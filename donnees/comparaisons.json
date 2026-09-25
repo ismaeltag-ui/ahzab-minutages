@@ -305,6 +305,72 @@
     "audio": "server13.mp3quran.net/husr"
   },
   {
+    "a": "aligne-humaid",
+    "b": "mp3quran-137",
+    "versets_debut": {
+      "n": 17,
+      "mediane": 4240,
+      "p90": 21150,
+      "p95": 23250,
+      "pire": 23250,
+      "biais": -4240,
+      "sous_50ms_pct": 0.0
+    },
+    "versets_fin": {
+      "n": 17,
+      "mediane": 7810,
+      "p90": 22170,
+      "p95": 26280,
+      "pire": 26280,
+      "biais": -7810,
+      "sous_50ms_pct": 0.0
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "server16.mp3quran.net/a_binhameed/rewayat-hafs-a-n-assem"
+  },
+  {
+    "a": "aligne-humaid",
+    "b": "qua-ahmed_talib_bin_humaid_mp3quran",
+    "versets_debut": {
+      "n": 17,
+      "mediane": 135,
+      "p90": 165,
+      "p95": 170,
+      "pire": 170,
+      "biais": -135,
+      "sous_50ms_pct": 0.0
+    },
+    "versets_fin": {
+      "n": 17,
+      "mediane": 272,
+      "p90": 565,
+      "p95": 575,
+      "pire": 575,
+      "biais": 272,
+      "sous_50ms_pct": 5.9
+    },
+    "mots_debut": {
+      "n": 134,
+      "mediane": 31,
+      "p90": 135,
+      "p95": 355,
+      "pire": 1015,
+      "biais": 6,
+      "sous_50ms_pct": 64.2
+    },
+    "mots_fin": {
+      "n": 134,
+      "mediane": 35,
+      "p90": 320,
+      "p95": 435,
+      "pire": 1015,
+      "biais": 20,
+      "sous_50ms_pct": 56.0
+    },
+    "audio": "server16.mp3quran.net/a_binhameed/rewayat-hafs-a-n-assem"
+  },
+  {
     "a": "mp3quran-137",
     "b": "qua-ahmed_talib_bin_humaid_mp3quran",
     "versets_debut": {

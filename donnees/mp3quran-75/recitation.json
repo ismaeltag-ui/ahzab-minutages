@@ -1,0 +1,17 @@
+{
+  "recitation": "mp3quran-75",
+  "nom": "علي بن عبدالرحمن الحذيفي",
+  "riwaya": "qalun",
+  "comptage": "madani",
+  "source": {
+    "nom": "mp3quran.net — ayat_timing",
+    "url": "https://www.mp3quran.net/api/v3/ayat_timing?read=75",
+    "conditions": "Source déjà utilisée par l'application."
+  },
+  "niveau": "publie",
+  "production": "bornes posées par l'éditeur",
+  "couverture": {
+    "versets": 6214,
+    "versets_avec_mots": 0
+  }
+}

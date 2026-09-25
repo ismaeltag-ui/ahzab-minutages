@@ -72,7 +72,7 @@ def modele(fils: int = 4):
         from quran_muaalem.modeling.modeling_multi_level_ctc import Wav2Vec2BertForMultilevelCTC
 
         torch.set_num_threads(fils)  # laisser respirer la machine
-        m = Wav2Vec2BertForMultilevelCTC.from_pretrained(MODELE, torch_dtype=torch.float32)
+        m = Wav2Vec2BertForMultilevelCTC.from_pretrained(MODELE, dtype=torch.float32)
         m.eval()
         _modele = (m, AutoFeatureExtractor.from_pretrained(MODELE))
     return _modele
@@ -414,9 +414,16 @@ def affiner(mots: list[Mot], db: np.ndarray) -> list[tuple[int, int]]:
     silence d'au moins 80 ms, le premier mot finit où le silence commence et le
     suivant commence où il finit ; sinon la frontière est posée au creux
     d'énergie de l'écart. Les silences ne décident jamais d'une frontière hors
-    de cet écart."""
+    de cet écart.
+
+    Avant un arrêt, la fin du mot suit la décroissance jusqu'à ce qu'elle rejoigne
+    le bruit de fond (seuil bas), sans dépasser la pause : couper dès que la voix
+    tombe tronquait le « -ā » final des fins de versets, surtout dans une mosquée
+    où la réverbération prolonge chaque mot (Ibn Humaid, An-Naba, 2026-09-25)."""
     plancher = np.percentile(db, 5)
-    seuil = plancher + 0.35 * (np.percentile(db, 95) - plancher)
+    etendue = np.percentile(db, 95) - plancher
+    seuil = plancher + 0.35 * etendue
+    seuil_bas = plancher + 0.15 * etendue
     silence = db < seuil
     ms = lambda trame: int(round(trame * TRAME * 1000))
     bornes = [[ms(m.debut), ms(m.fin + 1)] for m in mots]
@@ -439,7 +446,10 @@ def affiner(mots: list[Mot], db: np.ndarray) -> list[tuple[int, int]]:
         a, b = bornes[k][1] - 40, bornes[k + 1][0] + 40
         deb_sil, fin = cherche(a, b)
         if deb_sil is not None:
-            bornes[k][1], bornes[k + 1][0] = deb_sil, fin
+            i, j = deb_sil // 10, max(deb_sil // 10, fin // 10 - 5)
+            while i < j and db[i] >= seuil_bas:
+                i += 1
+            bornes[k][1], bornes[k + 1][0] = i * 10, fin
         else:
             bornes[k][1] = bornes[k + 1][0] = fin
     # tout début et toute fin : on étend jusqu'au silence voisin (au plus 400 ms)
@@ -451,7 +461,7 @@ def affiner(mots: list[Mot], db: np.ndarray) -> list[tuple[int, int]]:
         bornes[0][0] = i * 10
         i = min(len(db), bornes[-1][1] // 10)
         j = min(len(db), i + 40)
-        while i < j and not silence[i]:
+        while i < j and db[i] >= seuil_bas:
             i += 1
         bornes[-1][1] = i * 10
     return [tuple(b) for b in bornes]
@@ -520,6 +530,8 @@ def aligner_sourate(rec: str, source: str, s: int, audio_url: str | None = None,
     fiche["passes"][f"{s:03d}"] = {"versets": [a1, a2], "audio_s": round(duree, 1),
                                    "calcul_s": round(time.time() - t_debut, 1), "emissions_s": round(t_em, 1),
                                    "ouverture": list(prefixe)}
+    if t_em > 20:  # émissions calculées, pas relues du cache : une vraie mesure de vitesse
+        fiche.setdefault("vitesse", {})[f"{s:03d}"] = {"audio_s": round(duree, 1), "calcul_s": round(time.time() - t_debut, 1)}
     ecrire_fiche(rec, fiche)
     print(f"{rec} {s:03d} : {len(par_verset)} versets, {len(mots)} mots ; ouverture {prefixe or 'aucune'} ; "
           f"audio {duree:.0f} s, calcul {time.time() - t_debut:.0f} s", flush=True)

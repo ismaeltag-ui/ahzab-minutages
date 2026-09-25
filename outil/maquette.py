@@ -178,7 +178,7 @@ def main(args: list[str]) -> None:
     d["mesures"] = mesures()
     fiche_b = lire_json(DONNEES / "aligne-badr" / "recitation.json")
     fiche_h = lire_json(DONNEES / "aligne-humaid" / "recitation.json")
-    d["vitesse"] = [{"recitant": f["nom"], "sourate": s, **p} for f in (fiche_b, fiche_h) for s, p in f["passes"].items()]
+    d["vitesse"] = [{"recitant": f["nom"], "sourate": s, **p} for f in (fiche_b, fiche_h) for s, p in f.get("vitesse", {}).items()]
 
     # D. Continuité : al-Hudhayfi, An-Naba 31-40
     q = lire_json(DONNEES / "qua-ali_al_huthaifi_mp3quran" / "078.json")

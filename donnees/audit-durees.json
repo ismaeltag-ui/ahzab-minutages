@@ -1,4 +1,26 @@
 {
+  "aligne-badr": {
+    "justes": 2,
+    "au_dela": [],
+    "en_deca": [
+      [
+        18,
+        1606.7
+      ]
+    ],
+    "sans_mesure": 0
+  },
+  "aligne-humaid": {
+    "justes": 1,
+    "au_dela": [],
+    "en_deca": [
+      [
+        18,
+        1925.2
+      ]
+    ],
+    "sans_mesure": 0
+  },
   "mp3quran-112": {
     "justes": 10,
     "au_dela": [],
@@ -6,6 +28,12 @@
     "sans_mesure": 0
   },
   "mp3quran-118": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-120": {
     "justes": 10,
     "au_dela": [],
     "en_deca": [],
@@ -81,7 +109,31 @@
     ],
     "sans_mesure": 0
   },
+  "mp3quran-14": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-16": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-208": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
   "mp3quran-256": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-270": {
     "justes": 10,
     "au_dela": [],
     "en_deca": [],
@@ -94,6 +146,12 @@
     "sans_mesure": 0
   },
   "mp3quran-289": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-305": {
     "justes": 10,
     "au_dela": [],
     "en_deca": [],
@@ -122,7 +180,19 @@
     ],
     "sans_mesure": 0
   },
+  "mp3quran-75": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
   "mp3quran-78": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-80": {
     "justes": 10,
     "au_dela": [],
     "en_deca": [],

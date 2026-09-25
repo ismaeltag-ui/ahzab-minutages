@@ -17,8 +17,8 @@
         7
       ],
       "audio_s": 40.2,
-      "calcul_s": 89.8,
-      "emissions_s": 88.4,
+      "calcul_s": 5.8,
+      "emissions_s": 3.9,
       "ouverture": []
     },
     "018": {
@@ -27,8 +27,8 @@
         10
       ],
       "audio_s": 150.0,
-      "calcul_s": 257.4,
-      "emissions_s": 251.7,
+      "calcul_s": 9.2,
+      "emissions_s": 4.0,
       "ouverture": [
         "basmala"
       ]
@@ -39,11 +39,25 @@
         40
       ],
       "audio_s": 215.9,
-      "calcul_s": 354.6,
-      "emissions_s": 349.4,
+      "calcul_s": 8.3,
+      "emissions_s": 4.5,
       "ouverture": [
         "basmala"
       ]
+    }
+  },
+  "vitesse": {
+    "001": {
+      "audio_s": 40.2,
+      "calcul_s": 90
+    },
+    "018": {
+      "audio_s": 150.0,
+      "calcul_s": 257
+    },
+    "078": {
+      "audio_s": 215.9,
+      "calcul_s": 355
     }
   }
 }

@@ -17,7 +17,7 @@
         7
       ],
       "audio_s": 37.7,
-      "calcul_s": 8.6,
+      "calcul_s": 9.0,
       "emissions_s": 6.5,
       "ouverture": []
     },
@@ -27,11 +27,33 @@
         10
       ],
       "audio_s": 150.0,
-      "calcul_s": 12.8,
-      "emissions_s": 5.2,
+      "calcul_s": 9.4,
+      "emissions_s": 4.3,
       "ouverture": [
         "basmala"
       ]
+    },
+    "078": {
+      "versets": [
+        1,
+        40
+      ],
+      "audio_s": 285.3,
+      "calcul_s": 9.4,
+      "emissions_s": 5.0,
+      "ouverture": [
+        "basmala"
+      ]
+    }
+  },
+  "vitesse": {
+    "018": {
+      "audio_s": 150.0,
+      "calcul_s": 248
+    },
+    "078": {
+      "audio_s": 285.3,
+      "calcul_s": 416
     }
   }
 }
