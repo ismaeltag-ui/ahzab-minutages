@@ -3,10 +3,15 @@
 Le compte et sa connexion sont faits une fois pour toutes par son titulaire
 (`kaggle auth login`) ; ensuite tout se pilote d'ici :
 
-    py -m outil.kaggle preparer <récitation> <url du dossier> [--sourates 1-114] [--nom "…"] [--budget-h 10.5]
+    py -m outil.kaggle preparer <récitation> <url du dossier> [--sourates 1-114] [--nom "…"] [--budget-h 10.5] [--refaire]
     py -m outil.kaggle lancer <récitation>
     py -m outil.kaggle etat <récitation>
     py -m outil.kaggle recuperer <récitation>
+    py -m outil.kaggle enchainer --en-cours rec1,rec2 --a-lancer rec3,rec4
+
+`enchainer` tient compte de la limite de Kaggle (deux calculs GPU à la fois) :
+il rapatrie chaque calcul qui se termine et lance le suivant de la file, déjà
+préparé, dès qu'une place se libère.
 
 `preparer` écrit dans `cache/kaggle/<récitation>/` un script qui, sur le serveur,
 installe les dépendances, clone ce dépôt **au commit courant** (il doit donc être
@@ -54,7 +59,8 @@ if not os.path.exists(src):
 lancer("git", "-C", src, "checkout", "-q", P["commit"], check=True)
 env = dict(os.environ, AHZAB_FILS="0", PYTHONIOENCODING="utf-8", PYTHONUNBUFFERED="1")
 lancer(sys.executable, "-m", "outil.passe", P["rec"], P["dossier"], "--sourates", P["sourates"],
-       "--nom", P["nom"], "--budget-h", str(P["budget_h"]), cwd=src, env=env)
+       "--nom", P["nom"], "--budget-h", str(P["budget_h"]), *(["--refaire"] if P.get("refaire") else []),
+       cwd=src, env=env)
 # ce qui est fait est rangé même si la passe s'est arrêtée en route
 sortie = "/kaggle/working"
 if os.path.isdir(f"{src}/donnees/{P['rec']}"):
@@ -104,11 +110,12 @@ def commit_courant() -> str:
 
 
 def preparer(rec: str, url_dossier: str, sourates: str = "1-114", nom: str | None = None,
-             budget_h: float = 10.5) -> Path:
+             budget_h: float = 10.5, refaire: bool = False) -> Path:
     d = dossier(rec)
     d.mkdir(parents=True, exist_ok=True)
     params = {"rec": rec, "dossier": url_dossier, "sourates": sourates, "nom": nom or rec,
-              "budget_h": budget_h, "depot": DEPOT, "commit": commit_courant(), "paquets": PAQUETS}
+              "budget_h": budget_h, "depot": DEPOT, "commit": commit_courant(), "paquets": PAQUETS,
+              "refaire": refaire}
     (d / "passe_kaggle.py").write_text(MODELE_SCRIPT.replace("__PARAMS__", json.dumps(params, ensure_ascii=False)),
                                        encoding="utf-8", newline="\n")
     ecrire_json(d / "kernel-metadata.json", {
@@ -117,7 +124,8 @@ def preparer(rec: str, url_dossier: str, sourates: str = "1-114", nom: str | Non
         "enable_gpu": True, "enable_internet": True,
         "dataset_sources": [], "competition_sources": [], "kernel_sources": [], "model_sources": [],
     }, compact=False)
-    print(f"préparé : {d} (commit {params['commit'][:7]}, sourates {sourates}, budget {budget_h} h)")
+    print(f"préparé : {d} (commit {params['commit'][:7]}, sourates {sourates}, budget {budget_h} h"
+          f"{', tout refait' if refaire else ''})")
     return d
 
 
@@ -165,15 +173,58 @@ def recuperer(rec: str) -> None:
               f"erreurs {b['erreurs'] or 'aucune'}, non commencées {b['non_commencees'] or 'aucune'}")
 
 
+FINIS = ("COMPLETE", "ERROR", "CANCEL")
+
+
+def enchainer(en_cours: list[str], a_lancer: list[str], pause: int = 120, places: int = 2) -> None:
+    import time
+
+    actifs, file = list(en_cours), list(a_lancer)
+    while actifs or file:
+        for rec in list(actifs):
+            try:
+                s = kaggle("kernels", "status", f"{compte()}/{slug(rec)}")
+            except RuntimeError as e:
+                print(f"{time.strftime('%H:%M')} {rec} : état illisible ({e})", flush=True)
+                continue
+            if any(f in s.upper() for f in FINIS):
+                print(f"{time.strftime('%H:%M')} {rec} terminé : {s.strip().split()[-1]}", flush=True)
+                try:
+                    recuperer(rec)
+                except Exception as e:  # le rapatriement se refera à la main
+                    print(f"  rapatriement de {rec} en échec : {e}", flush=True)
+                actifs.remove(rec)
+        while file and len(actifs) < places:
+            rec = file.pop(0)
+            try:
+                lancer(rec)
+                actifs.append(rec)
+                print(f"{time.strftime('%H:%M')} {rec} lancé", flush=True)
+            except RuntimeError as e:
+                print(f"{time.strftime('%H:%M')} {rec} refusé ({e}) : remis en file", flush=True)
+                file.insert(0, rec)
+                break
+        if actifs or file:
+            time.sleep(pause)
+    print("file vide : tout est terminé", flush=True)
+
+
 def main(args: list[str]) -> None:
+    if args and args[0] == "enchainer":
+        opts = dict(zip(args[1::2], args[2::2]))
+        liste = lambda cle: [x for x in opts.get(cle, "").split(",") if x]
+        enchainer(liste("--en-cours"), liste("--a-lancer"))
+        return
     if len(args) < 2:
         print(__doc__)
         return
     cmd, rec = args[0], args[1]
     if cmd == "preparer":
-        opts = dict(zip(args[3::2], args[4::2]))
+        refaire = "--refaire" in args
+        reste = [a for a in args[3:] if a != "--refaire"]
+        opts = dict(zip(reste[::2], reste[1::2]))
         preparer(rec, args[2], opts.get("--sourates", "1-114"), opts.get("--nom"),
-                 float(opts.get("--budget-h", "10.5")))
+                 float(opts.get("--budget-h", "10.5")), refaire)
     elif cmd == "lancer":
         lancer(rec)
     elif cmd == "etat":
