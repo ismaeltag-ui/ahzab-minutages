@@ -438,8 +438,16 @@ def affiner(mots: list[Mot], db: np.ndarray) -> list[tuple[int, int]]:
     le bruit de fond (seuil bas), sans dépasser la pause : couper dès que la voix
     tombe tronquait le « -ā » final des fins de versets, surtout dans une mosquée
     où la réverbération prolonge chaque mot (Ibn Humaid, An-Naba, 2026-09-25)."""
-    plancher = np.percentile(db, 5)
-    etendue = np.percentile(db, 95) - plancher
+    # Le plancher se mesure sur le son enregistré, pas sur le silence numérique
+    # (zéros exacts, −100 dB) que certains fichiers portent en tête ou en queue :
+    # compté, il tirait le seuil si bas qu'aucune pause n'était reconnue, et le
+    # dernier mot d'un verset avalait la pause suivante (al-Husary muʿallim,
+    # 2026-09-25 : pauses à −60 dB, seuil tombé à −70).
+    vivant = db[db > -90]
+    if len(vivant) < len(db) // 10:
+        vivant = db
+    plancher = np.percentile(vivant, 5)
+    etendue = np.percentile(vivant, 95) - plancher
     seuil = plancher + 0.35 * etendue
     seuil_bas = plancher + 0.15 * etendue
     silence = db < seuil
@@ -467,14 +475,21 @@ def affiner(mots: list[Mot], db: np.ndarray) -> list[tuple[int, int]]:
             i, j = deb_sil // 10, max(deb_sil // 10, fin // 10 - 5)
             while i < j and db[i] >= seuil_bas:
                 i += 1
-            bornes[k][1], bornes[k + 1][0] = i * 10, fin
+            # symétriquement, le mot qui reprend après la pause commence à son
+            # attaque, là où la voix quitte le bruit de fond, et non quand elle a
+            # déjà franchi le seuil : sans quoi l'éditeur coupait 90 à 230 ms plus
+            # tôt que nous (al-Husary muʿallim, 2026-09-25)
+            d = fin // 10
+            while d > i and db[d - 1] >= seuil_bas:
+                d -= 1
+            bornes[k][1], bornes[k + 1][0] = i * 10, d * 10
         else:
             bornes[k][1] = bornes[k + 1][0] = fin
-    # tout début et toute fin : on étend jusqu'au silence voisin (au plus 400 ms)
+    # tout début et toute fin : on étend jusqu'au bruit de fond voisin (au plus 400 ms)
     if bornes:
         i = bornes[0][0] // 10
         j = max(0, i - 40)
-        while i > j and not silence[i - 1]:
+        while i > j and db[i - 1] >= seuil_bas:
             i -= 1
         bornes[0][0] = i * 10
         i = min(len(db), bornes[-1][1] // 10)
