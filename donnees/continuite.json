@@ -1,0 +1,70 @@
+{
+  "_lisezmoi": "Les voix de l'application encore lues verset par verset (avec une jointure entre deux fichiers), et le fichier de sourate de la MÊME prise qui les rendrait continues. « meme_prise » : score d'empreinte (outil/empreinte.py, sourates 112 et 113 ; même prise au-dessus de 0,8, autre prise sous 0,5). « minutage » : le dossier de donnees/ qui porte les bornes sur ce fichier. Relevé du 2026-09-25.",
+  "voix": {
+    "banna": {
+      "sourates": "https://download.quranicaudio.com/quran/mahmood_ali_albana/",
+      "meme_prise": [0.98, 0.99],
+      "versets": "qua-mahmoud_ali_al_banna_qdc",
+      "mots": "qua-mahmoud_ali_al_banna_qdc",
+      "niveau": "publie"
+    },
+    "abdelbasset-mujawwad": {
+      "sourates": "https://audio-cdn.tarteel.ai/quran/surah/abdulBasit/mujawwad/mp3/",
+      "meme_prise": [0.97, 0.99],
+      "versets": "qua-abdulbasit_abdulsamad_mujawwad_tarteel",
+      "mots": "qua-abdulbasit_abdulsamad_mujawwad_tarteel",
+      "niveau": "publie",
+      "autre_source": "https://server7.mp3quran.net/basit/Almusshaf-Al-Mojawwad/ (même prise, 0,90 ; versets : mp3quran-51)"
+    },
+    "minshawi-mujawwad": {
+      "sourates": "https://server10.mp3quran.net/minsh/Almusshaf-Al-Mojawwad/",
+      "meme_prise": [0.96, 0.94],
+      "versets": "qua-mohammed_siddiq_al_minshawi_mujawwad_mp3quran",
+      "mots": "qua-mohammed_siddiq_al_minshawi_mujawwad_mp3quran",
+      "niveau": "publie",
+      "note": "Certains fichiers continuent après la sourate (enregistrement en public : 75 s de plus après Al-Ikhlas) ; les versets sont bien placés, la lecture s'arrête au dernier."
+    },
+    "husary-mujawwad": {
+      "sourates": "https://audio-cdn.tarteel.ai/quran/surah/husary/mujawwad/mp3/",
+      "meme_prise": [0.96, 0.95],
+      "versets": "qua-mahmoud_khalil_al_husary_mujawwad_tarteel",
+      "mots": "qua-mahmoud_khalil_al_husary_mujawwad_tarteel",
+      "niveau": "publie",
+      "autre_source": "https://server13.mp3quran.net/husr/Almusshaf-Al-Mojawwad/ (même prise, 0,98 / 0,95 ; versets : mp3quran-119)",
+      "note": "QUA ne minute pas 62:10."
+    },
+    "jibreel": {
+      "sourates": "https://server8.mp3quran.net/jbrl/",
+      "meme_prise": [0.99, 0.98],
+      "versets": "aligne-jibreel",
+      "mots": "aligne-jibreel",
+      "niveau": "aligne"
+    },
+    "aziz-alili": {
+      "sourates": "https://download.quranicaudio.com/quran/aziz_alili/",
+      "meme_prise": [1.0, 0.99],
+      "versets": "aligne-alili",
+      "mots": "aligne-alili",
+      "niveau": "aligne"
+    },
+    "husary-muallim": {
+      "sourates": "https://download.quranicaudio.com/quran/husary_muallim/",
+      "meme_prise": [0.98, 0.91],
+      "versets": "aligne-husary-muallim",
+      "mots": "aligne-husary-muallim",
+      "niveau": "aligne",
+      "note": "Chaque verset est suivi d'une pause pour que l'élève le redise ; le fichier de verset la contient, les bornes alignées s'arrêtent avec la voix."
+    }
+  },
+  "sans_meme_prise": {
+    "muaiqly": "Aucune : mp3quran maher (0,16-0,22), quranicaudio year1440 (0,08-0,13) et maher_256 (0,16-0,22) sont d'autres enregistrements.",
+    "salamah": "Aucune : mp3quran salamah est un autre enregistrement (0,10-0,16).",
+    "parhizgar": "Aucun fichier de sourate trouvé (mp3quran, quranicaudio, QUA).",
+    "karim-mansoori": "Aucun fichier de sourate trouvé (mp3quran, quranicaudio, QUA).",
+    "sowaid": "Seulement une vidéo YouTube (QUA ayman_swed_muallim_yt), inutilisable dans l'application.",
+    "abdulkareem": "mp3quran : autre prise (durée du juz' 30 à −9,9 %, relevé de l'application).",
+    "bukhatir": "mp3quran : autre prise (−7,3 %).",
+    "hudhaify": "mp3quran hthfi : autre prise (empreinte 0,24-0,45 ; −8,3 %). QUA ali_al_huthaifi_mp3quran minute ce fichier au mot.",
+    "basfar": "mp3quran : autre prise (−21,9 %)."
+  }
+}

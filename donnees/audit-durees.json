@@ -1,22 +1,22 @@
 {
   "aligne-badr": {
-    "justes": 2,
+    "justes": 5,
     "au_dela": [],
     "en_deca": [
       [
         18,
-        1606.7
+        1606.6
       ]
     ],
     "sans_mesure": 0
   },
   "aligne-humaid": {
-    "justes": 1,
+    "justes": 2,
     "au_dela": [],
     "en_deca": [
       [
         18,
-        1925.2
+        1925.1
       ]
     ],
     "sans_mesure": 0
@@ -28,6 +28,12 @@
     "sans_mesure": 0
   },
   "mp3quran-118": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-119": {
     "justes": 10,
     "au_dela": [],
     "en_deca": [],
@@ -158,6 +164,12 @@
     "sans_mesure": 0
   },
   "mp3quran-31": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-51": {
     "justes": 10,
     "au_dela": [],
     "en_deca": [],
