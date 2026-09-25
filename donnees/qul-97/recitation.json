@@ -1,0 +1,18 @@
+{
+  "recitation": "qul-97",
+  "nom": "yasser ad-dussary",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "source": {
+    "nom": "QUL — Quranic Universal Library (Tarteel)",
+    "url": "https://qul.tarteel.ai/resources/recitation/351",
+    "api": "https://qul.tarteel.ai/api/v1/audio/surah_segments/97",
+    "conditions": "Usage commercial permis selon la FAQ de QUL ; attribution à QUL/Tarteel."
+  },
+  "niveau": "publie",
+  "production": "apprentissage automatique (documentation QUL)",
+  "couverture": {
+    "versets": 6236,
+    "versets_avec_mots": 0
+  }
+}

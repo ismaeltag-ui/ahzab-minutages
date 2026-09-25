@@ -1,0 +1,27 @@
+{
+  "recitation": "qua-mahmoud_khalil_al_husary_mujawwad_tarteel",
+  "nom": "محمود خليل الحصري — Mahmoud Khalil Al-Husary",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "style": "mujawwad",
+  "contexte": null,
+  "canal": "tarteel",
+  "source": {
+    "nom": "Quranic Universal Audio v3.1.0 (Wider Community)",
+    "url": "https://github.com/Wider-Community/quranic-universal-audio/releases/tag/v3.1.0",
+    "licence": "CC BY 4.0 — attribution à Wider Community",
+    "texte": "digital_khatt_v2"
+  },
+  "niveau": "publie",
+  "production": "alignement phonémique, validateurs automatiques, correction humaine possible (documentation QUA)",
+  "couverture": {
+    "versets": 6235,
+    "versets_avec_mots": 6235,
+    "annoncee": {
+      "ayahs": 6235,
+      "missing_verses": "62:10",
+      "surahs": 114
+    }
+  },
+  "reprises": {}
+}

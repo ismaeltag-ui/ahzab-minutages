@@ -1,0 +1,53 @@
+{
+  "recitation": "qua-saud_al_shuraim_mp3quran",
+  "nom": "سعود الشريم — Saud Al-Shuraim",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "style": "murattal",
+  "contexte": null,
+  "canal": "mp3quran",
+  "source": {
+    "nom": "Quranic Universal Audio v3.1.0 (Wider Community)",
+    "url": "https://github.com/Wider-Community/quranic-universal-audio/releases/tag/v3.1.0",
+    "licence": "CC BY 4.0 — attribution à Wider Community",
+    "texte": "digital_khatt_v2"
+  },
+  "niveau": "publie",
+  "production": "alignement phonémique, validateurs automatiques, correction humaine possible (documentation QUA)",
+  "couverture": {
+    "versets": 6235,
+    "versets_avec_mots": 6235,
+    "annoncee": {
+      "ayahs": 6235,
+      "missing_verses": "1:1",
+      "surahs": 114
+    }
+  },
+  "reprises": {
+    "3:36": 2,
+    "5:37": 1,
+    "7:146": 1,
+    "9:48": 1,
+    "12:23": 1,
+    "12:108": 1,
+    "13:26": 1,
+    "14:50": 1,
+    "14:51": 1,
+    "18:25": 1,
+    "20:121": 1,
+    "21:104": 1,
+    "36:67": 1,
+    "44:48": 1,
+    "44:49": 1,
+    "44:50": 1,
+    "44:56": 1,
+    "47:25": 1,
+    "69:19": 1,
+    "81:17": 1,
+    "81:18": 1,
+    "81:25": 1,
+    "81:26": 1,
+    "89:6": 1,
+    "89:23": 1
+  }
+}

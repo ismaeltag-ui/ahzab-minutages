@@ -1,0 +1,30 @@
+{
+  "recitation": "qua-mohammed_siddiq_al_minshawi_mp3quran",
+  "nom": "محمد صديق المنشاوي — Mohammed Siddiq Al-Minshawi",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "style": "murattal",
+  "contexte": null,
+  "canal": "mp3quran",
+  "source": {
+    "nom": "Quranic Universal Audio v3.1.0 (Wider Community)",
+    "url": "https://github.com/Wider-Community/quranic-universal-audio/releases/tag/v3.1.0",
+    "licence": "CC BY 4.0 — attribution à Wider Community",
+    "texte": "digital_khatt_v2"
+  },
+  "niveau": "publie",
+  "production": "alignement phonémique, validateurs automatiques, correction humaine possible (documentation QUA)",
+  "couverture": {
+    "versets": 6236,
+    "versets_avec_mots": 6236,
+    "annoncee": {
+      "ayahs": 6236,
+      "surahs": 114
+    }
+  },
+  "reprises": {
+    "6:69": 1,
+    "9:75": 1,
+    "37:151": 1
+  }
+}

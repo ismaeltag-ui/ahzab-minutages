@@ -1,0 +1,31 @@
+{
+  "recitation": "qua-ahmed_saleh_rajab_qalon_way2quran",
+  "nom": "أحمد صالح رجب — Ahmed Saleh Rajab",
+  "riwaya": "qalun",
+  "comptage": "madani",
+  "style": "murattal",
+  "contexte": null,
+  "canal": "way2quran",
+  "source": {
+    "nom": "Quranic Universal Audio v3.1.0 (Wider Community)",
+    "url": "https://github.com/Wider-Community/quranic-universal-audio/releases/tag/v3.1.0",
+    "licence": "CC BY 4.0 — attribution à Wider Community",
+    "texte": "qaloon-v21+sdk-words-v1"
+  },
+  "niveau": "publie",
+  "production": "alignement phonémique, validateurs automatiques, correction humaine possible (documentation QUA)",
+  "couverture": {
+    "versets": 6213,
+    "versets_avec_mots": 6213,
+    "annoncee": {
+      "ayahs": 6213,
+      "missing_verses": "36:46",
+      "surahs": 114
+    }
+  },
+  "reprises": {
+    "11:107": 1,
+    "22:41": 1,
+    "58:14": 1
+  }
+}

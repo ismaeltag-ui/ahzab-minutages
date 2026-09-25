@@ -1,0 +1,32 @@
+{
+  "recitation": "qua-walid_atef_way2quran",
+  "nom": "وليد عاطف — Walid Atef",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "style": "murattal",
+  "contexte": null,
+  "canal": "way2quran",
+  "source": {
+    "nom": "Quranic Universal Audio v3.1.0 (Wider Community)",
+    "url": "https://github.com/Wider-Community/quranic-universal-audio/releases/tag/v3.1.0",
+    "licence": "CC BY 4.0 — attribution à Wider Community",
+    "texte": "digital_khatt_v2"
+  },
+  "niveau": "publie",
+  "production": "alignement phonémique, validateurs automatiques, correction humaine possible (documentation QUA)",
+  "couverture": {
+    "versets": 6235,
+    "versets_avec_mots": 6235,
+    "annoncee": {
+      "ayahs": 6235,
+      "missing_verses": "2:83",
+      "surahs": 114
+    }
+  },
+  "reprises": {
+    "16:2": 1,
+    "24:37": 1,
+    "37:151": 1,
+    "107:4": 1
+  }
+}

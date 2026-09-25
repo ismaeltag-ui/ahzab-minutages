@@ -1,0 +1,582 @@
+[
+  {
+    "a": "qua-abdulbasit_abdulsamad_mujawwad_tarteel",
+    "b": "qul-1",
+    "versets_debut": {
+      "n": 6236,
+      "mediane": 340,
+      "p90": 500,
+      "p95": 540,
+      "pire": 8581,
+      "biais": -340,
+      "sous_50ms_pct": 0.8
+    },
+    "versets_fin": {
+      "n": 6236,
+      "mediane": 2388,
+      "p90": 3806,
+      "p95": 4116,
+      "pire": 76629,
+      "biais": 2388,
+      "sous_50ms_pct": 0.3
+    },
+    "mots_debut": {
+      "n": 77432,
+      "mediane": 0,
+      "p90": 0,
+      "p95": 0,
+      "pire": 7295,
+      "biais": 0,
+      "sous_50ms_pct": 99.5
+    },
+    "mots_fin": {
+      "n": 77432,
+      "mediane": 0,
+      "p90": 0,
+      "p95": 480,
+      "pire": 5565,
+      "biais": 0,
+      "sous_50ms_pct": 91.3
+    },
+    "audio": "audio-cdn.tarteel.ai/quran/surah/abdulbasit/mujawwad/mp3"
+  },
+  {
+    "a": "qua-abdulbasit_abdulsamad_tarteel",
+    "b": "qul-2",
+    "versets_debut": {
+      "n": 6236,
+      "mediane": 116,
+      "p90": 205,
+      "p95": 237,
+      "pire": 1270,
+      "biais": -116,
+      "sous_50ms_pct": 14.0
+    },
+    "versets_fin": {
+      "n": 6236,
+      "mediane": 417,
+      "p90": 1173,
+      "p95": 1425,
+      "pire": 3531,
+      "biais": 417,
+      "sous_50ms_pct": 5.3
+    },
+    "mots_debut": {
+      "n": 77432,
+      "mediane": 0,
+      "p90": 0,
+      "p95": 0,
+      "pire": 1420,
+      "biais": 0,
+      "sous_50ms_pct": 99.8
+    },
+    "mots_fin": {
+      "n": 77432,
+      "mediane": 0,
+      "p90": 0,
+      "p95": 325,
+      "pire": 1965,
+      "biais": 0,
+      "sous_50ms_pct": 92.2
+    },
+    "audio": "audio-cdn.tarteel.ai/quran/surah/abdulbasit/murattal/mp3"
+  },
+  {
+    "a": "qua-abu_bakr_al_shatri_tarteel",
+    "b": "qul-4",
+    "versets_debut": {
+      "n": 6236,
+      "mediane": 10,
+      "p90": 105,
+      "p95": 151,
+      "pire": 7929,
+      "biais": -10,
+      "sous_50ms_pct": 88.3
+    },
+    "versets_fin": {
+      "n": 6236,
+      "mediane": 70,
+      "p90": 300,
+      "p95": 741,
+      "pire": 70761,
+      "biais": -70,
+      "sous_50ms_pct": 4.7
+    },
+    "mots_debut": {
+      "n": 77432,
+      "mediane": 0,
+      "p90": 0,
+      "p95": 0,
+      "pire": 800,
+      "biais": 0,
+      "sous_50ms_pct": 99.8
+    },
+    "mots_fin": {
+      "n": 77432,
+      "mediane": 0,
+      "p90": 0,
+      "p95": 130,
+      "pire": 16635,
+      "biais": 0,
+      "sous_50ms_pct": 92.6
+    },
+    "audio": "audio-cdn.tarteel.ai/quran/surah/abubakralshatri/murattal/mp3"
+  },
+  {
+    "a": "qua-khalifa_al_tunaiji_tarteel",
+    "b": "qul-161",
+    "versets_debut": {
+      "n": 6236,
+      "mediane": 10,
+      "p90": 42,
+      "p95": 58,
+      "pire": 550,
+      "biais": -10,
+      "sous_50ms_pct": 92.7
+    },
+    "versets_fin": {
+      "n": 6236,
+      "mediane": 60,
+      "p90": 87,
+      "p95": 147,
+      "pire": 2076,
+      "biais": -40,
+      "sous_50ms_pct": 39.9
+    },
+    "mots_debut": {
+      "n": 77432,
+      "mediane": 0,
+      "p90": 0,
+      "p95": 0,
+      "pire": 670,
+      "biais": 0,
+      "sous_50ms_pct": 99.6
+    },
+    "mots_fin": {
+      "n": 77432,
+      "mediane": 0,
+      "p90": 0,
+      "p95": 65,
+      "pire": 2520,
+      "biais": 0,
+      "sous_50ms_pct": 94.4
+    },
+    "audio": "audio-cdn.tarteel.ai/quran/surah/khalifaaltunaiji/murattal/mp3"
+  },
+  {
+    "a": "qua-maher_al_muaiqly_qdc",
+    "b": "qul-159",
+    "versets_debut": {
+      "n": 6236,
+      "mediane": 225,
+      "p90": 415,
+      "p95": 435,
+      "pire": 6930,
+      "biais": -225,
+      "sous_50ms_pct": 0.8
+    },
+    "versets_fin": {
+      "n": 6236,
+      "mediane": 330,
+      "p90": 665,
+      "p95": 825,
+      "pire": 5280,
+      "biais": -325,
+      "sous_50ms_pct": 3.3
+    },
+    "mots_debut": {
+      "n": 77428,
+      "mediane": 45,
+      "p90": 330,
+      "p95": 1040,
+      "pire": 16100,
+      "biais": -40,
+      "sous_50ms_pct": 58.9
+    },
+    "mots_fin": {
+      "n": 77428,
+      "mediane": 48,
+      "p90": 985,
+      "p95": 1470,
+      "pire": 16140,
+      "biais": -35,
+      "sous_50ms_pct": 54.5
+    },
+    "audio": "download.quranicaudio.com/quran/maher_almu3aiqly/year1440"
+  },
+  {
+    "a": "qua-mahmoud_ali_al_banna_qdc",
+    "b": "qul-129",
+    "versets_debut": {
+      "n": 6236,
+      "mediane": 488,
+      "p90": 961,
+      "p95": 1172,
+      "pire": 30653,
+      "biais": -487,
+      "sous_50ms_pct": 3.2
+    },
+    "versets_fin": {
+      "n": 6236,
+      "mediane": 147,
+      "p90": 413,
+      "p95": 532,
+      "pire": 31338,
+      "biais": 116,
+      "sous_50ms_pct": 18.9
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "download.quranicaudio.com/quran/mahmood_ali_albana"
+  },
+  {
+    "a": "qua-mahmoud_khalil_al_husary_qdc_128k",
+    "b": "qul-122",
+    "versets_debut": {
+      "n": 6236,
+      "mediane": 4510,
+      "p90": 32916,
+      "p95": 49858,
+      "pire": 116348,
+      "biais": 3648,
+      "sous_50ms_pct": 2.0
+    },
+    "versets_fin": {
+      "n": 6236,
+      "mediane": 5196,
+      "p90": 34359,
+      "p95": 51820,
+      "pire": 118630,
+      "biais": 4878,
+      "sous_50ms_pct": 0.3
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "download.quranicaudio.com/quran/mahmood_khaleel_al-husaree_iza3a"
+  },
+  {
+    "a": "mp3quran-112",
+    "b": "qua-mohammed_siddiq_al_minshawi_mp3quran",
+    "versets_debut": {
+      "n": 6235,
+      "mediane": 300,
+      "p90": 1110,
+      "p95": 1577,
+      "pire": 70137,
+      "biais": 279,
+      "sous_50ms_pct": 9.2
+    },
+    "versets_fin": {
+      "n": 6235,
+      "mediane": 132,
+      "p90": 556,
+      "p95": 1003,
+      "pire": 71242,
+      "biais": -41,
+      "sous_50ms_pct": 21.3
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "server10.mp3quran.net/minsh"
+  },
+  {
+    "a": "mp3quran-118",
+    "b": "qua-mahmoud_khalil_al_husary_mp3quran",
+    "versets_debut": {
+      "n": 6235,
+      "mediane": 273,
+      "p90": 1024,
+      "p95": 1383,
+      "pire": 24547,
+      "biais": 258,
+      "sous_50ms_pct": 10.1
+    },
+    "versets_fin": {
+      "n": 6235,
+      "mediane": 652,
+      "p90": 2318,
+      "p95": 2950,
+      "pire": 25173,
+      "biais": -634,
+      "sous_50ms_pct": 4.3
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "server13.mp3quran.net/husr"
+  },
+  {
+    "a": "mp3quran-137",
+    "b": "qua-ahmed_talib_bin_humaid_mp3quran",
+    "versets_debut": {
+      "n": 5561,
+      "mediane": 52401,
+      "p90": 317856,
+      "p95": 475991,
+      "pire": 1583605,
+      "biais": -6537,
+      "sous_50ms_pct": 0.1
+    },
+    "versets_fin": {
+      "n": 5561,
+      "mediane": 54473,
+      "p90": 321305,
+      "p95": 479583,
+      "pire": 1584945,
+      "biais": -7733,
+      "sous_50ms_pct": 0.1
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "server16.mp3quran.net/a_binhameed/rewayat-hafs-a-n-assem"
+  },
+  {
+    "a": "mp3quran-289",
+    "b": "qua-ahmed_issa_al_maasaraawi_mp3quran",
+    "versets_debut": {
+      "n": 6234,
+      "mediane": 299,
+      "p90": 455,
+      "p95": 500,
+      "pire": 8570,
+      "biais": 297,
+      "sous_50ms_pct": 0.2
+    },
+    "versets_fin": {
+      "n": 6234,
+      "mediane": 211,
+      "p90": 302,
+      "p95": 340,
+      "pire": 7234,
+      "biais": 210,
+      "sous_50ms_pct": 2.3
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "server16.mp3quran.net/a_maasaraawi/rewayat-hafs-a-n-assem"
+  },
+  {
+    "a": "mp3quran-273",
+    "b": "qua-haitham_al_dukhain_mp3quran",
+    "versets_debut": {
+      "n": 6236,
+      "mediane": 305,
+      "p90": 485,
+      "p95": 600,
+      "pire": 434025,
+      "biais": 305,
+      "sous_50ms_pct": 0.5
+    },
+    "versets_fin": {
+      "n": 6236,
+      "mediane": 245,
+      "p90": 415,
+      "p95": 580,
+      "pire": 454160,
+      "biais": 245,
+      "sous_50ms_pct": 4.6
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "server16.mp3quran.net/h_dukhain/rewayat-hafs-a-n-assem"
+  },
+  {
+    "a": "mp3quran-134",
+    "b": "qua-mohammed_saayed_warsh_mp3quran",
+    "versets_debut": {
+      "n": 6188,
+      "mediane": 55940,
+      "p90": 503175,
+      "p95": 920075,
+      "pire": 2662995,
+      "biais": 54612,
+      "sous_50ms_pct": 0.0
+    },
+    "versets_fin": {
+      "n": 6188,
+      "mediane": 57385,
+      "p90": 506900,
+      "p95": 925675,
+      "pire": 2662945,
+      "biais": 56030,
+      "sous_50ms_pct": 0.1
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "server16.mp3quran.net/m_sayed/rewayat-warsh-a-n-nafi"
+  },
+  {
+    "a": "mp3quran-256",
+    "b": "qua-ahmed_shaheen_mp3quran",
+    "versets_debut": {
+      "n": 6236,
+      "mediane": 505,
+      "p90": 765,
+      "p95": 860,
+      "pire": 11370,
+      "biais": 505,
+      "sous_50ms_pct": 0.1
+    },
+    "versets_fin": {
+      "n": 6236,
+      "mediane": 145,
+      "p90": 325,
+      "p95": 410,
+      "pire": 4818,
+      "biais": 35,
+      "sous_50ms_pct": 18.6
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "server16.mp3quran.net/shaheen/rewayat-hafs-a-n-assem"
+  },
+  {
+    "a": "mp3quran-78",
+    "b": "qua-imad_zuhair_hafez_mp3quran",
+    "versets_debut": {
+      "n": 6236,
+      "mediane": 43,
+      "p90": 73,
+      "p95": 96,
+      "pire": 2250,
+      "biais": 43,
+      "sous_50ms_pct": 64.0
+    },
+    "versets_fin": {
+      "n": 6236,
+      "mediane": 295,
+      "p90": 405,
+      "p95": 866,
+      "pire": 3927,
+      "biais": -294,
+      "sous_50ms_pct": 0.3
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "server6.mp3quran.net/hafz"
+  },
+  {
+    "a": "mp3quran-86",
+    "b": "qua-nasser_al_qatami_mp3quran",
+    "versets_debut": {
+      "n": 6235,
+      "mediane": 220,
+      "p90": 431,
+      "p95": 1210,
+      "pire": 149800,
+      "biais": 218,
+      "sous_50ms_pct": 0.4
+    },
+    "versets_fin": {
+      "n": 6235,
+      "mediane": 188,
+      "p90": 383,
+      "p95": 980,
+      "pire": 150560,
+      "biais": 183,
+      "sous_50ms_pct": 1.0
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "server6.mp3quran.net/qtm"
+  },
+  {
+    "a": "mp3quran-31",
+    "b": "qua-saud_al_shuraim_mp3quran",
+    "versets_debut": {
+      "n": 6233,
+      "mediane": 46,
+      "p90": 211,
+      "p95": 499,
+      "pire": 82932,
+      "biais": 33,
+      "sous_50ms_pct": 53.2
+    },
+    "versets_fin": {
+      "n": 6233,
+      "mediane": 46,
+      "p90": 173,
+      "p95": 328,
+      "pire": 90841,
+      "biais": -8,
+      "sous_50ms_pct": 54.4
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "server7.mp3quran.net/shur"
+  },
+  {
+    "a": "mp3quran-123",
+    "b": "qua-mishary_rashid_al_afasy_mp3quran",
+    "versets_debut": {
+      "n": 6236,
+      "mediane": 230,
+      "p90": 377,
+      "p95": 413,
+      "pire": 12493,
+      "biais": 230,
+      "sous_50ms_pct": 0.3
+    },
+    "versets_fin": {
+      "n": 6236,
+      "mediane": 190,
+      "p90": 339,
+      "p95": 389,
+      "pire": 7069,
+      "biais": 190,
+      "sous_50ms_pct": 0.4
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "server8.mp3quran.net/afs"
+  },
+  {
+    "a": "mp3quran-71",
+    "b": "qua-abdulwadood_haneef_mp3quran",
+    "versets_debut": {
+      "n": 6235,
+      "mediane": 253,
+      "p90": 670,
+      "p95": 780,
+      "pire": 11214,
+      "biais": 250,
+      "sous_50ms_pct": 1.7
+    },
+    "versets_fin": {
+      "n": 6235,
+      "mediane": 207,
+      "p90": 295,
+      "p95": 345,
+      "pire": 12555,
+      "biais": 202,
+      "sous_50ms_pct": 5.7
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "server8.mp3quran.net/wdod"
+  },
+  {
+    "a": "mp3quran-74",
+    "b": "qua-ali_al_huthaifi_mp3quran",
+    "versets_debut": {
+      "n": 6123,
+      "mediane": 3706,
+      "p90": 15155,
+      "p95": 21031,
+      "pire": 37581,
+      "biais": 3640,
+      "sous_50ms_pct": 0.1
+    },
+    "versets_fin": {
+      "n": 6123,
+      "mediane": 3328,
+      "p90": 14749,
+      "p95": 20587,
+      "pire": 37220,
+      "biais": 3255,
+      "sous_50ms_pct": 1.4
+    },
+    "mots_debut": null,
+    "mots_fin": null,
+    "audio": "server9.mp3quran.net/hthfi"
+  }
+]

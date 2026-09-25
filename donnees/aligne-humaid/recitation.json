@@ -1,0 +1,37 @@
+{
+  "recitation": "aligne-humaid",
+  "nom": "Ahmad Talib ibn Humaid",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "source": {
+    "nom": "alignement forcé ahzab-minutages",
+    "modele": "obadx/muaalem-model-v3_2",
+    "texte": "quran-transcript (uthmani, Hafs, madd 4)"
+  },
+  "niveau": "aligne",
+  "production": "alignement CTC sur le texte, frontières affinées dans l'écart",
+  "passes": {
+    "001": {
+      "versets": [
+        1,
+        7
+      ],
+      "audio_s": 37.7,
+      "calcul_s": 8.6,
+      "emissions_s": 6.5,
+      "ouverture": []
+    },
+    "018": {
+      "versets": [
+        1,
+        10
+      ],
+      "audio_s": 150.0,
+      "calcul_s": 12.8,
+      "emissions_s": 5.2,
+      "ouverture": [
+        "basmala"
+      ]
+    }
+  }
+}

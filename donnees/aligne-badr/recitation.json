@@ -1,0 +1,49 @@
+{
+  "recitation": "aligne-badr",
+  "nom": "Badr at-Turki",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "source": {
+    "nom": "alignement forcé ahzab-minutages",
+    "modele": "obadx/muaalem-model-v3_2",
+    "texte": "quran-transcript (uthmani, Hafs, madd 4)"
+  },
+  "niveau": "aligne",
+  "production": "alignement CTC sur le texte, frontières affinées dans l'écart",
+  "passes": {
+    "001": {
+      "versets": [
+        1,
+        7
+      ],
+      "audio_s": 40.2,
+      "calcul_s": 89.8,
+      "emissions_s": 88.4,
+      "ouverture": []
+    },
+    "018": {
+      "versets": [
+        1,
+        10
+      ],
+      "audio_s": 150.0,
+      "calcul_s": 257.4,
+      "emissions_s": 251.7,
+      "ouverture": [
+        "basmala"
+      ]
+    },
+    "078": {
+      "versets": [
+        1,
+        40
+      ],
+      "audio_s": 215.9,
+      "calcul_s": 354.6,
+      "emissions_s": 349.4,
+      "ouverture": [
+        "basmala"
+      ]
+    }
+  }
+}

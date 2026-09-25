@@ -1,0 +1,30 @@
+{
+  "recitation": "qua-saber_abdulhakam_shubah_way2quran",
+  "nom": "صابر عبد الحكم — Saber Abdulhakam",
+  "riwaya": "shuba",
+  "comptage": "kufi",
+  "style": "murattal",
+  "contexte": null,
+  "canal": "way2quran",
+  "source": {
+    "nom": "Quranic Universal Audio v3.1.0 (Wider Community)",
+    "url": "https://github.com/Wider-Community/quranic-universal-audio/releases/tag/v3.1.0",
+    "licence": "CC BY 4.0 — attribution à Wider Community",
+    "texte": "shouba-v20+sdk-words-v1"
+  },
+  "niveau": "publie",
+  "production": "alignement phonémique, validateurs automatiques, correction humaine possible (documentation QUA)",
+  "couverture": {
+    "versets": 6236,
+    "versets_avec_mots": 6236,
+    "annoncee": {
+      "ayahs": 6236,
+      "surahs": 114
+    }
+  },
+  "reprises": {
+    "11:87": 1,
+    "25:12": 1,
+    "25:18": 1
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "recitation": "qua-muammar_zainal_al_sukaini_way2quran",
+  "nom": "معمر زينل السكيني — Muammar Zainal Al-Sukaini",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "style": "murattal",
+  "contexte": null,
+  "canal": "way2quran",
+  "source": {
+    "nom": "Quranic Universal Audio v3.1.0 (Wider Community)",
+    "url": "https://github.com/Wider-Community/quranic-universal-audio/releases/tag/v3.1.0",
+    "licence": "CC BY 4.0 — attribution à Wider Community",
+    "texte": "digital_khatt_v2"
+  },
+  "niveau": "publie",
+  "production": "alignement phonémique, validateurs automatiques, correction humaine possible (documentation QUA)",
+  "couverture": {
+    "versets": 6229,
+    "versets_avec_mots": 6229,
+    "annoncee": {
+      "ayahs": 6229,
+      "missing_verses": "7:11,17-18, 43:31, 48:12, 76:20, 77:1",
+      "surahs": 114
+    }
+  },
+  "reprises": {
+    "13:5": 1,
+    "13:6": 1,
+    "14:1": 1,
+    "14:43": 1,
+    "18:2": 1,
+    "36:22": 1,
+    "36:23": 1,
+    "36:24": 1,
+    "36:25": 1,
+    "36:26": 1,
+    "36:27": 1,
+    "39:46": 1,
+    "39:67": 1,
+    "40:29": 1,
+    "41:27": 1,
+    "43:36": 1,
+    "80:31": 1,
+    "103:3": 1
+  }
+}

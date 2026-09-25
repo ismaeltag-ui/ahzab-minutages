@@ -1,0 +1,34 @@
+{
+  "recitation": "qua-mohammed_alghazali_archive",
+  "nom": "محمد الغزالي — Mohammed Al-Ghazali",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "style": "murattal",
+  "contexte": null,
+  "canal": "archive_org",
+  "source": {
+    "nom": "Quranic Universal Audio v3.1.0 (Wider Community)",
+    "url": "https://github.com/Wider-Community/quranic-universal-audio/releases/tag/v3.1.0",
+    "licence": "CC BY 4.0 — attribution à Wider Community",
+    "texte": "digital_khatt_v2"
+  },
+  "niveau": "publie",
+  "production": "alignement phonémique, validateurs automatiques, correction humaine possible (documentation QUA)",
+  "couverture": {
+    "versets": 6236,
+    "versets_avec_mots": 6236,
+    "annoncee": {
+      "ayahs": 6236,
+      "surahs": 114
+    }
+  },
+  "reprises": {
+    "2:214": 1,
+    "2:251": 1,
+    "20:105": 1,
+    "24:37": 1,
+    "27:30": 1,
+    "69:18": 1,
+    "81:26": 1
+  }
+}

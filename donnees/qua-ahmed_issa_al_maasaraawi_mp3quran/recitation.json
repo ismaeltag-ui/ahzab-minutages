@@ -1,0 +1,36 @@
+{
+  "recitation": "qua-ahmed_issa_al_maasaraawi_mp3quran",
+  "nom": "أحمد عيسى المعصراوي — Ahmed Issa Al-Maasaraawi",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "style": "murattal",
+  "contexte": null,
+  "canal": "mp3quran",
+  "source": {
+    "nom": "Quranic Universal Audio v3.1.0 (Wider Community)",
+    "url": "https://github.com/Wider-Community/quranic-universal-audio/releases/tag/v3.1.0",
+    "licence": "CC BY 4.0 — attribution à Wider Community",
+    "texte": "digital_khatt_v2"
+  },
+  "niveau": "publie",
+  "production": "alignement phonémique, validateurs automatiques, correction humaine possible (documentation QUA)",
+  "couverture": {
+    "versets": 6234,
+    "versets_avec_mots": 6234,
+    "annoncee": {
+      "ayahs": 6234,
+      "missing_verses": "7:116, 41:15",
+      "surahs": 114
+    }
+  },
+  "reprises": {
+    "2:219": 1,
+    "10:10": 1,
+    "22:34": 1,
+    "37:22": 1,
+    "37:58": 1,
+    "37:151": 1,
+    "40:73": 1,
+    "107:4": 1
+  }
+}

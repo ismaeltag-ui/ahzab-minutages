@@ -1,0 +1,18 @@
+{
+  "recitation": "qul-122",
+  "nom": "mahmoud khaleel al-husary",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "source": {
+    "nom": "QUL — Quranic Universal Library (Tarteel)",
+    "url": "https://qul.tarteel.ai/resources/recitation/368",
+    "api": "https://qul.tarteel.ai/api/v1/audio/surah_segments/122",
+    "conditions": "Usage commercial permis selon la FAQ de QUL ; attribution à QUL/Tarteel."
+  },
+  "niveau": "publie",
+  "production": "apprentissage automatique (documentation QUL)",
+  "couverture": {
+    "versets": 6236,
+    "versets_avec_mots": 0
+  }
+}

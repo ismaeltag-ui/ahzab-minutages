@@ -1,0 +1,35 @@
+{
+  "recitation": "qua-mohammed_al_luhaidan_mp3quran",
+  "nom": "محمد اللحيدان — Mohammed Al-Luhaidan",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "style": "murattal",
+  "contexte": null,
+  "canal": "mp3quran",
+  "source": {
+    "nom": "Quranic Universal Audio v3.1.0 (Wider Community)",
+    "url": "https://github.com/Wider-Community/quranic-universal-audio/releases/tag/v3.1.0",
+    "licence": "CC BY 4.0 — attribution à Wider Community",
+    "texte": "digital_khatt_v2"
+  },
+  "niveau": "publie",
+  "production": "alignement phonémique, validateurs automatiques, correction humaine possible (documentation QUA)",
+  "couverture": {
+    "versets": 6234,
+    "versets_avec_mots": 6234,
+    "annoncee": {
+      "ayahs": 6234,
+      "missing_verses": "1:1, 3:199",
+      "surahs": 114
+    }
+  },
+  "reprises": {
+    "14:50": 1,
+    "17:65": 1,
+    "17:109": 1,
+    "18:49": 1,
+    "18:53": 1,
+    "23:104": 1,
+    "24:37": 1
+  }
+}

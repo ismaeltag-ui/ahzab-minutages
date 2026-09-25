@@ -1,0 +1,62 @@
+{
+  "recitation": "qua-abdullah_al_qarafi_mp3quran",
+  "nom": "عبد الله القرافي — Abdullah Al-Qarafi",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "style": "murattal",
+  "contexte": null,
+  "canal": "mp3quran",
+  "source": {
+    "nom": "Quranic Universal Audio v3.1.0 (Wider Community)",
+    "url": "https://github.com/Wider-Community/quranic-universal-audio/releases/tag/v3.1.0",
+    "licence": "CC BY 4.0 — attribution à Wider Community",
+    "texte": "digital_khatt_v2"
+  },
+  "niveau": "publie",
+  "production": "alignement phonémique, validateurs automatiques, correction humaine possible (documentation QUA)",
+  "couverture": {
+    "versets": 6223,
+    "versets_avec_mots": 6223,
+    "annoncee": {
+      "ayahs": 6223,
+      "missing_verses": "22:66-78",
+      "surahs": 114
+    }
+  },
+  "reprises": {
+    "2:16": 1,
+    "2:281": 1,
+    "3:147": 1,
+    "3:180": 1,
+    "3:183": 1,
+    "11:4": 1,
+    "11:63": 1,
+    "11:92": 1,
+    "11:105": 1,
+    "12:83": 1,
+    "27:38": 1,
+    "27:87": 1,
+    "28:4": 1,
+    "28:59": 1,
+    "28:88": 1,
+    "29:39": 1,
+    "29:67": 1,
+    "30:27": 1,
+    "30:31": 1,
+    "34:45": 1,
+    "34:54": 1,
+    "35:5": 1,
+    "36:54": 1,
+    "37:58": 1,
+    "39:24": 1,
+    "40:46": 1,
+    "40:47": 1,
+    "41:27": 1,
+    "41:28": 1,
+    "41:29": 1,
+    "43:45": 1,
+    "47:36": 1,
+    "64:16": 1,
+    "64:17": 1
+  }
+}

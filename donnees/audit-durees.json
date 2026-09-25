@@ -1,0 +1,777 @@
+{
+  "mp3quran-112": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-118": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-123": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-134": {
+    "justes": 4,
+    "au_dela": [
+      [
+        12,
+        17.8
+      ]
+    ],
+    "en_deca": [
+      [
+        2,
+        2654.6
+      ],
+      [
+        18,
+        242.2
+      ],
+      [
+        36,
+        65.0
+      ],
+      [
+        55,
+        108.2
+      ],
+      [
+        67,
+        39.6
+      ]
+    ],
+    "sans_mesure": 0
+  },
+  "mp3quran-137": {
+    "justes": 4,
+    "au_dela": [
+      [
+        2,
+        1584.4
+      ],
+      [
+        12,
+        186.2
+      ],
+      [
+        55,
+        52.3
+      ]
+    ],
+    "en_deca": [
+      [
+        18,
+        357.0
+      ],
+      [
+        67,
+        156.0
+      ],
+      [
+        78,
+        75.3
+      ]
+    ],
+    "sans_mesure": 0
+  },
+  "mp3quran-256": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-273": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-289": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-31": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-71": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-74": {
+    "justes": 9,
+    "au_dela": [],
+    "en_deca": [
+      [
+        78,
+        23.6
+      ]
+    ],
+    "sans_mesure": 0
+  },
+  "mp3quran-78": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "mp3quran-86": {
+    "justes": 9,
+    "au_dela": [],
+    "en_deca": [
+      [
+        78,
+        25.8
+      ]
+    ],
+    "sans_mesure": 0
+  },
+  "qua-abdulbasit_abdulsamad_mujawwad_tarteel": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-abdulbasit_abdulsamad_tarteel": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-abdulbasit_abdulsamad_warsh_qdc": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-abdullah_al_qarafi_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-abdulwadood_haneef_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-abdur_rashid_sufi_qdc": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-abdur_rashid_sufi_shubah_qdc": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-abu_bakr_al_shatri_tarteel": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-ahmed_amer_tvquran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-ahmed_deban_qalon_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-ahmed_issa_al_maasaraawi_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-ahmed_kaseb_way2quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-ahmed_saleh_rajab_qalon_way2quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-ahmed_saud_mp3quran": {
+    "justes": 2,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-ahmed_shaheen_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-ahmed_talib_bin_humaid_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-ali_al_huthaifi_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-fatih_seferagic_way2quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-haitham_al_dukhain_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-imad_zuhair_hafez_mp3quran": {
+    "justes": 8,
+    "au_dela": [
+      [
+        2,
+        1.8
+      ],
+      [
+        36,
+        1.6
+      ]
+    ],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-islam_sobhi_mp3quran": {
+    "justes": 9,
+    "au_dela": [],
+    "en_deca": [
+      [
+        112,
+        22.7
+      ]
+    ],
+    "sans_mesure": 0
+  },
+  "qua-khalifa_al_tunaiji_tarteel": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-maher_al_muaiqly_qdc": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-mahmoud_abdul_hakam_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-mahmoud_ali_al_banna_qdc": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-mahmoud_khalil_al_husary_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-mahmoud_khalil_al_husary_mujawwad_tarteel": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-mahmoud_khalil_al_husary_qdc_128k": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-mishary_rashid_al_afasy_2008_qdc": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-mishary_rashid_al_afasy_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-moaz_mahmoud_hamed_qalon_way2quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-mohammed_al_luhaidan_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-mohammed_alghazali_archive": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-mohammed_saayed_warsh_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-mohammed_siddiq_al_minshawi_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-mohammed_siddiq_al_minshawi_mujawwad_mp3quran": {
+    "justes": 7,
+    "au_dela": [],
+    "en_deca": [
+      [
+        1,
+        39.3
+      ],
+      [
+        93,
+        24.9
+      ],
+      [
+        112,
+        75.7
+      ]
+    ],
+    "sans_mesure": 0
+  },
+  "qua-muammar_zainal_al_sukaini_way2quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-mustafa_ismail_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-nasser_al_qatami_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-saber_abdulhakam_qalon_way2quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-saber_abdulhakam_shubah_way2quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-saber_abdulhakam_warsh_way2quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-saud_al_shuraim_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-walid_al_naihi_qalon_mp3quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-walid_atef_way2quran": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qua-yasser_al_dosari_archive": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-1": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-10": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-104": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-12": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-122": {
+    "justes": 3,
+    "au_dela": [
+      [
+        2,
+        102.8
+      ],
+      [
+        12,
+        28.7
+      ],
+      [
+        18,
+        48.9
+      ],
+      [
+        36,
+        8.0
+      ],
+      [
+        55,
+        3.7
+      ],
+      [
+        67,
+        3.1
+      ],
+      [
+        78,
+        3.8
+      ]
+    ],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-124": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-126": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-127": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-128": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-129": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-13": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-14": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-158": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-159": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-160": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-161": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-162": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-163": {
+    "justes": 2,
+    "au_dela": [
+      [
+        2,
+        1250.0
+      ],
+      [
+        12,
+        416.3
+      ],
+      [
+        18,
+        435.6
+      ],
+      [
+        36,
+        156.5
+      ],
+      [
+        55,
+        14.2
+      ],
+      [
+        67,
+        69.1
+      ],
+      [
+        78,
+        44.8
+      ],
+      [
+        93,
+        6.3
+      ]
+    ],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-169": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-17": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-170": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-172": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-173": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-174": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-175": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-18": {
+    "justes": 9,
+    "au_dela": [
+      [
+        2,
+        71.9
+      ]
+    ],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-2": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-3": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-4": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-43": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-44": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-5": {
+    "justes": 0,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 10
+  },
+  "qul-6": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-7": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-8": {
+    "justes": 4,
+    "au_dela": [
+      [
+        1,
+        4.3
+      ],
+      [
+        2,
+        9.3
+      ]
+    ],
+    "en_deca": [
+      [
+        55,
+        219.0
+      ],
+      [
+        78,
+        132.6
+      ],
+      [
+        93,
+        21.8
+      ],
+      [
+        112,
+        75.1
+      ]
+    ],
+    "sans_mesure": 0
+  },
+  "qul-88": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-9": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-91": {
+    "justes": 9,
+    "au_dela": [
+      [
+        2,
+        23.6
+      ]
+    ],
+    "en_deca": [],
+    "sans_mesure": 0
+  },
+  "qul-97": {
+    "justes": 10,
+    "au_dela": [],
+    "en_deca": [],
+    "sans_mesure": 0
+  }
+}

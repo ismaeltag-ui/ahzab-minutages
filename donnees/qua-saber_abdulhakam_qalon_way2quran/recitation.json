@@ -1,0 +1,26 @@
+{
+  "recitation": "qua-saber_abdulhakam_qalon_way2quran",
+  "nom": "صابر عبد الحكم — Saber Abdulhakam",
+  "riwaya": "qalun",
+  "comptage": "madani",
+  "style": "murattal",
+  "contexte": null,
+  "canal": "way2quran",
+  "source": {
+    "nom": "Quranic Universal Audio v3.1.0 (Wider Community)",
+    "url": "https://github.com/Wider-Community/quranic-universal-audio/releases/tag/v3.1.0",
+    "licence": "CC BY 4.0 — attribution à Wider Community",
+    "texte": "qaloon-v21+sdk-words-v1"
+  },
+  "niveau": "publie",
+  "production": "alignement phonémique, validateurs automatiques, correction humaine possible (documentation QUA)",
+  "couverture": {
+    "versets": 6214,
+    "versets_avec_mots": 6214,
+    "annoncee": {
+      "ayahs": 6214,
+      "surahs": 114
+    }
+  },
+  "reprises": {}
+}

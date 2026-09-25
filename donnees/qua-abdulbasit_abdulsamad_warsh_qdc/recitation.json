@@ -1,0 +1,35 @@
+{
+  "recitation": "qua-abdulbasit_abdulsamad_warsh_qdc",
+  "nom": "عبد الباسط عبد الصمد — Abdulbasit Abdulsamad",
+  "riwaya": "warsh",
+  "comptage": "madani",
+  "style": "murattal",
+  "contexte": null,
+  "canal": "quranicaudio",
+  "source": {
+    "nom": "Quranic Universal Audio v3.1.0 (Wider Community)",
+    "url": "https://github.com/Wider-Community/quranic-universal-audio/releases/tag/v3.1.0",
+    "licence": "CC BY 4.0 — attribution à Wider Community",
+    "texte": "warsh-v21+sdk-words-v1"
+  },
+  "niveau": "publie",
+  "production": "alignement phonémique, validateurs automatiques, correction humaine possible (documentation QUA)",
+  "couverture": {
+    "versets": 6214,
+    "versets_avec_mots": 6214,
+    "annoncee": {
+      "ayahs": 6214,
+      "surahs": 114
+    }
+  },
+  "reprises": {
+    "3:146": 1,
+    "8:42": 1,
+    "20:128": 1,
+    "24:25": 1,
+    "30:5": 1,
+    "30:30": 1,
+    "37:151": 1,
+    "42:1": 1
+  }
+}

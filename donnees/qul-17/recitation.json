@@ -1,0 +1,18 @@
+{
+  "recitation": "qul-17",
+  "nom": "sahl yasin",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "source": {
+    "nom": "QUL — Quranic Universal Library (Tarteel)",
+    "url": "https://qul.tarteel.ai/resources/recitation/361",
+    "api": "https://qul.tarteel.ai/api/v1/audio/surah_segments/17",
+    "conditions": "Usage commercial permis selon la FAQ de QUL ; attribution à QUL/Tarteel."
+  },
+  "niveau": "publie",
+  "production": "apprentissage automatique (documentation QUL)",
+  "couverture": {
+    "versets": 6236,
+    "versets_avec_mots": 0
+  }
+}

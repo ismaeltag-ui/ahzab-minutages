@@ -1,0 +1,18 @@
+{
+  "recitation": "qul-14",
+  "nom": "fares abbad",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "source": {
+    "nom": "QUL — Quranic Universal Library (Tarteel)",
+    "url": "https://qul.tarteel.ai/resources/recitation/336",
+    "api": "https://qul.tarteel.ai/api/v1/audio/surah_segments/14",
+    "conditions": "Usage commercial permis selon la FAQ de QUL ; attribution à QUL/Tarteel."
+  },
+  "niveau": "publie",
+  "production": "apprentissage automatique (documentation QUL)",
+  "couverture": {
+    "versets": 6236,
+    "versets_avec_mots": 6236
+  }
+}
