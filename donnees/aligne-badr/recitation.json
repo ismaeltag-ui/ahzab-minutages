@@ -33,6 +33,30 @@
         "basmala"
       ]
     },
+    "036": {
+      "versets": [
+        1,
+        83
+      ],
+      "audio_s": 861.2,
+      "calcul_s": 164.9,
+      "emissions_s": 156.8,
+      "ouverture": [
+        "basmala"
+      ]
+    },
+    "067": {
+      "versets": [
+        1,
+        30
+      ],
+      "audio_s": 338.4,
+      "calcul_s": 22.0,
+      "emissions_s": 18.6,
+      "ouverture": [
+        "basmala"
+      ]
+    },
     "078": {
       "versets": [
         1,
@@ -90,6 +114,10 @@
     "018": {
       "audio_s": 150.0,
       "calcul_s": 257
+    },
+    "036": {
+      "audio_s": 861.2,
+      "calcul_s": 164.9
     },
     "078": {
       "audio_s": 215.9,

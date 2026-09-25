@@ -17,6 +17,7 @@ poussé), fait la passe et range les tables dans la sortie du calcul.
 from __future__ import annotations
 
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -64,7 +65,9 @@ if os.path.exists(f"{src}/cache/passe-{P['rec']}.json"):
 
 
 def kaggle(*args: str, capture: bool = True) -> str:
-    r = subprocess.run([str(KAGGLE), *args], capture_output=capture, text=True, encoding="utf-8")
+    # la sortie contient de l'arabe : sans UTF-8 forcé, l'outil Kaggle échoue sous Windows
+    env = dict(os.environ, PYTHONUTF8="1", PYTHONIOENCODING="utf-8")
+    r = subprocess.run([str(KAGGLE), *args], capture_output=capture, text=True, encoding="utf-8", env=env)
     if r.returncode != 0:
         raise RuntimeError(f"kaggle {' '.join(args)} : {(r.stderr or r.stdout or '').strip()}")
     return r.stdout or ""
@@ -140,10 +143,12 @@ def recuperer(rec: str) -> None:
         return
     local = DONNEES / rec
     local.mkdir(parents=True, exist_ok=True)
-    n = 0
-    for f in sorted(distant.glob("[0-9][0-9][0-9].json")):
-        shutil.copy(f, local / f.name)
-        n += 1
+    bilan_f = sortie / "passe.json"
+    b = lire_json(bilan_f) if bilan_f.exists() else None
+    # seulement ce que cette passe a calculé : le reste de la sortie vient du clone
+    faites = [f"{s:03d}" for s in b["faites"]] if b else [f.stem for f in distant.glob("[0-9][0-9][0-9].json")]
+    for s in faites:
+        shutil.copy(distant / f"{s}.json", local / f"{s}.json")
     # la fiche : on garde la locale et l'on y reporte les passes faites là-bas
     fd = distant / "recitation.json"
     if fd.exists():
@@ -151,13 +156,11 @@ def recuperer(rec: str) -> None:
         fl = local / "recitation.json"
         fiche = lire_json(fl) if fl.exists() else fiche_d
         for cle in ("passes", "vitesse"):
-            fiche.setdefault(cle, {}).update(fiche_d.get(cle, {}))
+            fiche.setdefault(cle, {}).update({s: v for s, v in fiche_d.get(cle, {}).items() if s in faites})
             fiche[cle] = dict(sorted(fiche[cle].items()))
         ecrire_json(fl, fiche, compact=False)
-    bilan = sortie / "passe.json"
-    print(f"{n} sourates rapatriées dans {local}")
-    if bilan.exists():
-        b = lire_json(bilan)
+    print(f"{len(faites)} sourates rapatriées dans {local}")
+    if b:
         print(f"bilan : {len(b['faites'])} faites, {len(b['sautees'])} sautées, "
               f"erreurs {b['erreurs'] or 'aucune'}, non commencées {b['non_commencees'] or 'aucune'}")
 
