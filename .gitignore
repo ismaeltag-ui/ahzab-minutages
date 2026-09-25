@@ -8,3 +8,16 @@ __pycache__/
 donnees/*/[0-9][0-9][0-9].json
 !donnees/aligne-*/[0-9][0-9][0-9].json
 donnees/*/verification.json
+# … sauf les tables que l'application lit (outil/publier.py), CC BY 4.0, attribution
+# à Wider Community (Quranic Universal Audio) : voir LISEZMOI, « Sources et attributions ».
+!donnees/qua-mahmoud_ali_al_banna_qdc/[0-9][0-9][0-9].json
+!donnees/qua-mohammed_siddiq_al_minshawi_mujawwad_mp3quran/[0-9][0-9][0-9].json
+!donnees/qua-mustafa_ismail_mp3quran/[0-9][0-9][0-9].json
+!donnees/qua-mohammed_saayed_warsh_mp3quran/[0-9][0-9][0-9].json
+!donnees/qua-abdulbasit_abdulsamad_warsh_qdc/[0-9][0-9][0-9].json
+!donnees/qua-saber_abdulhakam_warsh_way2quran/[0-9][0-9][0-9].json
+!donnees/qua-ahmed_deban_qalon_mp3quran/[0-9][0-9][0-9].json
+!donnees/qua-walid_al_naihi_qalon_mp3quran/[0-9][0-9][0-9].json
+!donnees/qua-saber_abdulhakam_qalon_way2quran/[0-9][0-9][0-9].json
+!donnees/qua-abdur_rashid_sufi_shubah_qdc/[0-9][0-9][0-9].json
+!donnees/qua-saber_abdulhakam_shubah_way2quran/[0-9][0-9][0-9].json

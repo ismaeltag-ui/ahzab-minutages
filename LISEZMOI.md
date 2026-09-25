@@ -114,7 +114,30 @@ temps de sauver ce qui est fait ; relancer reprend à la sourate suivante.
 Le code, les tables **alignées** ici (`donnees/aligne-*`), les fiches de toutes
 les récitations et les bilans (`audit-durees.json`, `comparaisons.json`). Les
 tables publiées par des tiers se régénèrent avec les commandes ci-dessus et ne
-sont pas recopiées ici.
+sont pas recopiées ici — **sauf celles que l'application lit**.
+
+## Les tables que lit l'application
+
+L'application Ahzab (dépôt CoranRevise, `lib/verseTiming.ts`) télécharge une
+sourate à la fois depuis jsDelivr, épinglé sur un commit de ce dépôt :
+
+```
+https://cdn.jsdelivr.net/gh/ismaeltag-ui/ahzab-minutages@<commit>/donnees/<table>/<sss>.json
+```
+
+Elle ne s'en sert que si la taille du MP3 (`octets`) est toujours celle du
+fichier servi. La liste de ces tables est dans `outil/publier.py`, qui relève
+les tailles manquantes (les tables de Quranic Universal Audio n'en ont pas) ;
+`.gitignore` les réintègre une à une.
+
+```
+.venv\Scripts\python -m outil.publier             # tailles manquantes
+.venv\Scripts\python -m outil.publier --verifier  # un fichier a-t-il changé ?
+```
+
+Ajouter une table pour l'application : l'inscrire dans `APPLICATION`, la
+réintégrer dans `.gitignore`, lancer `outil.publier`, pousser, puis épingler le
+nouveau commit dans `lib/verseTiming.ts` (`TABLES_COMMIT`).
 
 ## Sources et attributions
 
