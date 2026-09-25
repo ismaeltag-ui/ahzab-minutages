@@ -1,0 +1,1476 @@
+{
+  "recitation": "aligne-husary-muallim",
+  "nom": "Al-Husary, muʿallim",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "source": {
+    "nom": "alignement forcé ahzab-minutages",
+    "modele": "obadx/muaalem-model-v3_2",
+    "texte": "quran-transcript (uthmani, Hafs, madd 4)"
+  },
+  "niveau": "aligne",
+  "production": "alignement CTC sur le texte, frontières affinées dans l'écart",
+  "passes": {
+    "001": {
+      "versets": [
+        1,
+        7
+      ],
+      "audio_s": 64.8,
+      "calcul_s": 96.1,
+      "emissions_s": 95.4,
+      "ouverture": []
+    },
+    "002": {
+      "versets": [
+        1,
+        286
+      ],
+      "audio_s": 13985.3,
+      "calcul_s": 897.2,
+      "emissions_s": 756.2,
+      "ouverture": []
+    },
+    "003": {
+      "versets": [
+        1,
+        200
+      ],
+      "audio_s": 7940.1,
+      "calcul_s": 502.5,
+      "emissions_s": 432.7,
+      "ouverture": []
+    },
+    "004": {
+      "versets": [
+        1,
+        176
+      ],
+      "audio_s": 2204.6,
+      "calcul_s": 154.7,
+      "emissions_s": 121.2,
+      "ouverture": []
+    },
+    "005": {
+      "versets": [
+        1,
+        120
+      ],
+      "audio_s": 6433.8,
+      "calcul_s": 416.4,
+      "emissions_s": 351.3,
+      "ouverture": []
+    },
+    "006": {
+      "versets": [
+        1,
+        165
+      ],
+      "audio_s": 6747.2,
+      "calcul_s": 425.1,
+      "emissions_s": 367.4,
+      "ouverture": []
+    },
+    "007": {
+      "versets": [
+        1,
+        206
+      ],
+      "audio_s": 6832.0,
+      "calcul_s": 430.2,
+      "emissions_s": 372.6,
+      "ouverture": []
+    },
+    "008": {
+      "versets": [
+        1,
+        75
+      ],
+      "audio_s": 2897.0,
+      "calcul_s": 181.4,
+      "emissions_s": 159.6,
+      "ouverture": []
+    },
+    "009": {
+      "versets": [
+        1,
+        129
+      ],
+      "audio_s": 5751.9,
+      "calcul_s": 360.4,
+      "emissions_s": 314.3,
+      "ouverture": []
+    },
+    "010": {
+      "versets": [
+        1,
+        109
+      ],
+      "audio_s": 3975.4,
+      "calcul_s": 249.8,
+      "emissions_s": 218.2,
+      "ouverture": []
+    },
+    "011": {
+      "versets": [
+        1,
+        123
+      ],
+      "audio_s": 4283.2,
+      "calcul_s": 266.3,
+      "emissions_s": 234.2,
+      "ouverture": []
+    },
+    "012": {
+      "versets": [
+        1,
+        111
+      ],
+      "audio_s": 3840.8,
+      "calcul_s": 239.9,
+      "emissions_s": 210.3,
+      "ouverture": []
+    },
+    "013": {
+      "versets": [
+        1,
+        43
+      ],
+      "audio_s": 1797.2,
+      "calcul_s": 115.1,
+      "emissions_s": 98.5,
+      "ouverture": []
+    },
+    "014": {
+      "versets": [
+        1,
+        52
+      ],
+      "audio_s": 1950.6,
+      "calcul_s": 124.2,
+      "emissions_s": 107.5,
+      "ouverture": []
+    },
+    "015": {
+      "versets": [
+        1,
+        99
+      ],
+      "audio_s": 1557.1,
+      "calcul_s": 95.7,
+      "emissions_s": 85.6,
+      "ouverture": []
+    },
+    "016": {
+      "versets": [
+        1,
+        128
+      ],
+      "audio_s": 3959.5,
+      "calcul_s": 245.6,
+      "emissions_s": 216.3,
+      "ouverture": []
+    },
+    "017": {
+      "versets": [
+        1,
+        111
+      ],
+      "audio_s": 3466.4,
+      "calcul_s": 215.1,
+      "emissions_s": 190.3,
+      "ouverture": []
+    },
+    "018": {
+      "versets": [
+        1,
+        110
+      ],
+      "audio_s": 3411.0,
+      "calcul_s": 213.2,
+      "emissions_s": 187.2,
+      "ouverture": []
+    },
+    "019": {
+      "versets": [
+        1,
+        98
+      ],
+      "audio_s": 2195.6,
+      "calcul_s": 135.6,
+      "emissions_s": 120.7,
+      "ouverture": []
+    },
+    "020": {
+      "versets": [
+        1,
+        135
+      ],
+      "audio_s": 2805.6,
+      "calcul_s": 172.9,
+      "emissions_s": 153.2,
+      "ouverture": []
+    },
+    "021": {
+      "versets": [
+        1,
+        112
+      ],
+      "audio_s": 2551.2,
+      "calcul_s": 157.7,
+      "emissions_s": 140.2,
+      "ouverture": []
+    },
+    "022": {
+      "versets": [
+        1,
+        78
+      ],
+      "audio_s": 2787.5,
+      "calcul_s": 176.3,
+      "emissions_s": 153.3,
+      "ouverture": []
+    },
+    "023": {
+      "versets": [
+        1,
+        118
+      ],
+      "audio_s": 2350.4,
+      "calcul_s": 144.6,
+      "emissions_s": 128.7,
+      "ouverture": []
+    },
+    "024": {
+      "versets": [
+        1,
+        64
+      ],
+      "audio_s": 3079.4,
+      "calcul_s": 199.1,
+      "emissions_s": 168.3,
+      "ouverture": []
+    },
+    "025": {
+      "versets": [
+        1,
+        77
+      ],
+      "audio_s": 1885.1,
+      "calcul_s": 117.5,
+      "emissions_s": 103.6,
+      "ouverture": []
+    },
+    "026": {
+      "versets": [
+        1,
+        227
+      ],
+      "audio_s": 3283.1,
+      "calcul_s": 202.5,
+      "emissions_s": 181.0,
+      "ouverture": []
+    },
+    "027": {
+      "versets": [
+        1,
+        93
+      ],
+      "audio_s": 2558.0,
+      "calcul_s": 158.5,
+      "emissions_s": 140.8,
+      "ouverture": []
+    },
+    "028": {
+      "versets": [
+        1,
+        88
+      ],
+      "audio_s": 3067.3,
+      "calcul_s": 190.6,
+      "emissions_s": 167.9,
+      "ouverture": []
+    },
+    "029": {
+      "versets": [
+        1,
+        69
+      ],
+      "audio_s": 2193.2,
+      "calcul_s": 137.2,
+      "emissions_s": 120.8,
+      "ouverture": []
+    },
+    "030": {
+      "versets": [
+        1,
+        60
+      ],
+      "audio_s": 1721.9,
+      "calcul_s": 108.4,
+      "emissions_s": 95.3,
+      "ouverture": []
+    },
+    "031": {
+      "versets": [
+        1,
+        34
+      ],
+      "audio_s": 1083.2,
+      "calcul_s": 68.2,
+      "emissions_s": 60.3,
+      "ouverture": []
+    },
+    "032": {
+      "versets": [
+        1,
+        30
+      ],
+      "audio_s": 800.4,
+      "calcul_s": 50.0,
+      "emissions_s": 44.2,
+      "ouverture": []
+    },
+    "033": {
+      "versets": [
+        1,
+        73
+      ],
+      "audio_s": 2739.9,
+      "calcul_s": 176.9,
+      "emissions_s": 149.4,
+      "ouverture": []
+    },
+    "034": {
+      "versets": [
+        1,
+        54
+      ],
+      "audio_s": 1807.0,
+      "calcul_s": 112.9,
+      "emissions_s": 99.3,
+      "ouverture": []
+    },
+    "035": {
+      "versets": [
+        1,
+        45
+      ],
+      "audio_s": 1776.8,
+      "calcul_s": 111.5,
+      "emissions_s": 97.8,
+      "ouverture": []
+    },
+    "036": {
+      "versets": [
+        1,
+        83
+      ],
+      "audio_s": 1582.3,
+      "calcul_s": 98.1,
+      "emissions_s": 87.4,
+      "ouverture": []
+    },
+    "037": {
+      "versets": [
+        1,
+        182
+      ],
+      "audio_s": 2085.9,
+      "calcul_s": 129.2,
+      "emissions_s": 115.3,
+      "ouverture": []
+    },
+    "038": {
+      "versets": [
+        1,
+        88
+      ],
+      "audio_s": 1665.5,
+      "calcul_s": 103.5,
+      "emissions_s": 91.8,
+      "ouverture": []
+    },
+    "039": {
+      "versets": [
+        1,
+        75
+      ],
+      "audio_s": 2578.7,
+      "calcul_s": 162.6,
+      "emissions_s": 142.2,
+      "ouverture": []
+    },
+    "040": {
+      "versets": [
+        1,
+        85
+      ],
+      "audio_s": 2371.3,
+      "calcul_s": 148.2,
+      "emissions_s": 130.2,
+      "ouverture": []
+    },
+    "041": {
+      "versets": [
+        1,
+        54
+      ],
+      "audio_s": 1670.6,
+      "calcul_s": 104.6,
+      "emissions_s": 92.2,
+      "ouverture": []
+    },
+    "042": {
+      "versets": [
+        1,
+        53
+      ],
+      "audio_s": 1921.3,
+      "calcul_s": 121.1,
+      "emissions_s": 106.1,
+      "ouverture": []
+    },
+    "043": {
+      "versets": [
+        1,
+        89
+      ],
+      "audio_s": 1770.0,
+      "calcul_s": 109.9,
+      "emissions_s": 97.4,
+      "ouverture": []
+    },
+    "044": {
+      "versets": [
+        1,
+        59
+      ],
+      "audio_s": 725.0,
+      "calcul_s": 46.1,
+      "emissions_s": 40.8,
+      "ouverture": []
+    },
+    "045": {
+      "versets": [
+        1,
+        37
+      ],
+      "audio_s": 931.5,
+      "calcul_s": 58.2,
+      "emissions_s": 51.3,
+      "ouverture": []
+    },
+    "046": {
+      "versets": [
+        1,
+        35
+      ],
+      "audio_s": 1282.5,
+      "calcul_s": 82.8,
+      "emissions_s": 71.4,
+      "ouverture": []
+    },
+    "047": {
+      "versets": [
+        1,
+        38
+      ],
+      "audio_s": 1158.8,
+      "calcul_s": 73.6,
+      "emissions_s": 64.1,
+      "ouverture": []
+    },
+    "048": {
+      "versets": [
+        1,
+        29
+      ],
+      "audio_s": 1192.1,
+      "calcul_s": 75.0,
+      "emissions_s": 65.6,
+      "ouverture": []
+    },
+    "049": {
+      "versets": [
+        1,
+        18
+      ],
+      "audio_s": 743.1,
+      "calcul_s": 47.4,
+      "emissions_s": 40.8,
+      "ouverture": []
+    },
+    "050": {
+      "versets": [
+        1,
+        45
+      ],
+      "audio_s": 835.4,
+      "calcul_s": 51.5,
+      "emissions_s": 45.8,
+      "ouverture": []
+    },
+    "051": {
+      "versets": [
+        1,
+        60
+      ],
+      "audio_s": 753.6,
+      "calcul_s": 47.1,
+      "emissions_s": 41.8,
+      "ouverture": []
+    },
+    "052": {
+      "versets": [
+        1,
+        49
+      ],
+      "audio_s": 678.3,
+      "calcul_s": 42.5,
+      "emissions_s": 37.5,
+      "ouverture": []
+    },
+    "053": {
+      "versets": [
+        1,
+        62
+      ],
+      "audio_s": 811.2,
+      "calcul_s": 51.1,
+      "emissions_s": 44.7,
+      "ouverture": []
+    },
+    "054": {
+      "versets": [
+        1,
+        55
+      ],
+      "audio_s": 759.9,
+      "calcul_s": 46.8,
+      "emissions_s": 41.7,
+      "ouverture": []
+    },
+    "055": {
+      "versets": [
+        1,
+        78
+      ],
+      "audio_s": 953.8,
+      "calcul_s": 58.3,
+      "emissions_s": 52.0,
+      "ouverture": []
+    },
+    "056": {
+      "versets": [
+        1,
+        96
+      ],
+      "audio_s": 914.7,
+      "calcul_s": 57.2,
+      "emissions_s": 50.8,
+      "ouverture": []
+    },
+    "057": {
+      "versets": [
+        1,
+        29
+      ],
+      "audio_s": 1108.2,
+      "calcul_s": 70.1,
+      "emissions_s": 60.8,
+      "ouverture": []
+    },
+    "058": {
+      "versets": [
+        1,
+        22
+      ],
+      "audio_s": 1097.9,
+      "calcul_s": 69.6,
+      "emissions_s": 60.8,
+      "ouverture": []
+    },
+    "059": {
+      "versets": [
+        1,
+        24
+      ],
+      "audio_s": 955.4,
+      "calcul_s": 61.3,
+      "emissions_s": 53.1,
+      "ouverture": []
+    },
+    "060": {
+      "versets": [
+        1,
+        13
+      ],
+      "audio_s": 733.9,
+      "calcul_s": 48.7,
+      "emissions_s": 39.9,
+      "ouverture": []
+    },
+    "061": {
+      "versets": [
+        1,
+        14
+      ],
+      "audio_s": 436.6,
+      "calcul_s": 27.4,
+      "emissions_s": 24.0,
+      "ouverture": []
+    },
+    "062": {
+      "versets": [
+        1,
+        11
+      ],
+      "audio_s": 306.0,
+      "calcul_s": 19.5,
+      "emissions_s": 17.0,
+      "ouverture": []
+    },
+    "063": {
+      "versets": [
+        1,
+        11
+      ],
+      "audio_s": 367.8,
+      "calcul_s": 22.9,
+      "emissions_s": 20.1,
+      "ouverture": []
+    },
+    "064": {
+      "versets": [
+        1,
+        18
+      ],
+      "audio_s": 501.3,
+      "calcul_s": 31.5,
+      "emissions_s": 27.5,
+      "ouverture": []
+    },
+    "065": {
+      "versets": [
+        1,
+        12
+      ],
+      "audio_s": 624.7,
+      "calcul_s": 42.8,
+      "emissions_s": 34.8,
+      "ouverture": []
+    },
+    "066": {
+      "versets": [
+        1,
+        12
+      ],
+      "audio_s": 544.0,
+      "calcul_s": 35.1,
+      "emissions_s": 29.9,
+      "ouverture": []
+    },
+    "067": {
+      "versets": [
+        1,
+        30
+      ],
+      "audio_s": 602.0,
+      "calcul_s": 37.5,
+      "emissions_s": 33.1,
+      "ouverture": []
+    },
+    "068": {
+      "versets": [
+        1,
+        52
+      ],
+      "audio_s": 733.4,
+      "calcul_s": 45.0,
+      "emissions_s": 40.1,
+      "ouverture": []
+    },
+    "069": {
+      "versets": [
+        1,
+        52
+      ],
+      "audio_s": 632.2,
+      "calcul_s": 39.0,
+      "emissions_s": 34.8,
+      "ouverture": []
+    },
+    "070": {
+      "versets": [
+        1,
+        44
+      ],
+      "audio_s": 474.3,
+      "calcul_s": 29.1,
+      "emissions_s": 25.8,
+      "ouverture": []
+    },
+    "071": {
+      "versets": [
+        1,
+        28
+      ],
+      "audio_s": 496.5,
+      "calcul_s": 30.9,
+      "emissions_s": 27.4,
+      "ouverture": []
+    },
+    "072": {
+      "versets": [
+        1,
+        28
+      ],
+      "audio_s": 549.8,
+      "calcul_s": 33.9,
+      "emissions_s": 29.9,
+      "ouverture": []
+    },
+    "073": {
+      "versets": [
+        1,
+        20
+      ],
+      "audio_s": 426.1,
+      "calcul_s": 27.6,
+      "emissions_s": 23.4,
+      "ouverture": []
+    },
+    "074": {
+      "versets": [
+        1,
+        56
+      ],
+      "audio_s": 601.6,
+      "calcul_s": 38.6,
+      "emissions_s": 33.5,
+      "ouverture": []
+    },
+    "075": {
+      "versets": [
+        1,
+        40
+      ],
+      "audio_s": 373.8,
+      "calcul_s": 23.2,
+      "emissions_s": 20.4,
+      "ouverture": []
+    },
+    "076": {
+      "versets": [
+        1,
+        31
+      ],
+      "audio_s": 511.7,
+      "calcul_s": 31.9,
+      "emissions_s": 28.3,
+      "ouverture": []
+    },
+    "077": {
+      "versets": [
+        1,
+        50
+      ],
+      "audio_s": 477.7,
+      "calcul_s": 29.3,
+      "emissions_s": 26.0,
+      "ouverture": []
+    },
+    "078": {
+      "versets": [
+        1,
+        40
+      ],
+      "audio_s": 461.7,
+      "calcul_s": 28.7,
+      "emissions_s": 25.5,
+      "ouverture": []
+    },
+    "079": {
+      "versets": [
+        1,
+        46
+      ],
+      "audio_s": 435.1,
+      "calcul_s": 26.8,
+      "emissions_s": 23.7,
+      "ouverture": []
+    },
+    "080": {
+      "versets": [
+        1,
+        42
+      ],
+      "audio_s": 366.4,
+      "calcul_s": 22.7,
+      "emissions_s": 19.9,
+      "ouverture": []
+    },
+    "081": {
+      "versets": [
+        1,
+        29
+      ],
+      "audio_s": 256.8,
+      "calcul_s": 16.6,
+      "emissions_s": 14.3,
+      "ouverture": []
+    },
+    "082": {
+      "versets": [
+        1,
+        19
+      ],
+      "audio_s": 184.5,
+      "calcul_s": 11.9,
+      "emissions_s": 10.3,
+      "ouverture": []
+    },
+    "083": {
+      "versets": [
+        1,
+        36
+      ],
+      "audio_s": 407.2,
+      "calcul_s": 25.6,
+      "emissions_s": 22.5,
+      "ouverture": []
+    },
+    "084": {
+      "versets": [
+        1,
+        25
+      ],
+      "audio_s": 248.1,
+      "calcul_s": 15.9,
+      "emissions_s": 13.7,
+      "ouverture": []
+    },
+    "085": {
+      "versets": [
+        1,
+        22
+      ],
+      "audio_s": 252.9,
+      "calcul_s": 15.8,
+      "emissions_s": 13.7,
+      "ouverture": []
+    },
+    "086": {
+      "versets": [
+        1,
+        17
+      ],
+      "audio_s": 144.4,
+      "calcul_s": 9.3,
+      "emissions_s": 8.1,
+      "ouverture": []
+    },
+    "087": {
+      "versets": [
+        1,
+        19
+      ],
+      "audio_s": 166.7,
+      "calcul_s": 10.7,
+      "emissions_s": 9.3,
+      "ouverture": []
+    },
+    "088": {
+      "versets": [
+        1,
+        26
+      ],
+      "audio_s": 218.1,
+      "calcul_s": 13.9,
+      "emissions_s": 12.0,
+      "ouverture": []
+    },
+    "089": {
+      "versets": [
+        1,
+        30
+      ],
+      "audio_s": 316.8,
+      "calcul_s": 19.9,
+      "emissions_s": 17.5,
+      "ouverture": [
+        "istiadha",
+        "basmala"
+      ]
+    },
+    "090": {
+      "versets": [
+        1,
+        20
+      ],
+      "audio_s": 169.6,
+      "calcul_s": 10.7,
+      "emissions_s": 9.2,
+      "ouverture": []
+    },
+    "091": {
+      "versets": [
+        1,
+        15
+      ],
+      "audio_s": 140.5,
+      "calcul_s": 9.2,
+      "emissions_s": 8.0,
+      "ouverture": []
+    },
+    "092": {
+      "versets": [
+        1,
+        21
+      ],
+      "audio_s": 175.4,
+      "calcul_s": 11.2,
+      "emissions_s": 9.7,
+      "ouverture": []
+    },
+    "093": {
+      "versets": [
+        1,
+        11
+      ],
+      "audio_s": 98.1,
+      "calcul_s": 6.3,
+      "emissions_s": 5.4,
+      "ouverture": []
+    },
+    "094": {
+      "versets": [
+        1,
+        8
+      ],
+      "audio_s": 54.7,
+      "calcul_s": 3.6,
+      "emissions_s": 3.0,
+      "ouverture": []
+    },
+    "095": {
+      "versets": [
+        1,
+        8
+      ],
+      "audio_s": 74.0,
+      "calcul_s": 4.8,
+      "emissions_s": 4.1,
+      "ouverture": []
+    },
+    "096": {
+      "versets": [
+        1,
+        19
+      ],
+      "audio_s": 158.7,
+      "calcul_s": 10.2,
+      "emissions_s": 8.8,
+      "ouverture": []
+    },
+    "097": {
+      "versets": [
+        1,
+        5
+      ],
+      "audio_s": 62.7,
+      "calcul_s": 4.3,
+      "emissions_s": 3.6,
+      "ouverture": []
+    },
+    "098": {
+      "versets": [
+        1,
+        8
+      ],
+      "audio_s": 203.5,
+      "calcul_s": 12.9,
+      "emissions_s": 11.3,
+      "ouverture": []
+    },
+    "099": {
+      "versets": [
+        1,
+        8
+      ],
+      "audio_s": 86.9,
+      "calcul_s": 5.8,
+      "emissions_s": 4.9,
+      "ouverture": []
+    },
+    "100": {
+      "versets": [
+        1,
+        11
+      ],
+      "audio_s": 94.4,
+      "calcul_s": 6.1,
+      "emissions_s": 5.2,
+      "ouverture": []
+    },
+    "101": {
+      "versets": [
+        1,
+        11
+      ],
+      "audio_s": 82.8,
+      "calcul_s": 5.4,
+      "emissions_s": 4.6,
+      "ouverture": []
+    },
+    "102": {
+      "versets": [
+        1,
+        8
+      ],
+      "audio_s": 63.0,
+      "calcul_s": 4.2,
+      "emissions_s": 3.6,
+      "ouverture": []
+    },
+    "103": {
+      "versets": [
+        1,
+        3
+      ],
+      "audio_s": 36.8,
+      "calcul_s": 2.4,
+      "emissions_s": 2.0,
+      "ouverture": []
+    },
+    "104": {
+      "versets": [
+        1,
+        9
+      ],
+      "audio_s": 85.5,
+      "calcul_s": 5.5,
+      "emissions_s": 4.7,
+      "ouverture": []
+    },
+    "105": {
+      "versets": [
+        1,
+        5
+      ],
+      "audio_s": 51.5,
+      "calcul_s": 3.4,
+      "emissions_s": 2.9,
+      "ouverture": []
+    },
+    "106": {
+      "versets": [
+        1,
+        4
+      ],
+      "audio_s": 42.4,
+      "calcul_s": 2.9,
+      "emissions_s": 2.5,
+      "ouverture": []
+    },
+    "107": {
+      "versets": [
+        1,
+        7
+      ],
+      "audio_s": 62.0,
+      "calcul_s": 4.2,
+      "emissions_s": 3.5,
+      "ouverture": []
+    },
+    "108": {
+      "versets": [
+        1,
+        3
+      ],
+      "audio_s": 25.0,
+      "calcul_s": 1.7,
+      "emissions_s": 1.4,
+      "ouverture": []
+    },
+    "109": {
+      "versets": [
+        1,
+        6
+      ],
+      "audio_s": 55.2,
+      "calcul_s": 3.6,
+      "emissions_s": 3.1,
+      "ouverture": []
+    },
+    "110": {
+      "versets": [
+        1,
+        3
+      ],
+      "audio_s": 41.2,
+      "calcul_s": 2.9,
+      "emissions_s": 2.4,
+      "ouverture": []
+    },
+    "111": {
+      "versets": [
+        1,
+        5
+      ],
+      "audio_s": 43.1,
+      "calcul_s": 3.0,
+      "emissions_s": 2.5,
+      "ouverture": []
+    },
+    "112": {
+      "versets": [
+        1,
+        4
+      ],
+      "audio_s": 26.5,
+      "calcul_s": 1.8,
+      "emissions_s": 1.5,
+      "ouverture": []
+    },
+    "113": {
+      "versets": [
+        1,
+        5
+      ],
+      "audio_s": 37.6,
+      "calcul_s": 2.5,
+      "emissions_s": 2.1,
+      "ouverture": []
+    },
+    "114": {
+      "versets": [
+        1,
+        6
+      ],
+      "audio_s": 46.7,
+      "calcul_s": 3.1,
+      "emissions_s": 2.6,
+      "ouverture": []
+    }
+  },
+  "vitesse": {
+    "001": {
+      "audio_s": 64.8,
+      "calcul_s": 96.1
+    },
+    "002": {
+      "audio_s": 13985.3,
+      "calcul_s": 897.2
+    },
+    "003": {
+      "audio_s": 7940.1,
+      "calcul_s": 502.5
+    },
+    "004": {
+      "audio_s": 2204.6,
+      "calcul_s": 154.7
+    },
+    "005": {
+      "audio_s": 6433.8,
+      "calcul_s": 416.4
+    },
+    "006": {
+      "audio_s": 6747.2,
+      "calcul_s": 425.1
+    },
+    "007": {
+      "audio_s": 6832.0,
+      "calcul_s": 430.2
+    },
+    "008": {
+      "audio_s": 2897.0,
+      "calcul_s": 181.4
+    },
+    "009": {
+      "audio_s": 5751.9,
+      "calcul_s": 360.4
+    },
+    "010": {
+      "audio_s": 3975.4,
+      "calcul_s": 249.8
+    },
+    "011": {
+      "audio_s": 4283.2,
+      "calcul_s": 266.3
+    },
+    "012": {
+      "audio_s": 3840.8,
+      "calcul_s": 239.9
+    },
+    "013": {
+      "audio_s": 1797.2,
+      "calcul_s": 115.1
+    },
+    "014": {
+      "audio_s": 1950.6,
+      "calcul_s": 124.2
+    },
+    "015": {
+      "audio_s": 1557.1,
+      "calcul_s": 95.7
+    },
+    "016": {
+      "audio_s": 3959.5,
+      "calcul_s": 245.6
+    },
+    "017": {
+      "audio_s": 3466.4,
+      "calcul_s": 215.1
+    },
+    "018": {
+      "audio_s": 3411.0,
+      "calcul_s": 213.2
+    },
+    "019": {
+      "audio_s": 2195.6,
+      "calcul_s": 135.6
+    },
+    "020": {
+      "audio_s": 2805.6,
+      "calcul_s": 172.9
+    },
+    "021": {
+      "audio_s": 2551.2,
+      "calcul_s": 157.7
+    },
+    "022": {
+      "audio_s": 2787.5,
+      "calcul_s": 176.3
+    },
+    "023": {
+      "audio_s": 2350.4,
+      "calcul_s": 144.6
+    },
+    "024": {
+      "audio_s": 3079.4,
+      "calcul_s": 199.1
+    },
+    "025": {
+      "audio_s": 1885.1,
+      "calcul_s": 117.5
+    },
+    "026": {
+      "audio_s": 3283.1,
+      "calcul_s": 202.5
+    },
+    "027": {
+      "audio_s": 2558.0,
+      "calcul_s": 158.5
+    },
+    "028": {
+      "audio_s": 3067.3,
+      "calcul_s": 190.6
+    },
+    "029": {
+      "audio_s": 2193.2,
+      "calcul_s": 137.2
+    },
+    "030": {
+      "audio_s": 1721.9,
+      "calcul_s": 108.4
+    },
+    "031": {
+      "audio_s": 1083.2,
+      "calcul_s": 68.2
+    },
+    "032": {
+      "audio_s": 800.4,
+      "calcul_s": 50.0
+    },
+    "033": {
+      "audio_s": 2739.9,
+      "calcul_s": 176.9
+    },
+    "034": {
+      "audio_s": 1807.0,
+      "calcul_s": 112.9
+    },
+    "035": {
+      "audio_s": 1776.8,
+      "calcul_s": 111.5
+    },
+    "036": {
+      "audio_s": 1582.3,
+      "calcul_s": 98.1
+    },
+    "037": {
+      "audio_s": 2085.9,
+      "calcul_s": 129.2
+    },
+    "038": {
+      "audio_s": 1665.5,
+      "calcul_s": 103.5
+    },
+    "039": {
+      "audio_s": 2578.7,
+      "calcul_s": 162.6
+    },
+    "040": {
+      "audio_s": 2371.3,
+      "calcul_s": 148.2
+    },
+    "041": {
+      "audio_s": 1670.6,
+      "calcul_s": 104.6
+    },
+    "042": {
+      "audio_s": 1921.3,
+      "calcul_s": 121.1
+    },
+    "043": {
+      "audio_s": 1770.0,
+      "calcul_s": 109.9
+    },
+    "044": {
+      "audio_s": 725.0,
+      "calcul_s": 46.1
+    },
+    "045": {
+      "audio_s": 931.5,
+      "calcul_s": 58.2
+    },
+    "046": {
+      "audio_s": 1282.5,
+      "calcul_s": 82.8
+    },
+    "047": {
+      "audio_s": 1158.8,
+      "calcul_s": 73.6
+    },
+    "048": {
+      "audio_s": 1192.1,
+      "calcul_s": 75.0
+    },
+    "049": {
+      "audio_s": 743.1,
+      "calcul_s": 47.4
+    },
+    "050": {
+      "audio_s": 835.4,
+      "calcul_s": 51.5
+    },
+    "051": {
+      "audio_s": 753.6,
+      "calcul_s": 47.1
+    },
+    "052": {
+      "audio_s": 678.3,
+      "calcul_s": 42.5
+    },
+    "053": {
+      "audio_s": 811.2,
+      "calcul_s": 51.1
+    },
+    "054": {
+      "audio_s": 759.9,
+      "calcul_s": 46.8
+    },
+    "055": {
+      "audio_s": 953.8,
+      "calcul_s": 58.3
+    },
+    "056": {
+      "audio_s": 914.7,
+      "calcul_s": 57.2
+    },
+    "057": {
+      "audio_s": 1108.2,
+      "calcul_s": 70.1
+    },
+    "058": {
+      "audio_s": 1097.9,
+      "calcul_s": 69.6
+    },
+    "059": {
+      "audio_s": 955.4,
+      "calcul_s": 61.3
+    },
+    "060": {
+      "audio_s": 733.9,
+      "calcul_s": 48.7
+    },
+    "061": {
+      "audio_s": 436.6,
+      "calcul_s": 27.4
+    },
+    "063": {
+      "audio_s": 367.8,
+      "calcul_s": 22.9
+    },
+    "064": {
+      "audio_s": 501.3,
+      "calcul_s": 31.5
+    },
+    "065": {
+      "audio_s": 624.7,
+      "calcul_s": 42.8
+    },
+    "066": {
+      "audio_s": 544.0,
+      "calcul_s": 35.1
+    },
+    "067": {
+      "audio_s": 602.0,
+      "calcul_s": 37.5
+    },
+    "068": {
+      "audio_s": 733.4,
+      "calcul_s": 45.0
+    },
+    "069": {
+      "audio_s": 632.2,
+      "calcul_s": 39.0
+    },
+    "070": {
+      "audio_s": 474.3,
+      "calcul_s": 29.1
+    },
+    "071": {
+      "audio_s": 496.5,
+      "calcul_s": 30.9
+    },
+    "072": {
+      "audio_s": 549.8,
+      "calcul_s": 33.9
+    },
+    "073": {
+      "audio_s": 426.1,
+      "calcul_s": 27.6
+    },
+    "074": {
+      "audio_s": 601.6,
+      "calcul_s": 38.6
+    },
+    "075": {
+      "audio_s": 373.8,
+      "calcul_s": 23.2
+    },
+    "076": {
+      "audio_s": 511.7,
+      "calcul_s": 31.9
+    },
+    "077": {
+      "audio_s": 477.7,
+      "calcul_s": 29.3
+    },
+    "078": {
+      "audio_s": 461.7,
+      "calcul_s": 28.7
+    },
+    "079": {
+      "audio_s": 435.1,
+      "calcul_s": 26.8
+    },
+    "083": {
+      "audio_s": 407.2,
+      "calcul_s": 25.6
+    }
+  }
+}

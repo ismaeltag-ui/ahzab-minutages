@@ -48,9 +48,31 @@ APPLICATION = {
     "qua-saber_abdulhakam_qalon_way2quran": "Saber Abdulhakam en Qālūn",
     # Shuʿba.
     "qua-abdur_rashid_sufi_shubah_qdc": "Abdur-Rashid Sufi",
-    # Saber Abdulhakam en Shuʿba attend : son serveur nomme 70 sourates « 97.mp3 »
-    # et les autres « 097.mp3 », quand l'application ne fabrique que la seconde
-    # forme. Sa table reste versionnée, prête pour le jour où elle lira `audio`.
+    # Son serveur nomme 70 sourates « 97.mp3 » et les autres « 097.mp3 » :
+    # l'application prend l'adresse dans la table (`audio`) depuis le 2026-09-25.
+    "qua-saber_abdulhakam_shubah_way2quran": "Saber Abdulhakam en Shuʿba",
+    # Qālūn, avec des sourates que la voix ne couvre pas (l'application ne la
+    # propose pas sur celles-là) : 36 chez Rajab, 36 et 45 chez Moaz Hamed.
+    "qua-ahmed_saleh_rajab_qalon_way2quran": "Ahmed Saleh Rajab",
+    "qua-moaz_mahmoud_hamed_qalon_way2quran": "Moaz Hamed",
+    # Hafs, voix nouvelles du 2026-09-25. Les sourates entre crochets manquent
+    # (fichier absent ou verset non minuté) : la voix n'y est pas proposée.
+    "qua-ahmed_talib_bin_humaid_mp3quran": "Ibn Humaid [9, 14, 16, 17, 23, 24, 33]",
+    "qua-abdur_rashid_sufi_qdc": "Abdur-Rashid Sufi",
+    "qua-ahmed_amer_tvquran": "Ahmed Amer",
+    "qua-ahmed_shaheen_mp3quran": "Ahmed Shaheen",
+    "qua-haitham_al_dukhain_mp3quran": "Haitham Al-Dukhain",
+    "qua-mahmoud_abdul_hakam_mp3quran": "Mahmoud Abdul Hakam",
+    "qua-mohammed_alghazali_archive": "Mohammed Al-Ghazali",
+    "qua-imad_zuhair_hafez_mp3quran": "Imad Zuhair Hafez",
+    "qua-abdullah_al_qarafi_mp3quran": "Abdullah Al-Qarafi [22]",
+    "qua-abdulwadood_haneef_mp3quran": "Abdulwadood Haneef [1]",
+    "qua-ahmed_issa_al_maasaraawi_mp3quran": "Ahmed Al-Maasaraawi [7, 41]",
+    "qua-ahmed_kaseb_way2quran": "Ahmed Kaseb [37]",
+    "qua-mohammed_al_luhaidan_mp3quran": "Mohammed Al-Luhaidan [1, 3]",
+    "qua-muammar_zainal_al_sukaini_way2quran": "Muammar Al-Sukaini [7, 43, 48, 76, 77]",
+    "qua-walid_atef_way2quran": "Walid Atef [2]",
+    "qua-fatih_seferagic_way2quran": "Fatih Seferagic [1]",
 }
 
 

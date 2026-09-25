@@ -17,8 +17,8 @@
         7
       ],
       "audio_s": 40.2,
-      "calcul_s": 5.8,
-      "emissions_s": 3.9,
+      "calcul_s": 89.2,
+      "emissions_s": 88.6,
       "ouverture": []
     },
     "002": {
@@ -27,8 +27,8 @@
         286
       ],
       "audio_s": 7462.5,
-      "calcul_s": 591.2,
-      "emissions_s": 507.2,
+      "calcul_s": 480.1,
+      "emissions_s": 405.0,
       "ouverture": [
         "basmala"
       ]
@@ -39,8 +39,8 @@
         200
       ],
       "audio_s": 4189.5,
-      "calcul_s": 279.8,
-      "emissions_s": 236.7,
+      "calcul_s": 265.6,
+      "emissions_s": 229.3,
       "ouverture": [
         "basmala"
       ]
@@ -51,8 +51,8 @@
         176
       ],
       "audio_s": 4177.8,
-      "calcul_s": 283.4,
-      "emissions_s": 237.5,
+      "calcul_s": 266.6,
+      "emissions_s": 228.4,
       "ouverture": [
         "basmala"
       ]
@@ -63,8 +63,8 @@
         120
       ],
       "audio_s": 3302.3,
-      "calcul_s": 226.5,
-      "emissions_s": 188.5,
+      "calcul_s": 212.8,
+      "emissions_s": 180.9,
       "ouverture": [
         "basmala"
       ]
@@ -75,8 +75,8 @@
         165
       ],
       "audio_s": 3525.1,
-      "calcul_s": 235.7,
-      "emissions_s": 199.3,
+      "calcul_s": 223.5,
+      "emissions_s": 192.7,
       "ouverture": [
         "basmala"
       ]
@@ -87,8 +87,8 @@
         206
       ],
       "audio_s": 3889.0,
-      "calcul_s": 260.2,
-      "emissions_s": 219.8,
+      "calcul_s": 246.6,
+      "emissions_s": 212.4,
       "ouverture": [
         "basmala"
       ]
@@ -99,8 +99,8 @@
         75
       ],
       "audio_s": 1431.9,
-      "calcul_s": 96.3,
-      "emissions_s": 81.7,
+      "calcul_s": 91.2,
+      "emissions_s": 78.6,
       "ouverture": [
         "basmala"
       ]
@@ -111,8 +111,8 @@
         129
       ],
       "audio_s": 3024.7,
-      "calcul_s": 201.9,
-      "emissions_s": 172.1,
+      "calcul_s": 190.5,
+      "emissions_s": 165.0,
       "ouverture": [
         "istiadha"
       ]
@@ -123,8 +123,8 @@
         109
       ],
       "audio_s": 2060.5,
-      "calcul_s": 137.9,
-      "emissions_s": 117.2,
+      "calcul_s": 131.0,
+      "emissions_s": 113.0,
       "ouverture": [
         "basmala"
       ]
@@ -135,8 +135,8 @@
         123
       ],
       "audio_s": 2282.2,
-      "calcul_s": 151.5,
-      "emissions_s": 128.9,
+      "calcul_s": 145.2,
+      "emissions_s": 125.6,
       "ouverture": [
         "basmala"
       ]
@@ -147,8 +147,8 @@
         111
       ],
       "audio_s": 2088.7,
-      "calcul_s": 139.1,
-      "emissions_s": 118.6,
+      "calcul_s": 132.3,
+      "emissions_s": 114.2,
       "ouverture": [
         "basmala"
       ]
@@ -159,8 +159,8 @@
         43
       ],
       "audio_s": 936.7,
-      "calcul_s": 64.3,
-      "emissions_s": 54.4,
+      "calcul_s": 60.7,
+      "emissions_s": 52.0,
       "ouverture": [
         "basmala"
       ]
@@ -171,8 +171,8 @@
         52
       ],
       "audio_s": 998.9,
-      "calcul_s": 68.4,
-      "emissions_s": 58.2,
+      "calcul_s": 63.4,
+      "emissions_s": 54.5,
       "ouverture": [
         "basmala"
       ]
@@ -183,8 +183,8 @@
         99
       ],
       "audio_s": 792.4,
-      "calcul_s": 53.5,
-      "emissions_s": 45.3,
+      "calcul_s": 51.1,
+      "emissions_s": 43.6,
       "ouverture": [
         "basmala"
       ]
@@ -195,8 +195,8 @@
         128
       ],
       "audio_s": 2020.2,
-      "calcul_s": 134.8,
-      "emissions_s": 115.1,
+      "calcul_s": 129.0,
+      "emissions_s": 111.2,
       "ouverture": [
         "basmala"
       ]
@@ -207,8 +207,8 @@
         111
       ],
       "audio_s": 1810.4,
-      "calcul_s": 120.6,
-      "emissions_s": 103.1,
+      "calcul_s": 114.6,
+      "emissions_s": 99.3,
       "ouverture": [
         "basmala"
       ]
@@ -219,8 +219,8 @@
         110
       ],
       "audio_s": 1699.3,
-      "calcul_s": 114.4,
-      "emissions_s": 97.2,
+      "calcul_s": 108.5,
+      "emissions_s": 93.3,
       "ouverture": [
         "basmala"
       ]
@@ -231,8 +231,8 @@
         98
       ],
       "audio_s": 1098.6,
-      "calcul_s": 74.1,
-      "emissions_s": 63.0,
+      "calcul_s": 70.4,
+      "emissions_s": 60.6,
       "ouverture": [
         "basmala"
       ]
@@ -243,8 +243,8 @@
         135
       ],
       "audio_s": 1545.6,
-      "calcul_s": 102.9,
-      "emissions_s": 87.8,
+      "calcul_s": 98.9,
+      "emissions_s": 85.3,
       "ouverture": [
         "basmala"
       ]
@@ -255,8 +255,8 @@
         112
       ],
       "audio_s": 1474.5,
-      "calcul_s": 97.5,
-      "emissions_s": 83.6,
+      "calcul_s": 93.8,
+      "emissions_s": 81.0,
       "ouverture": [
         "basmala"
       ]
@@ -267,8 +267,8 @@
         78
       ],
       "audio_s": 1426.9,
-      "calcul_s": 96.6,
-      "emissions_s": 82.2,
+      "calcul_s": 91.5,
+      "emissions_s": 78.8,
       "ouverture": [
         "basmala"
       ]
@@ -279,8 +279,8 @@
         118
       ],
       "audio_s": 1331.5,
-      "calcul_s": 88.9,
-      "emissions_s": 76.1,
+      "calcul_s": 84.2,
+      "emissions_s": 72.9,
       "ouverture": [
         "basmala"
       ]
@@ -291,8 +291,8 @@
         64
       ],
       "audio_s": 1533.1,
-      "calcul_s": 105.9,
-      "emissions_s": 87.5,
+      "calcul_s": 100.3,
+      "emissions_s": 84.5,
       "ouverture": [
         "basmala"
       ]
@@ -303,8 +303,8 @@
         77
       ],
       "audio_s": 995.7,
-      "calcul_s": 68.1,
-      "emissions_s": 58.2,
+      "calcul_s": 63.0,
+      "emissions_s": 54.5,
       "ouverture": [
         "basmala"
       ]
@@ -315,8 +315,8 @@
         227
       ],
       "audio_s": 1448.5,
-      "calcul_s": 98.8,
-      "emissions_s": 83.1,
+      "calcul_s": 93.0,
+      "emissions_s": 79.3,
       "ouverture": [
         "basmala"
       ]
@@ -327,8 +327,8 @@
         93
       ],
       "audio_s": 1345.2,
-      "calcul_s": 89.8,
-      "emissions_s": 76.8,
+      "calcul_s": 85.9,
+      "emissions_s": 74.4,
       "ouverture": [
         "basmala"
       ]
@@ -339,8 +339,8 @@
         88
       ],
       "audio_s": 1629.8,
-      "calcul_s": 108.1,
-      "emissions_s": 92.4,
+      "calcul_s": 102.2,
+      "emissions_s": 88.8,
       "ouverture": [
         "basmala"
       ]
@@ -351,8 +351,8 @@
         69
       ],
       "audio_s": 1091.6,
-      "calcul_s": 74.2,
-      "emissions_s": 62.8,
+      "calcul_s": 69.8,
+      "emissions_s": 60.0,
       "ouverture": [
         "basmala"
       ]
@@ -363,8 +363,8 @@
         60
       ],
       "audio_s": 915.4,
-      "calcul_s": 61.6,
-      "emissions_s": 52.2,
+      "calcul_s": 57.7,
+      "emissions_s": 49.8,
       "ouverture": [
         "basmala"
       ]
@@ -375,8 +375,8 @@
         34
       ],
       "audio_s": 563.7,
-      "calcul_s": 38.4,
-      "emissions_s": 32.5,
+      "calcul_s": 36.0,
+      "emissions_s": 30.9,
       "ouverture": [
         "basmala"
       ]
@@ -387,8 +387,8 @@
         30
       ],
       "audio_s": 390.0,
-      "calcul_s": 26.5,
-      "emissions_s": 22.0,
+      "calcul_s": 25.0,
+      "emissions_s": 21.2,
       "ouverture": [
         "basmala"
       ]
@@ -399,8 +399,8 @@
         73
       ],
       "audio_s": 1577.7,
-      "calcul_s": 108.0,
-      "emissions_s": 90.3,
+      "calcul_s": 101.3,
+      "emissions_s": 85.9,
       "ouverture": [
         "basmala"
       ]
@@ -411,8 +411,8 @@
         54
       ],
       "audio_s": 905.5,
-      "calcul_s": 62.2,
-      "emissions_s": 52.7,
+      "calcul_s": 58.1,
+      "emissions_s": 49.9,
       "ouverture": [
         "basmala"
       ]
@@ -423,8 +423,8 @@
         45
       ],
       "audio_s": 806.1,
-      "calcul_s": 55.3,
-      "emissions_s": 46.5,
+      "calcul_s": 51.3,
+      "emissions_s": 43.8,
       "ouverture": []
     },
     "036": {
@@ -433,8 +433,8 @@
         83
       ],
       "audio_s": 861.2,
-      "calcul_s": 164.9,
-      "emissions_s": 156.8,
+      "calcul_s": 55.0,
+      "emissions_s": 47.5,
       "ouverture": [
         "basmala"
       ]
@@ -445,8 +445,8 @@
         182
       ],
       "audio_s": 1103.0,
-      "calcul_s": 76.5,
-      "emissions_s": 64.4,
+      "calcul_s": 70.8,
+      "emissions_s": 60.3,
       "ouverture": [
         "basmala"
       ]
@@ -457,8 +457,8 @@
         88
       ],
       "audio_s": 847.1,
-      "calcul_s": 57.7,
-      "emissions_s": 48.9,
+      "calcul_s": 54.8,
+      "emissions_s": 47.1,
       "ouverture": [
         "basmala"
       ]
@@ -469,8 +469,8 @@
         75
       ],
       "audio_s": 1479.2,
-      "calcul_s": 99.8,
-      "emissions_s": 85.0,
+      "calcul_s": 94.3,
+      "emissions_s": 81.2,
       "ouverture": [
         "basmala"
       ]
@@ -481,8 +481,8 @@
         85
       ],
       "audio_s": 1512.5,
-      "calcul_s": 107.3,
-      "emissions_s": 86.4,
+      "calcul_s": 101.4,
+      "emissions_s": 83.3,
       "ouverture": [
         "basmala"
       ]
@@ -493,8 +493,8 @@
         54
       ],
       "audio_s": 888.6,
-      "calcul_s": 60.4,
-      "emissions_s": 51.2,
+      "calcul_s": 58.0,
+      "emissions_s": 49.2,
       "ouverture": [
         "basmala"
       ]
@@ -505,8 +505,8 @@
         53
       ],
       "audio_s": 975.6,
-      "calcul_s": 65.8,
-      "emissions_s": 56.0,
+      "calcul_s": 63.6,
+      "emissions_s": 54.1,
       "ouverture": [
         "basmala"
       ]
@@ -517,8 +517,8 @@
         89
       ],
       "audio_s": 987.7,
-      "calcul_s": 67.5,
-      "emissions_s": 57.6,
+      "calcul_s": 64.1,
+      "emissions_s": 55.0,
       "ouverture": [
         "basmala"
       ]
@@ -529,8 +529,8 @@
         59
       ],
       "audio_s": 397.0,
-      "calcul_s": 27.0,
-      "emissions_s": 22.4,
+      "calcul_s": 25.7,
+      "emissions_s": 21.4,
       "ouverture": [
         "basmala"
       ]
@@ -541,8 +541,8 @@
         37
       ],
       "audio_s": 522.6,
-      "calcul_s": 37.0,
-      "emissions_s": 31.6,
+      "calcul_s": 34.2,
+      "emissions_s": 29.3,
       "ouverture": [
         "basmala"
       ]
@@ -553,8 +553,8 @@
         35
       ],
       "audio_s": 725.5,
-      "calcul_s": 48.4,
-      "emissions_s": 41.1,
+      "calcul_s": 46.7,
+      "emissions_s": 39.5,
       "ouverture": [
         "basmala"
       ]
@@ -565,8 +565,8 @@
         38
       ],
       "audio_s": 633.0,
-      "calcul_s": 43.1,
-      "emissions_s": 36.7,
+      "calcul_s": 41.6,
+      "emissions_s": 35.5,
       "ouverture": [
         "basmala"
       ]
@@ -577,8 +577,8 @@
         29
       ],
       "audio_s": 633.6,
-      "calcul_s": 42.2,
-      "emissions_s": 36.1,
+      "calcul_s": 40.9,
+      "emissions_s": 35.0,
       "ouverture": [
         "basmala"
       ]
@@ -589,8 +589,8 @@
         18
       ],
       "audio_s": 420.8,
-      "calcul_s": 28.5,
-      "emissions_s": 24.0,
+      "calcul_s": 27.7,
+      "emissions_s": 23.3,
       "ouverture": [
         "basmala"
       ]
@@ -601,8 +601,8 @@
         45
       ],
       "audio_s": 480.1,
-      "calcul_s": 32.6,
-      "emissions_s": 27.7,
+      "calcul_s": 31.6,
+      "emissions_s": 26.8,
       "ouverture": [
         "basmala"
       ]
@@ -613,7 +613,7 @@
         60
       ],
       "audio_s": 396.1,
-      "calcul_s": 26.9,
+      "calcul_s": 26.8,
       "emissions_s": 22.2,
       "ouverture": [
         "basmala"
@@ -625,7 +625,7 @@
         49
       ],
       "audio_s": 382.1,
-      "calcul_s": 25.7,
+      "calcul_s": 25.8,
       "emissions_s": 21.6,
       "ouverture": [
         "basmala"
@@ -637,8 +637,8 @@
         62
       ],
       "audio_s": 426.1,
-      "calcul_s": 29.8,
-      "emissions_s": 24.7,
+      "calcul_s": 29.9,
+      "emissions_s": 24.6,
       "ouverture": [
         "basmala"
       ]
@@ -649,8 +649,8 @@
         55
       ],
       "audio_s": 394.6,
-      "calcul_s": 26.6,
-      "emissions_s": 22.1,
+      "calcul_s": 27.1,
+      "emissions_s": 22.3,
       "ouverture": [
         "basmala"
       ]
@@ -661,8 +661,8 @@
         78
       ],
       "audio_s": 533.2,
-      "calcul_s": 36.2,
-      "emissions_s": 30.6,
+      "calcul_s": 36.5,
+      "emissions_s": 30.0,
       "ouverture": [
         "istiadha",
         "basmala"
@@ -674,8 +674,8 @@
         96
       ],
       "audio_s": 468.1,
-      "calcul_s": 32.2,
-      "emissions_s": 26.5,
+      "calcul_s": 32.3,
+      "emissions_s": 26.2,
       "ouverture": [
         "basmala"
       ]
@@ -686,8 +686,8 @@
         29
       ],
       "audio_s": 645.9,
-      "calcul_s": 44.1,
-      "emissions_s": 37.2,
+      "calcul_s": 43.4,
+      "emissions_s": 36.2,
       "ouverture": [
         "basmala"
       ]
@@ -698,8 +698,8 @@
         22
       ],
       "audio_s": 503.0,
-      "calcul_s": 34.4,
-      "emissions_s": 28.7,
+      "calcul_s": 34.2,
+      "emissions_s": 28.3,
       "ouverture": []
     },
     "059": {
@@ -708,8 +708,8 @@
         24
       ],
       "audio_s": 491.0,
-      "calcul_s": 34.1,
-      "emissions_s": 28.4,
+      "calcul_s": 33.6,
+      "emissions_s": 27.6,
       "ouverture": [
         "basmala"
       ]
@@ -720,7 +720,7 @@
         13
       ],
       "audio_s": 411.1,
-      "calcul_s": 30.2,
+      "calcul_s": 30.6,
       "emissions_s": 23.3,
       "ouverture": [
         "basmala"
@@ -732,8 +732,8 @@
         14
       ],
       "audio_s": 264.8,
-      "calcul_s": 18.0,
-      "emissions_s": 15.0,
+      "calcul_s": 18.2,
+      "emissions_s": 15.1,
       "ouverture": [
         "basmala"
       ]
@@ -745,7 +745,7 @@
       ],
       "audio_s": 186.2,
       "calcul_s": 12.9,
-      "emissions_s": 10.7,
+      "emissions_s": 10.5,
       "ouverture": [
         "basmala"
       ]
@@ -756,8 +756,8 @@
         11
       ],
       "audio_s": 201.7,
-      "calcul_s": 14.2,
-      "emissions_s": 11.9,
+      "calcul_s": 13.9,
+      "emissions_s": 11.4,
       "ouverture": [
         "basmala"
       ]
@@ -768,7 +768,7 @@
         18
       ],
       "audio_s": 255.8,
-      "calcul_s": 17.3,
+      "calcul_s": 17.4,
       "emissions_s": 14.6,
       "ouverture": []
     },
@@ -778,8 +778,8 @@
         12
       ],
       "audio_s": 325.4,
-      "calcul_s": 22.0,
-      "emissions_s": 18.3,
+      "calcul_s": 22.3,
+      "emissions_s": 18.4,
       "ouverture": [
         "basmala"
       ]
@@ -790,8 +790,8 @@
         12
       ],
       "audio_s": 287.6,
-      "calcul_s": 19.5,
-      "emissions_s": 16.4,
+      "calcul_s": 19.7,
+      "emissions_s": 16.3,
       "ouverture": [
         "basmala"
       ]
@@ -802,8 +802,8 @@
         30
       ],
       "audio_s": 338.4,
-      "calcul_s": 22.0,
-      "emissions_s": 18.6,
+      "calcul_s": 23.0,
+      "emissions_s": 19.0,
       "ouverture": [
         "basmala"
       ]
@@ -814,8 +814,8 @@
         52
       ],
       "audio_s": 344.1,
-      "calcul_s": 24.0,
-      "emissions_s": 20.1,
+      "calcul_s": 23.7,
+      "emissions_s": 19.6,
       "ouverture": [
         "basmala"
       ]
@@ -826,8 +826,8 @@
         52
       ],
       "audio_s": 317.3,
-      "calcul_s": 21.9,
-      "emissions_s": 18.2,
+      "calcul_s": 22.1,
+      "emissions_s": 18.1,
       "ouverture": [
         "basmala"
       ]
@@ -838,8 +838,8 @@
         44
       ],
       "audio_s": 251.5,
-      "calcul_s": 17.2,
-      "emissions_s": 14.1,
+      "calcul_s": 17.7,
+      "emissions_s": 14.4,
       "ouverture": [
         "basmala"
       ]
@@ -850,8 +850,8 @@
         28
       ],
       "audio_s": 249.8,
-      "calcul_s": 17.0,
-      "emissions_s": 14.2,
+      "calcul_s": 17.1,
+      "emissions_s": 14.1,
       "ouverture": [
         "basmala"
       ]
@@ -862,7 +862,7 @@
         28
       ],
       "audio_s": 300.5,
-      "calcul_s": 20.4,
+      "calcul_s": 20.6,
       "emissions_s": 17.0,
       "ouverture": [
         "basmala"
@@ -874,8 +874,8 @@
         20
       ],
       "audio_s": 215.6,
-      "calcul_s": 14.9,
-      "emissions_s": 12.2,
+      "calcul_s": 15.1,
+      "emissions_s": 12.1,
       "ouverture": [
         "istiadha",
         "basmala"
@@ -887,8 +887,8 @@
         56
       ],
       "audio_s": 306.8,
-      "calcul_s": 21.7,
-      "emissions_s": 17.3,
+      "calcul_s": 22.5,
+      "emissions_s": 17.6,
       "ouverture": [
         "basmala"
       ]
@@ -899,7 +899,7 @@
         40
       ],
       "audio_s": 205.0,
-      "calcul_s": 14.2,
+      "calcul_s": 14.5,
       "emissions_s": 11.6,
       "ouverture": [
         "basmala"
@@ -911,8 +911,8 @@
         31
       ],
       "audio_s": 287.3,
-      "calcul_s": 19.9,
-      "emissions_s": 16.7,
+      "calcul_s": 19.4,
+      "emissions_s": 16.1,
       "ouverture": [
         "basmala"
       ]
@@ -923,8 +923,8 @@
         50
       ],
       "audio_s": 236.1,
-      "calcul_s": 16.4,
-      "emissions_s": 13.3,
+      "calcul_s": 17.0,
+      "emissions_s": 13.7,
       "ouverture": [
         "basmala"
       ]
@@ -935,8 +935,8 @@
         40
       ],
       "audio_s": 215.9,
-      "calcul_s": 8.3,
-      "emissions_s": 4.5,
+      "calcul_s": 15.2,
+      "emissions_s": 12.2,
       "ouverture": [
         "basmala"
       ]
@@ -947,7 +947,7 @@
         46
       ],
       "audio_s": 220.0,
-      "calcul_s": 15.3,
+      "calcul_s": 15.5,
       "emissions_s": 12.4,
       "ouverture": [
         "istiadha",
@@ -960,8 +960,8 @@
         42
       ],
       "audio_s": 181.5,
-      "calcul_s": 12.8,
-      "emissions_s": 10.4,
+      "calcul_s": 13.2,
+      "emissions_s": 10.5,
       "ouverture": [
         "basmala"
       ]
@@ -972,7 +972,7 @@
         29
       ],
       "audio_s": 130.2,
-      "calcul_s": 9.1,
+      "calcul_s": 9.4,
       "emissions_s": 7.3,
       "ouverture": [
         "basmala"
@@ -984,8 +984,8 @@
         19
       ],
       "audio_s": 101.3,
-      "calcul_s": 7.5,
-      "emissions_s": 6.1,
+      "calcul_s": 7.3,
+      "emissions_s": 5.9,
       "ouverture": [
         "basmala"
       ]
@@ -996,8 +996,8 @@
         36
       ],
       "audio_s": 205.2,
-      "calcul_s": 14.8,
-      "emissions_s": 12.2,
+      "calcul_s": 14.4,
+      "emissions_s": 11.7,
       "ouverture": [
         "basmala"
       ]
@@ -1008,7 +1008,7 @@
         25
       ],
       "audio_s": 114.6,
-      "calcul_s": 8.3,
+      "calcul_s": 8.4,
       "emissions_s": 6.5,
       "ouverture": [
         "basmala"
@@ -1020,8 +1020,8 @@
         22
       ],
       "audio_s": 122.6,
-      "calcul_s": 8.8,
-      "emissions_s": 7.2,
+      "calcul_s": 8.9,
+      "emissions_s": 7.0,
       "ouverture": [
         "basmala"
       ]
@@ -1033,7 +1033,7 @@
       ],
       "audio_s": 70.2,
       "calcul_s": 5.2,
-      "emissions_s": 4.1,
+      "emissions_s": 4.0,
       "ouverture": [
         "istiadha",
         "basmala"
@@ -1045,7 +1045,7 @@
         19
       ],
       "audio_s": 75.4,
-      "calcul_s": 5.6,
+      "calcul_s": 5.7,
       "emissions_s": 4.4,
       "ouverture": [
         "basmala"
@@ -1057,7 +1057,7 @@
         26
       ],
       "audio_s": 103.6,
-      "calcul_s": 7.6,
+      "calcul_s": 7.7,
       "emissions_s": 6.0,
       "ouverture": [
         "basmala"
@@ -1069,8 +1069,8 @@
         30
       ],
       "audio_s": 161.7,
-      "calcul_s": 11.5,
-      "emissions_s": 9.3,
+      "calcul_s": 11.7,
+      "emissions_s": 9.4,
       "ouverture": [
         "istiadha",
         "basmala"
@@ -1083,7 +1083,7 @@
       ],
       "audio_s": 87.5,
       "calcul_s": 6.4,
-      "emissions_s": 5.1,
+      "emissions_s": 5.0,
       "ouverture": [
         "basmala"
       ]
@@ -1094,7 +1094,7 @@
         15
       ],
       "audio_s": 64.2,
-      "calcul_s": 4.8,
+      "calcul_s": 4.9,
       "emissions_s": 3.8,
       "ouverture": [
         "basmala"
@@ -1106,8 +1106,8 @@
         21
       ],
       "audio_s": 91.4,
-      "calcul_s": 6.8,
-      "emissions_s": 5.4,
+      "calcul_s": 6.9,
+      "emissions_s": 5.3,
       "ouverture": [
         "basmala"
       ]
@@ -1118,7 +1118,7 @@
         11
       ],
       "audio_s": 61.7,
-      "calcul_s": 4.6,
+      "calcul_s": 4.7,
       "emissions_s": 3.7,
       "ouverture": [
         "basmala"
@@ -1130,7 +1130,7 @@
         8
       ],
       "audio_s": 38.3,
-      "calcul_s": 2.9,
+      "calcul_s": 2.8,
       "emissions_s": 2.2,
       "ouverture": [
         "basmala"
@@ -1154,8 +1154,8 @@
         19
       ],
       "audio_s": 93.2,
-      "calcul_s": 6.6,
-      "emissions_s": 5.3,
+      "calcul_s": 6.7,
+      "emissions_s": 5.2,
       "ouverture": [
         "basmala"
       ]
@@ -1167,7 +1167,7 @@
       ],
       "audio_s": 38.5,
       "calcul_s": 2.9,
-      "emissions_s": 2.3,
+      "emissions_s": 2.2,
       "ouverture": [
         "basmala"
       ]
@@ -1178,8 +1178,8 @@
         8
       ],
       "audio_s": 107.3,
-      "calcul_s": 7.4,
-      "emissions_s": 6.1,
+      "calcul_s": 7.6,
+      "emissions_s": 6.2,
       "ouverture": [
         "basmala"
       ]
@@ -1190,7 +1190,7 @@
         8
       ],
       "audio_s": 46.8,
-      "calcul_s": 3.5,
+      "calcul_s": 3.6,
       "emissions_s": 2.8,
       "ouverture": [
         "basmala"
@@ -1202,7 +1202,7 @@
         11
       ],
       "audio_s": 67.8,
-      "calcul_s": 4.8,
+      "calcul_s": 4.9,
       "emissions_s": 3.9,
       "ouverture": [
         "basmala"
@@ -1215,7 +1215,7 @@
       ],
       "audio_s": 52.5,
       "calcul_s": 3.8,
-      "emissions_s": 3.0,
+      "emissions_s": 2.9,
       "ouverture": [
         "istiadha",
         "basmala"
@@ -1227,8 +1227,8 @@
         8
       ],
       "audio_s": 45.8,
-      "calcul_s": 3.3,
-      "emissions_s": 2.7,
+      "calcul_s": 3.4,
+      "emissions_s": 2.6,
       "ouverture": [
         "basmala"
       ]
@@ -1239,7 +1239,7 @@
         3
       ],
       "audio_s": 18.3,
-      "calcul_s": 1.4,
+      "calcul_s": 1.5,
       "emissions_s": 1.0,
       "ouverture": [
         "basmala"
@@ -1251,7 +1251,7 @@
         9
       ],
       "audio_s": 44.7,
-      "calcul_s": 3.3,
+      "calcul_s": 3.4,
       "emissions_s": 2.6,
       "ouverture": [
         "basmala"
@@ -1264,7 +1264,7 @@
       ],
       "audio_s": 33.1,
       "calcul_s": 2.4,
-      "emissions_s": 1.9,
+      "emissions_s": 1.8,
       "ouverture": [
         "basmala"
       ]
@@ -1287,8 +1287,8 @@
         7
       ],
       "audio_s": 41.2,
-      "calcul_s": 3.2,
-      "emissions_s": 2.5,
+      "calcul_s": 3.1,
+      "emissions_s": 2.4,
       "ouverture": [
         "basmala"
       ]
@@ -1311,8 +1311,8 @@
         6
       ],
       "audio_s": 30.1,
-      "calcul_s": 2.3,
-      "emissions_s": 1.7,
+      "calcul_s": 2.2,
+      "emissions_s": 1.6,
       "ouverture": [
         "basmala"
       ]
@@ -1324,7 +1324,7 @@
       ],
       "audio_s": 29.2,
       "calcul_s": 2.2,
-      "emissions_s": 1.7,
+      "emissions_s": 1.6,
       "ouverture": [
         "basmala"
       ]
@@ -1347,8 +1347,8 @@
         4
       ],
       "audio_s": 16.8,
-      "calcul_s": 56.7,
-      "emissions_s": 56.4,
+      "calcul_s": 1.4,
+      "emissions_s": 0.9,
       "ouverture": [
         "basmala"
       ]
@@ -1359,8 +1359,8 @@
         5
       ],
       "audio_s": 26.1,
-      "calcul_s": 25.9,
-      "emissions_s": 25.3,
+      "calcul_s": 2.1,
+      "emissions_s": 1.6,
       "ouverture": [
         "basmala"
       ]
@@ -1371,8 +1371,8 @@
         6
       ],
       "audio_s": 35.5,
-      "calcul_s": 33.4,
-      "emissions_s": 32.7,
+      "calcul_s": 2.6,
+      "emissions_s": 2.0,
       "ouverture": [
         "basmala"
       ]
@@ -1381,243 +1381,243 @@
   "vitesse": {
     "001": {
       "audio_s": 40.2,
-      "calcul_s": 90
+      "calcul_s": 89.2
     },
     "002": {
       "audio_s": 7462.5,
-      "calcul_s": 591.2
+      "calcul_s": 480.1
     },
     "003": {
       "audio_s": 4189.5,
-      "calcul_s": 279.8
+      "calcul_s": 265.6
     },
     "004": {
       "audio_s": 4177.8,
-      "calcul_s": 283.4
+      "calcul_s": 266.6
     },
     "005": {
       "audio_s": 3302.3,
-      "calcul_s": 226.5
+      "calcul_s": 212.8
     },
     "006": {
       "audio_s": 3525.1,
-      "calcul_s": 235.7
+      "calcul_s": 223.5
     },
     "007": {
       "audio_s": 3889.0,
-      "calcul_s": 260.2
+      "calcul_s": 246.6
     },
     "008": {
       "audio_s": 1431.9,
-      "calcul_s": 96.3
+      "calcul_s": 91.2
     },
     "009": {
       "audio_s": 3024.7,
-      "calcul_s": 201.9
+      "calcul_s": 190.5
     },
     "010": {
       "audio_s": 2060.5,
-      "calcul_s": 137.9
+      "calcul_s": 131.0
     },
     "011": {
       "audio_s": 2282.2,
-      "calcul_s": 151.5
+      "calcul_s": 145.2
     },
     "012": {
       "audio_s": 2088.7,
-      "calcul_s": 139.1
+      "calcul_s": 132.3
     },
     "013": {
       "audio_s": 936.7,
-      "calcul_s": 64.3
+      "calcul_s": 60.7
     },
     "014": {
       "audio_s": 998.9,
-      "calcul_s": 68.4
+      "calcul_s": 63.4
     },
     "015": {
       "audio_s": 792.4,
-      "calcul_s": 53.5
+      "calcul_s": 51.1
     },
     "016": {
       "audio_s": 2020.2,
-      "calcul_s": 134.8
+      "calcul_s": 129.0
     },
     "017": {
       "audio_s": 1810.4,
-      "calcul_s": 120.6
+      "calcul_s": 114.6
     },
     "018": {
       "audio_s": 1699.3,
-      "calcul_s": 114.4
+      "calcul_s": 108.5
     },
     "019": {
       "audio_s": 1098.6,
-      "calcul_s": 74.1
+      "calcul_s": 70.4
     },
     "020": {
       "audio_s": 1545.6,
-      "calcul_s": 102.9
+      "calcul_s": 98.9
     },
     "021": {
       "audio_s": 1474.5,
-      "calcul_s": 97.5
+      "calcul_s": 93.8
     },
     "022": {
       "audio_s": 1426.9,
-      "calcul_s": 96.6
+      "calcul_s": 91.5
     },
     "023": {
       "audio_s": 1331.5,
-      "calcul_s": 88.9
+      "calcul_s": 84.2
     },
     "024": {
       "audio_s": 1533.1,
-      "calcul_s": 105.9
+      "calcul_s": 100.3
     },
     "025": {
       "audio_s": 995.7,
-      "calcul_s": 68.1
+      "calcul_s": 63.0
     },
     "026": {
       "audio_s": 1448.5,
-      "calcul_s": 98.8
+      "calcul_s": 93.0
     },
     "027": {
       "audio_s": 1345.2,
-      "calcul_s": 89.8
+      "calcul_s": 85.9
     },
     "028": {
       "audio_s": 1629.8,
-      "calcul_s": 108.1
+      "calcul_s": 102.2
     },
     "029": {
       "audio_s": 1091.6,
-      "calcul_s": 74.2
+      "calcul_s": 69.8
     },
     "030": {
       "audio_s": 915.4,
-      "calcul_s": 61.6
+      "calcul_s": 57.7
     },
     "031": {
       "audio_s": 563.7,
-      "calcul_s": 38.4
+      "calcul_s": 36.0
     },
     "032": {
       "audio_s": 390.0,
-      "calcul_s": 26.5
+      "calcul_s": 25.0
     },
     "033": {
       "audio_s": 1577.7,
-      "calcul_s": 108.0
+      "calcul_s": 101.3
     },
     "034": {
       "audio_s": 905.5,
-      "calcul_s": 62.2
+      "calcul_s": 58.1
     },
     "035": {
       "audio_s": 806.1,
-      "calcul_s": 55.3
+      "calcul_s": 51.3
     },
     "036": {
       "audio_s": 861.2,
-      "calcul_s": 164.9
+      "calcul_s": 55.0
     },
     "037": {
       "audio_s": 1103.0,
-      "calcul_s": 76.5
+      "calcul_s": 70.8
     },
     "038": {
       "audio_s": 847.1,
-      "calcul_s": 57.7
+      "calcul_s": 54.8
     },
     "039": {
       "audio_s": 1479.2,
-      "calcul_s": 99.8
+      "calcul_s": 94.3
     },
     "040": {
       "audio_s": 1512.5,
-      "calcul_s": 107.3
+      "calcul_s": 101.4
     },
     "041": {
       "audio_s": 888.6,
-      "calcul_s": 60.4
+      "calcul_s": 58.0
     },
     "042": {
       "audio_s": 975.6,
-      "calcul_s": 65.8
+      "calcul_s": 63.6
     },
     "043": {
       "audio_s": 987.7,
-      "calcul_s": 67.5
+      "calcul_s": 64.1
     },
     "044": {
       "audio_s": 397.0,
-      "calcul_s": 27.0
+      "calcul_s": 25.7
     },
     "045": {
       "audio_s": 522.6,
-      "calcul_s": 37.0
+      "calcul_s": 34.2
     },
     "046": {
       "audio_s": 725.5,
-      "calcul_s": 48.4
+      "calcul_s": 46.7
     },
     "047": {
       "audio_s": 633.0,
-      "calcul_s": 43.1
+      "calcul_s": 41.6
     },
     "048": {
       "audio_s": 633.6,
-      "calcul_s": 42.2
+      "calcul_s": 40.9
     },
     "049": {
       "audio_s": 420.8,
-      "calcul_s": 28.5
+      "calcul_s": 27.7
     },
     "050": {
       "audio_s": 480.1,
-      "calcul_s": 32.6
+      "calcul_s": 31.6
     },
     "051": {
       "audio_s": 396.1,
-      "calcul_s": 26.9
+      "calcul_s": 26.8
     },
     "052": {
       "audio_s": 382.1,
-      "calcul_s": 25.7
+      "calcul_s": 25.8
     },
     "053": {
       "audio_s": 426.1,
-      "calcul_s": 29.8
+      "calcul_s": 29.9
     },
     "054": {
       "audio_s": 394.6,
-      "calcul_s": 26.6
+      "calcul_s": 27.1
     },
     "055": {
       "audio_s": 533.2,
-      "calcul_s": 36.2
+      "calcul_s": 36.5
     },
     "056": {
       "audio_s": 468.1,
-      "calcul_s": 32.2
+      "calcul_s": 32.3
     },
     "057": {
       "audio_s": 645.9,
-      "calcul_s": 44.1
+      "calcul_s": 43.4
     },
     "058": {
       "audio_s": 503.0,
-      "calcul_s": 34.4
+      "calcul_s": 34.2
     },
     "059": {
       "audio_s": 491.0,
-      "calcul_s": 34.1
+      "calcul_s": 33.6
     },
     "060": {
       "audio_s": 411.1,
-      "calcul_s": 30.2
+      "calcul_s": 30.6
     },
     "068": {
       "audio_s": 344.1,
