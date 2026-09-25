@@ -48,7 +48,9 @@ APPLICATION = {
     "qua-saber_abdulhakam_qalon_way2quran": "Saber Abdulhakam en Qālūn",
     # Shuʿba.
     "qua-abdur_rashid_sufi_shubah_qdc": "Abdur-Rashid Sufi",
-    "qua-saber_abdulhakam_shubah_way2quran": "Saber Abdulhakam en Shuʿba",
+    # Saber Abdulhakam en Shuʿba attend : son serveur nomme 70 sourates « 97.mp3 »
+    # et les autres « 097.mp3 », quand l'application ne fabrique que la seconde
+    # forme. Sa table reste versionnée, prête pour le jour où elle lira `audio`.
 }
 
 
