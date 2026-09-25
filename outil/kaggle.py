@@ -40,7 +40,12 @@ def lancer(*cmd, **kw):
     return subprocess.run(cmd, **kw)
 
 
-lancer("nvidia-smi")
+gpu = subprocess.run([sys.executable, "-c", "import torch; print(torch.cuda.get_device_name(0) "
+                      "if torch.cuda.is_available() else '')"], capture_output=True, text=True).stdout.strip()
+print("GPU :", gpu or "aucun", flush=True)
+if not gpu and not P.get("sans_gpu"):
+    # sur processeur, la passe prendrait des dizaines d'heures : inutile de consommer le quota
+    sys.exit("Aucun GPU attribué. Le téléphone du compte est-il vérifié (kaggle.com/settings) ?")
 lancer(sys.executable, "-m", "pip", "install", "-q", *P["paquets"], check=True)
 src = "/tmp/ahzab-minutages"
 if not os.path.exists(src):
