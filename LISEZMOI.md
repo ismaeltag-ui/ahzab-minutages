@@ -82,6 +82,33 @@ de l'audio sur un processeur portable, bien moins sur un GPU) :
 
 `--jusqua 150 --versets 1-10` aligne seulement le début d'un fichier.
 
+Toute une récitation (téléchargement, alignement, reprise là où l'on s'était
+arrêté ; une sourate déjà alignée en entier est sautée) :
+
+```
+.venv\Scripts\python -m outil.passe aligne-badr https://server10.mp3quran.net/bader/Rewayat-Hafs-A-n-Assem/ --sourates 1-114 --nom "Badr at-Turki"
+```
+
+## Sur un GPU gratuit (Kaggle)
+
+Un Coran entier demande 25 à 45 heures sur un portable, une à deux sur un GPU.
+Kaggle en prête un gratuitement (environ 30 h par semaine, douze heures par
+calcul, qui tourne sans navigateur ouvert). Une fois pour toutes, le titulaire
+du compte vérifie son téléphone dans les réglages de Kaggle (sans quoi ni GPU ni
+Internet) et connecte l'outil : `.venv\Scripts\kaggle auth login`. Ensuite :
+
+```
+.venv\Scripts\python -m outil.kaggle preparer aligne-badr https://server10.mp3quran.net/bader/Rewayat-Hafs-A-n-Assem/ --nom "Badr at-Turki"
+.venv\Scripts\python -m outil.kaggle lancer aligne-badr
+.venv\Scripts\python -m outil.kaggle etat aligne-badr
+.venv\Scripts\python -m outil.kaggle recuperer aligne-badr
+```
+
+Le serveur clone ce dépôt **au commit courant** : `preparer` refuse de
+continuer si `outil/` a des modifications non poussées. La passe s'arrête
+d'elle-même après `--budget-h` heures (10,5 par défaut) pour que Kaggle ait le
+temps de sauver ce qui est fait ; relancer reprend à la sourate suivante.
+
 ## Ce qui est versionné
 
 Le code, les tables **alignées** ici (`donnees/aligne-*`), les fiches de toutes

@@ -44,6 +44,42 @@
       "ouverture": [
         "basmala"
       ]
+    },
+    "112": {
+      "versets": [
+        1,
+        4
+      ],
+      "audio_s": 16.8,
+      "calcul_s": 56.7,
+      "emissions_s": 56.4,
+      "ouverture": [
+        "basmala"
+      ]
+    },
+    "113": {
+      "versets": [
+        1,
+        5
+      ],
+      "audio_s": 26.1,
+      "calcul_s": 25.9,
+      "emissions_s": 25.3,
+      "ouverture": [
+        "basmala"
+      ]
+    },
+    "114": {
+      "versets": [
+        1,
+        6
+      ],
+      "audio_s": 35.5,
+      "calcul_s": 33.4,
+      "emissions_s": 32.7,
+      "ouverture": [
+        "basmala"
+      ]
     }
   },
   "vitesse": {
@@ -58,6 +94,18 @@
     "078": {
       "audio_s": 215.9,
       "calcul_s": 355
+    },
+    "112": {
+      "audio_s": 16.8,
+      "calcul_s": 56.7
+    },
+    "113": {
+      "audio_s": 26.1,
+      "calcul_s": 25.9
+    },
+    "114": {
+      "audio_s": 35.5,
+      "calcul_s": 33.4
     }
   }
 }

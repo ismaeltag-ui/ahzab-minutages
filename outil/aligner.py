@@ -23,6 +23,8 @@ passe comme une courte.
 from __future__ import annotations
 
 import hashlib
+import os
+import shutil
 import subprocess
 import sys
 import time
@@ -44,8 +46,18 @@ NEG = -1e30
 
 # --- Audio ------------------------------------------------------------------
 
+def ffmpeg() -> str:
+    """ffmpeg du système, sinon celui qu'embarque `imageio-ffmpeg` (serveurs de calcul)."""
+    trouve = os.environ.get("AHZAB_FFMPEG") or shutil.which("ffmpeg")
+    if trouve:
+        return trouve
+    import imageio_ffmpeg
+
+    return imageio_ffmpeg.get_ffmpeg_exe()
+
+
 def charger_audio(source: str | Path, debut: float = 0.0, duree: float | None = None) -> np.ndarray:
-    cmd = ["ffmpeg", "-v", "error", "-ss", f"{debut}"]
+    cmd = [ffmpeg(), "-v", "error", "-ss", f"{debut}"]
     if duree:
         cmd += ["-t", f"{duree}"]
     cmd += ["-i", str(source), "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"]
@@ -64,17 +76,23 @@ def energie_db(audio: np.ndarray, pas: int = 160) -> np.ndarray:
 _modele = None
 
 
-def modele(fils: int = 4):
+def modele():
+    """Le modèle, sur le GPU s'il y en a un. Toujours en float32 : ce sont les
+    réglages que l'écoute du 2026-09-25 a validés."""
     global _modele
     if _modele is None:
         import torch
         from transformers import AutoFeatureExtractor
         from quran_muaalem.modeling.modeling_multi_level_ctc import Wav2Vec2BertForMultilevelCTC
 
-        torch.set_num_threads(fils)  # laisser respirer la machine
-        m = Wav2Vec2BertForMultilevelCTC.from_pretrained(MODELE, dtype=torch.float32)
+        # sur un portable, laisser respirer la machine ; sur un serveur, AHZAB_FILS=0
+        fils = int(os.environ.get("AHZAB_FILS", "4"))
+        if fils > 0:
+            torch.set_num_threads(fils)
+        appareil = "cuda" if torch.cuda.is_available() else "cpu"
+        m = Wav2Vec2BertForMultilevelCTC.from_pretrained(MODELE, dtype=torch.float32).to(appareil)
         m.eval()
-        _modele = (m, AutoFeatureExtractor.from_pretrained(MODELE))
+        _modele = (m, AutoFeatureExtractor.from_pretrained(MODELE), appareil)
     return _modele
 
 
@@ -96,11 +114,11 @@ def emissions(audio: np.ndarray, cle: str, fenetre: float = 20.0, marge: float =
         if f.exists():
             morceau = np.load(f).astype(np.float32)
         else:
-            m, fe = modele()
+            m, fe, appareil = modele()
             with torch.no_grad():
-                x = fe(audio[a:b], sampling_rate=SR, return_tensors="pt")
+                x = {k: v.to(appareil) for k, v in fe(audio[a:b], sampling_rate=SR, return_tensors="pt").items()}
                 sortie_m = m(**x, return_dict=False)[0]["phonemes"][0]
-                lp = torch.log_softmax(sortie_m.float(), dim=-1).numpy()
+                lp = torch.log_softmax(sortie_m.float(), dim=-1).cpu().numpy()
             decal = round((debut - a) / SR / TRAME)
             morceau = lp[decal: decal + (t1 - t0)]
             np.save(f, morceau.astype(np.float16))
@@ -513,7 +531,8 @@ def aligner_sourate(rec: str, source: str, s: int, audio_url: str | None = None,
         scores.setdefault(u.verset, []).append(m.score)
     vbornes = {a: tuple(e) for a, e in etendue.items()}
     mots = [m for k, m in enumerate(occ) if derniere[(m.unite, m.mot)] == k]
-    table = table_sourate(audio_url or str(source), None, comptes("hafs")[s], vbornes, par_verset)
+    octets = Path(source).stat().st_size if jusqua is None and Path(source).is_file() else None
+    table = table_sourate(audio_url or str(source), octets, comptes("hafs")[s], vbornes, par_verset)
     table["ouverture"] = ouverture
     table["ouverture_dite"] = list(prefixe)
     table["lies"] = {str(u.verset): u.lies for u in unites if u.genre == "verset" and u.lies}
