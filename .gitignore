@@ -7,6 +7,7 @@ __pycache__/
 # Tables publiées par des tiers : régénérées par les commandes du LISEZMOI.
 donnees/*/[0-9][0-9][0-9].json
 !donnees/aligne-*/[0-9][0-9][0-9].json
+!donnees/reporte-*/[0-9][0-9][0-9].json
 donnees/*/verification.json
 # … sauf les tables que l'application lit (outil/publier.py), CC BY 4.0, attribution
 # à Wider Community (Quranic Universal Audio) : voir LISEZMOI, « Sources et attributions ».

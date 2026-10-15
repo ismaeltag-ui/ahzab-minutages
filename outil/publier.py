@@ -73,6 +73,13 @@ APPLICATION = {
     "qua-muammar_zainal_al_sukaini_way2quran": "Muammar Al-Sukaini [7, 43, 48, 76, 77]",
     "qua-walid_atef_way2quran": "Walid Atef [2]",
     "qua-fatih_seferagic_way2quran": "Fatih Seferagic [1]",
+    # Hafs, voix qui quittent everyayah (aucune licence commerciale) pour la même
+    # prise chez mp3quran : chaque fichier au verset retrouvé dans le fichier de
+    # sourate (`outil.reporter`, niveau « reporté »).
+    "reporte-fares-abbad": "Fares Abbad",
+    "reporte-neana": "Ahmed Neana",
+    "reporte-suesy": "As-Suesy",
+    "reporte-ajamy": "Al-Ajamy",
 }
 
 

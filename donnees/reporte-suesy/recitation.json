@@ -1,0 +1,18 @@
+{
+  "recitation": "reporte-suesy",
+  "nom": "Ali Hajjaj As-Suesy",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "source": {
+    "audio": "mp3quran.net, https://cdn.mp3quran.net/audio/ali-souissi/r1/ (lecture 77)",
+    "reference": "fichiers au verset de la même prise, https://everyayah.com/data/Ali_Hajjaj_AlSuesy_128kbps/"
+  },
+  "niveau": "reporte",
+  "production": "chaque fichier au verset retrouvé dans le fichier de sourate par corrélation de la forme d'onde (2 kHz, affinée à 8 kHz) ; bornes = coupes de l'éditeur, début + 30 ms et fin − 150 ms (marges que l'application ajoute)",
+  "examen": {},
+  "voisins": {},
+  "couverture": {
+    "versets": 6236,
+    "versets_avec_mots": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "recitation": "reporte-fares-abbad",
+  "nom": "Fares Abbad",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "source": {
+    "audio": "mp3quran.net, https://cdn.mp3quran.net/audio/fares-abbad/r1/ (lecture 81)",
+    "reference": "fichiers au verset de la même prise, https://everyayah.com/data/Fares_Abbad_64kbps/"
+  },
+  "niveau": "reporte",
+  "production": "chaque fichier au verset retrouvé dans le fichier de sourate par corrélation de la forme d'onde (2 kHz, affinée à 8 kHz) ; bornes = coupes de l'éditeur, début + 30 ms et fin − 150 ms (marges que l'application ajoute)",
+  "examen": {
+    "7:7": "voisins",
+    "13:43": "même prise (enveloppe 0.98)",
+    "20:135": "même prise (enveloppe 0.94)",
+    "75:40": "voisins",
+    "101:6": "même prise (enveloppe 0.99)"
+  },
+  "voisins": {
+    "7:7": "everyayah 007007.mp3 est identique à l'octet à 007008.mp3 (le verset 8) ; entre les coupes de 6 et de 8 : فَلَنَقُصَّنَّ عَلَيْهِم بِعِلْمٍ وَمَا كُنَّا غَائِبِينَ",
+    "75:40": "everyayah 075040.mp3 dit la basmala ; après la coupe de 39, jusqu'à la fin du fichier : أَلَيْسَ ذَٰلِكَ بِقَادِرٍ عَلَىٰ أَن يُحْيِيَ الْمَوْتَىٰ"
+  },
+  "couverture": {
+    "versets": 6236,
+    "versets_avec_mots": 0
+  }
+}

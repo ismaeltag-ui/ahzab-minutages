@@ -15,9 +15,20 @@ Chaque table dit d'où elle vient (`donnees/<récitation>/recitation.json`, cham
 
 1. **publié** — un tiers a minuté ce fichier et le publie : Quranic Universal
    Audio, QUL (Tarteel), mp3quran. On le récolte tel quel.
-2. **reporté** — (à venir) une table publiée pour les fichiers de versets,
-   reportée dans le fichier de sourate de la même prise par corrélation de la
-   forme d'onde.
+2. **reporté** — les fichiers au verset d'une prise (everyayah), retrouvés un
+   à un dans le fichier de sourate de la même prise (mp3quran) par corrélation
+   de la forme d'onde (`outil.reporter`). Les bornes sont **les coupes de
+   l'éditeur** des fichiers au verset : ce qu'il avait retiré (une reprise de
+   l'imam, un passage copié deux fois dans le fichier de sourate) reste hors
+   des versets, et la table le signale (`sauts`) pour que la lecture d'un
+   trait le saute. Un verset qu'on ne retrouve pas n'est admis que si sa prise
+   se reconnaît encore à l'enveloppe d'énergie au même endroit, ou si le
+   fichier au verset est faux (en double, autre verset, vide) et que la place
+   entre ses voisins a été vérifiée en lisant ses phonèmes (`VOISINS`) ; quand
+   aucun fichier ne donne la coupe (un fichier qui dit deux versets), ses bornes
+   sont posées au creux d'un silence et vérifiées de même (`COUPES`). Sinon la
+   table n'est pas écrite. Les fichiers de sourate se décodent par ffmpeg :
+   libsndfile (mpg123) jette les trames abîmées, et tout ce qui suit glisse.
 3. **aligné** — ce que personne ne publie, produit ici par alignement forcé :
    le modèle `obadx/muaalem-model-v3_2` reconnaît les phonèmes, et l'on cherche
    le chemin qui dit tout le texte, dans l'ordre. Aucune borne n'est tirée d'un
@@ -43,7 +54,9 @@ Un fichier par sourate, `donnees/<récitation>/<sss>.json` :
 Temps en millisecondes. `versets[a-1]` = [début, fin] du verset `a` ; `mots[a-1]`
 = les [début, fin] de ses mots, à plat, `-1, -1` pour un mot absent. Les tables
 alignées ajoutent `lies` (mots qui se prononcent d'un bloc : idghām, iqlāb),
-`reprises` et `confiance` (log-probabilité moyenne par verset).
+`reprises` et `confiance` (log-probabilité moyenne par verset). Les tables
+reportées peuvent porter `sauts` : les versets après lesquels le fichier
+contient autre chose que le verset suivant (voir le niveau « reporté »).
 
 ## Les commandes
 
@@ -71,6 +84,16 @@ py -m outil.verifier tout      # bornes croissantes, mots manquants, chevaucheme
 py -m outil.duree auditer      # la table décrit-elle le fichier servi aujourd'hui ?
 py -m outil.comparer           # deux sources sur le même fichier : leur écart
 py -m outil.mesurer aligne-humaid qua-ahmed_talib_bin_humaid_mp3quran 1 18 --detail
+```
+
+Reporter les fichiers au verset d'une prise dans ses fichiers de sourate
+(voix inscrites dans `VOIX`, `outil/reporter.py`) :
+
+```
+.venv\Scripts\python -m outil.reporter relever fares-abbad     # coupes brutes (cache)
+.venv\Scripts\python -m outil.reporter bilan fares-abbad       # scores, désordre, reprises, examen
+.venv\Scripts\python -m outil.reporter ecrire fares-abbad      # donnees/reporte-fares-abbad/
+.venv\Scripts\python -m outil.reporter controler fares-abbad   # chaque verset comme l'application le jouera
 ```
 
 Ajouter une voix que personne ne minute (alignement ; environ 1,7 fois la durée

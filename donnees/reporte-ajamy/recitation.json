@@ -1,0 +1,67 @@
+{
+  "recitation": "reporte-ajamy",
+  "nom": "Ahmed Al-Ajamy",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "source": {
+    "audio": "mp3quran.net, https://cdn.mp3quran.net/audio/ahmad-ajmi/r1/ (lecture 5)",
+    "reference": "fichiers au verset de la même prise, https://everyayah.com/data/ahmed_ibn_ali_al_ajamy_128kbps/"
+  },
+  "niveau": "reporte",
+  "production": "chaque fichier au verset retrouvé dans le fichier de sourate par corrélation de la forme d'onde (2 kHz, affinée à 8 kHz) ; bornes = coupes de l'éditeur, début + 30 ms et fin − 150 ms (marges que l'application ajoute)",
+  "examen": {
+    "2:86": "même prise (enveloppe 0.97)",
+    "2:142": "même prise (enveloppe 0.97)",
+    "2:205": "même prise (enveloppe 0.98)",
+    "2:258": "même prise (enveloppe 0.98)",
+    "6:30": "même prise (enveloppe 1.00)",
+    "6:89": "même prise (enveloppe 0.99)",
+    "6:94": "même prise (enveloppe 0.97)",
+    "6:106": "même prise (enveloppe 0.99)",
+    "6:125": "même prise (enveloppe 0.98)",
+    "6:130": "même prise (enveloppe 0.99)",
+    "6:132": "même prise (enveloppe 0.97)",
+    "6:135": "même prise (enveloppe 0.98)",
+    "13:37": "même prise (enveloppe 0.99)",
+    "18:32": "même prise (enveloppe 0.98)",
+    "18:41": "même prise (enveloppe 0.99)",
+    "19:30": "même prise (enveloppe 0.99)",
+    "22:75": "même prise (enveloppe 0.98)",
+    "24:6": "même prise (enveloppe 0.99)",
+    "24:7": "même prise (enveloppe 1.00)",
+    "24:8": "même prise (enveloppe 0.99)",
+    "24:13": "même prise (enveloppe 1.00)",
+    "24:15": "même prise (enveloppe 0.98)",
+    "25:29": "même prise (enveloppe 0.98)",
+    "25:42": "même prise (enveloppe 0.98)",
+    "29:29": "voisins",
+    "33:50": "voisins",
+    "34:29": "voisins",
+    "34:38": "même prise (enveloppe 0.96)",
+    "37:20": "voisins",
+    "38:70": "même prise (enveloppe 0.98)",
+    "40:1": "même prise (enveloppe 0.99)",
+    "55:78": "même prise (enveloppe 0.99)",
+    "74:6": "même prise (enveloppe 0.95)",
+    "74:40": "coupe fixée"
+  },
+  "voisins": {
+    "29:29": "everyayah 029029.mp3 n'a pas de son ; entre les coupes de 28 et de 30 (l'imam y redit « إِلَّا أَن قَالُوا ائْتِنَا بِعَذَابِ اللَّهِ ») : أَئِنَّكُمْ لَتَأْتُونَ الرِّجَالَ … إِن كُنتَ مِنَ الصَّادِقِينَ",
+    "33:50": "everyayah 033050.mp3 n'a pas de son ; entre les coupes de 49 et de 51 (l'imam y redit plusieurs passages) : يَا أَيُّهَا النَّبِيُّ إِنَّا أَحْلَلْنَا لَكَ أَزْوَاجَكَ … وَكَانَ اللَّهُ غَفُورًا رَّحِيمًا",
+    "34:29": "everyayah 034029.mp3 n'a pas de son ; entre les coupes de 28 et de 30 : وَيَقُولُونَ مَتَىٰ هَٰذَا الْوَعْدُ إِن كُنتُمْ صَادِقِينَ",
+    "37:20": "everyayah 037020.mp3 n'a pas de son ; entre les coupes de 19 et de 21 : وَقَالُوا يَا وَيْلَنَا هَٰذَا يَوْمُ الدِّينِ"
+  },
+  "coupes": {
+    "74:40": {
+      "coupe": [
+        268042,
+        275487
+      ],
+      "raison": "everyayah 074040.mp3 n'a pas de son, et l'imam dit le verset deux fois entre les coupes de 39 et de 41 : la première, jusqu'au creux d'énergie (-39 dB) qui les sépare : فِي جَنَّاتٍ يَتَسَاءَلُونَ ; la reprise reste hors du verset"
+    }
+  },
+  "couverture": {
+    "versets": 6236,
+    "versets_avec_mots": 0
+  }
+}

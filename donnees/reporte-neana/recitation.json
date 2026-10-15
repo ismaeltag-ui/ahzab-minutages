@@ -1,0 +1,51 @@
+{
+  "recitation": "reporte-neana",
+  "nom": "Ahmed Neana",
+  "riwaya": "hafs",
+  "comptage": "kufi",
+  "source": {
+    "audio": "mp3quran.net, https://cdn.mp3quran.net/audio/ahmad-naina/r1/ (lecture 9)",
+    "reference": "fichiers au verset de la même prise, https://everyayah.com/data/Ahmed_Neana_128kbps/"
+  },
+  "niveau": "reporte",
+  "production": "chaque fichier au verset retrouvé dans le fichier de sourate par corrélation de la forme d'onde (2 kHz, affinée à 8 kHz) ; bornes = coupes de l'éditeur, début + 30 ms et fin − 150 ms (marges que l'application ajoute)",
+  "examen": {
+    "3:80": "voisins",
+    "4:24": "voisins",
+    "18:61": "coupe fixée",
+    "18:62": "coupe fixée",
+    "18:63": "coupe fixée",
+    "31:1": "même prise (enveloppe 0.99)"
+  },
+  "voisins": {
+    "3:80": "everyayah 003080.mp3 : la seconde moitié est la même prise (0,99), la première moins (0,72), et le fichier déborde de 1,3 s sur la coupe de 81 ; entre les coupes de 79 et de 81 : وَلَا يَأْمُرَكُمْ أَن تَتَّخِذُوا الْمَلَائِكَةَ … بَعْدَ إِذْ أَنتُم مُّسْلِمُونَ",
+    "4:24": "everyayah 004024.mp3 : la seconde moitié est la même prise (1,00), la première moins (0,82) ; entre les coupes de 23 et de 25 : وَالْمُحْصَنَاتُ مِنَ النِّسَاءِ … إِنَّ اللَّهَ كَانَ عَلِيمًا حَكِيمًا"
+  },
+  "coupes": {
+    "18:61": {
+      "coupe": [
+        1319105,
+        1333155
+      ],
+      "raison": "everyayah 018061.mp3 dit les versets 61 et 62 : sa coupe, jusqu'au milieu du silence 1332445-1333865 ms : فَلَمَّا بَلَغَا مَجْمَعَ بَيْنِهِمَا نَسِيَا حُوتَهُمَا فَاتَّخَذَ سَبِيلَهُ فِي الْبَحْرِ سَرَبًا"
+    },
+    "18:62": {
+      "coupe": [
+        1333155,
+        1348754
+      ],
+      "raison": "la suite de la coupe de 018061.mp3 : فَلَمَّا جَاوَزَا قَالَ لِفَتَاهُ آتِنَا غَدَاءَنَا لَقَدْ لَقِينَا مِن سَفَرِنَا هَٰذَا نَصَبًا"
+    },
+    "18:63": {
+      "coupe": [
+        1348754,
+        1372630
+      ],
+      "raison": "everyayah 018062.mp3 dit le verset 63, et 018063.mp3 n'a que 0,26 s de son : la coupe de 018062.mp3 : قَالَ أَرَأَيْتَ إِذْ أَوَيْنَا إِلَى الصَّخْرَةِ … وَاتَّخَذَ سَبِيلَهُ فِي الْبَحْرِ عَجَبًا"
+    }
+  },
+  "couverture": {
+    "versets": 6236,
+    "versets_avec_mots": 0
+  }
+}
