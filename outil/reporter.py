@@ -66,6 +66,9 @@ VOIX = {
 PAS_ENV = 40  # 5 ms à 8 kHz
 NET = {"onde": 0.85, "enveloppe": 0.80}  # au-dessus : trouvé sans ambiguïté
 
+# Fichiers d'everyayah que mpg123 raccourcit (trames abîmées jetées) : décodés par ffmpeg.
+EA_FFMPEG = {"Ghamadi_40kbps"}
+
 
 # --- Audio ------------------------------------------------------------------
 
@@ -98,8 +101,12 @@ def decoder(f: Path) -> np.ndarray:
     Les fichiers de sourate passent par ffmpeg : mpg123 jette les trames abîmées
     (« dequantization failed ») et tout ce qui suit se retrouve avancé — 3,3 s à la
     fin de la sourate 3 d'Al-Ajamy. ffmpeg les garde, et sa durée est celle que
-    suppose la table de mp3quran (`controles-m389/longueurs.py`)."""
-    if ICI / "sourates" in f.parents:
+    suppose la table de mp3quran (`controles-m389/longueurs.py`).
+
+    Les fichiers au verset des dossiers de `EA_FFMPEG` aussi : chez Al-Ghamadi
+    (40 kb/s), mpg123 en raccourcit 2 869 sur 6 236, de 20 à 190 ms
+    (`controles-m389/durees_locales.py`)."""
+    if ICI / "sourates" in f.parents or f.parent.name in EA_FFMPEG:
         cmd = [ffmpeg(), "-v", "error", "-i", str(f), "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"]
         return np.frombuffer(subprocess.run(cmd, capture_output=True, check=True).stdout, dtype=np.float32)
     try:
@@ -278,6 +285,19 @@ VOISINS: dict[str, dict[tuple[int, int], str]] = {
                  "(0,82) ; entre les coupes de 23 et de 25 : وَالْمُحْصَنَاتُ مِنَ النِّسَاءِ … إِنَّ اللَّهَ "
                  "كَانَ عَلِيمًا حَكِيمًا",
     },
+    "ghamadi": {
+        (16, 120): "everyayah 016120.mp3 : la seconde moitié est la même prise (0,99), la première moins "
+                   "(0,51) — une pause intérieure raccourcie ; entre les coupes de 119 et de 121 : إِنَّ "
+                   "إِبْرَاهِيمَ كَانَ أُمَّةً قَانِتًا لِّلَّهِ حَنِيفًا وَلَمْ يَكُ مِنَ الْمُشْرِكِينَ",
+        (17, 69): "everyayah 017069.mp3 : chaque moitié est la même prise (0,92 et 0,98), le verset entier "
+                  "non (0,50) — une pause intérieure raccourcie ; entre les coupes de 68 et de 70 (l'imam y "
+                  "redit « ثُمَّ لَا تَجِدُوا ») : أَمْ أَمِنتُمْ أَن يُعِيدَكُمْ فِيهِ تَارَةً أُخْرَىٰ … "
+                  "ثُمَّ لَا تَجِدُوا لَكُمْ عَلَيْنَا بِهِ تَبِيعًا",
+        (22, 18): "everyayah 022018.mp3 : chaque moitié est la même prise (0,92 et 0,94), le verset entier "
+                  "moins (0,82) — le bruit du codec à 40 kbit/s ; entre les coupes de 17 et de 19 (l'imam y "
+                  "redit plusieurs passages) : أَلَمْ تَرَ أَنَّ اللَّهَ يَسْجُدُ لَهُ … إِنَّ اللَّهَ يَفْعَلُ "
+                  "مَا يَشَاءُ",
+    },
 }
 
 # Versets dont aucun fichier d'everyayah ne donne la coupe (un fichier qui dit deux
@@ -303,9 +323,53 @@ COUPES: dict[str, dict[tuple[int, int], tuple[tuple[int, int], str]]] = {
 }
 
 
+# Deux fichiers d'everyayah qui se recouvrent de plus que la lecture d'un trait
+# n'enjambe (330 ms) : chez Al-Ghamadi, le fichier de l'un porte, fondue dans sa
+# traîne ou sa tête, une seconde du silence et de la voix du voisin. Les deux voix
+# ne s'y touchent pas : la coupe est posée au milieu du silence qui les sépare
+# (`controles-m389/jonctions.py`), et chaque morceau, lu aux phonèmes, est son
+# verset et lui seul. (sourate, verset) → (coupe en ms entre lui et le suivant, raison).
+JONCTIONS: dict[str, dict[tuple[int, int], tuple[int, str]]] = {
+    "ghamadi": {
+        (2, 25): (422605, "les fichiers de 25 et 26 se recouvrent de 1 358 ms ; silence 422350-422860 ms "
+                          "(−60 dB) ; lus : 0,99 et 1,00"),
+        (2, 74): (1414505, "recouvrement de 679 ms ; silence 1414400-1414610 ms (−51 dB) ; lus : 0,99 et 0,85 "
+                           "(l'imam redit « وَقَدْ كَانَ فَرِيقٌ مِّنْهُمْ يَسْمَعُونَ كَلَامَ اللَّهِ » dans 75)"),
+        (2, 141): (2931142, "recouvrement de 2 188 ms ; silence 2930800-2931485 ms (−52 dB) ; lus : 0,98 et 0,99"),
+        (3, 152): (2926612, "recouvrement de 366 ms ; silence 2926510-2926715 ms (−49 dB) ; lus : 0,99 et 0,88 "
+                            "(l'imam redit « وَالرَّسُولُ يَدْعُوكُمْ فِي أُخْرَاكُمْ » et « لِّكَيْلَا تَحْزَنُوا » "
+                            "dans 153)"),
+        (10, 70): (1424468, "recouvrement de 548 ms ; silence 1424245-1424690 ms (−50 dB) ; lus : 0,85 et 0,96 "
+                            "(l'imam redit « ثُمَّ نُذِيقُهُمُ الْعَذَابَ الشَّدِيدَ » dans 70)"),
+        (10, 89): (1753922, "recouvrement de 339 ms ; silence 1753735-1754110 ms (−49 dB) ; lus : 0,99 et 0,99"),
+        (16, 50): (722408, "recouvrement de 365 ms ; silence 721965-722850 ms (−60 dB) ; lus : 1,00 et 0,99"),
+    },
+}
+
+# Jour entre deux fichiers d'everyayah en deçà duquel un verset reconnu à son
+# enveloppe est tenu pour accolé au précédent (`examiner`) : 100 ms, plus là où
+# chaque jour jusqu'à 2 s a été lu aux phonèmes et ne contient rien
+# (`controles-m389/jonctions.py --phonemes`).
+JOUR_ACCOLE: dict[str, int] = {"ghamadi": 2000}  # 91 jours de 100 ms à 2 s, tous vides aux phonèmes
+
+# Versets qu'everyayah a tirés d'un autre fichier de sourate que le leur : la
+# basmala d'al-Fâtiha (1:1), que le fichier d'al-Fâtiha de mp3quran ne contient
+# pas dans cette prise. Absents de la table ; l'application les lit dans ce fichier,
+# à ces bornes (`lib/recitationAudio.ts`). (sourate, verset) → (audio, fenêtre en ms, raison).
+AILLEURS: dict[str, dict[tuple[int, int], tuple[str, tuple[int, int], str]]] = {
+    "ghamadi": {
+        (1, 1): ("https://cdn.mp3quran.net/audio/saad-ghamdi/r1/004.mp3", (3937, 9000),
+                 "001.mp3 s'ouvre sur l'isti'adha et une autre basmala (0,05 avec 001001.mp3) ; 001001.mp3 "
+                 "est la basmala qui ouvre an-Nisâ', retrouvée dans 004.mp3 à 3 937 ms (0,96) : la voix "
+                 "attaque à 3 940 ms et se tait vers 8 750, يَا أَيُّهَا النَّاسُ attaque à 9 200 ; la fenêtre "
+                 "s'arrête au milieu de ce silence. Lu aux phonèmes : بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ"),
+    },
+}
+
+
 def hors_reference(voix: str) -> set[tuple[int, int]]:
     """Les versets qu'on ne peut pas comparer à leur fichier d'everyayah."""
-    return set(VOISINS.get(voix, {})) | set(COUPES.get(voix, {}))
+    return set(VOISINS.get(voix, {})) | set(COUPES.get(voix, {})) | set(AILLEURS.get(voix, {}))
 
 
 ENVELOPPE_MEME_PRISE = 0.90  # en mode onde, un verset retraité (fondu de fin…) se reconnaît encore là
@@ -344,6 +408,8 @@ def examiner(voix: str) -> dict[str, str]:
                 verdicts[cle] = "voisins"
             elif (s, v["a"]) in COUPES.get(voix, {}):
                 verdicts[cle] = "coupe fixée"
+            elif (s, v["a"]) in AILLEURS.get(voix, {}):
+                verdicts[cle] = "ailleurs"
             elif v.get("vide"):
                 verdicts[cle] = "douteux (fichier d'everyayah sans son)"
             elif doublon:
@@ -356,9 +422,11 @@ def examiner(voix: str) -> dict[str, str]:
                     continue
                 so = decoder(telecharger(r["audio"])[0]) if so is None else so
                 env = _env_au_meme_endroit(voix, s, v, so)
-                # accolé au précédent : au plus 100 ms de jour, ou un recouvrement que la
-                # lecture d'un trait enjambe sans reculer (`controler`)
-                accole = k == 0 or -330 <= v["coupe"][0] - vs[k - 1]["coupe"][1] <= 100
+                # accolé au précédent : au plus 100 ms de jour (ou `JOUR_ACCOLE`), un
+                # recouvrement que la lecture d'un trait enjambe sans reculer (`controler`),
+                # ou une jonction posée dans le silence (`JONCTIONS`)
+                accole = (k == 0 or -330 <= v["coupe"][0] - vs[k - 1]["coupe"][1] <= JOUR_ACCOLE.get(voix, 100)
+                          or (s, vs[k - 1]["a"]) in JONCTIONS.get(voix, {}))
                 verdicts[cle] = (f"même prise (enveloppe {env:.2f})" if env >= ENVELOPPE_MEME_PRISE and accole
                                  else f"douteux (onde {v['score']:.2f}, enveloppe {env:.2f})")
             else:
@@ -370,7 +438,8 @@ def examiner(voix: str) -> dict[str, str]:
 # --- Tables -----------------------------------------------------------------
 
 def bornes(r: dict, voisins: set[int] = frozenset(),
-           fixees: dict[int, tuple[int, int]] | None = None) -> list[tuple[int, int]]:
+           fixees: dict[int, tuple[int, int]] | None = None,
+           jonctions: dict[int, int] | None = None) -> list[tuple[int, int]]:
     """Les bornes écrites dans la table, pour qu'un verset joué seul soit **exactement
     le fichier d'everyayah**.
 
@@ -383,7 +452,9 @@ def bornes(r: dict, voisins: set[int] = frozenset(),
     suivant et la joue, comme le fichier.
 
     `voisins` : les versets (numéros) dont la coupe est celle de leurs voisins ;
-    `fixees` : ceux dont la coupe est posée à la main (`COUPES`).
+    `fixees` : ceux dont la coupe est posée à la main (`COUPES`) ;
+    `jonctions` : verset → coupe entre lui et le suivant (`JONCTIONS`), qui
+    remplace la fin de l'un et le début de l'autre.
     """
     vs = r["versets"]
     out = []
@@ -397,6 +468,10 @@ def bornes(r: dict, voisins: set[int] = frozenset(),
             v0 = c0 + 30
         else:
             (c0, c1), v0 = v["coupe"], v["voix"][0]
+        if jonctions and v["a"] in jonctions:
+            c1 = jonctions[v["a"]]
+        if jonctions and v["a"] - 1 in jonctions:
+            c0 = jonctions[v["a"] - 1]
         c0 = max(0, c0)
         c1 = min(c1, r["duree"])  # le fichier d'everyayah peut finir sur un silence de plus
         debut = max(c0, min(c0 + 30, v0))
@@ -417,12 +492,15 @@ def ecrire(voix: str) -> None:
     for s in range(1, 115):
         r = lire_json(ICI / "brut" / voix / f"{s:03d}.json")
         b = bornes(r, {int(c.split(":")[1]) for c, x in verdicts.items() if x == "voisins" and int(c.split(":")[0]) == s},
-                   {a: c for (s2, a), (c, _) in COUPES.get(voix, {}).items() if s2 == s})
+                   {a: c for (s2, a), (c, _) in COUPES.get(voix, {}).items() if s2 == s},
+                   {a: c for (s2, a), (c, _) in JONCTIONS.get(voix, {}).items() if s2 == s})
         n = comptes("hafs")[s]
-        t = table_sourate(r["audio"], r["octets"], n, {a: x for a, x in enumerate(b, start=1)}, {})
-        c0 = max(0, r["versets"][0]["coupe"][0])
+        ailleurs = {a for (s2, a) in AILLEURS.get(voix, {}) if s2 == s}  # absents de la table (`AILLEURS`)
+        t = table_sourate(r["audio"], r["octets"], n, {a: x for a, x in enumerate(b, start=1) if a not in ailleurs}, {})
+        p = next(k for k in range(len(b)) if k + 1 not in ailleurs)  # le premier verset de la table
+        c0 = max(0, r["versets"][p]["coupe"][0])
         t["ouverture"] = [0, c0] if c0 > 0 else None  # ce qui précède le premier fichier d'everyayah
-        sauts = sauts_de(r, b)
+        sauts = [x for x in sauts_de(r, b) if x not in ailleurs and x + 1 not in ailleurs]
         if sauts:
             t["sauts"] = sauts
         ecrire_sourate(rec, s, t)
@@ -446,6 +524,10 @@ def ecrire(voix: str) -> None:
         "voisins": {f"{s}:{a}": x for (s, a), x in VOISINS.get(voix, {}).items()},
         **({"coupes": {f"{s}:{a}": {"coupe": list(c), "raison": x} for (s, a), (c, x) in COUPES[voix].items()}}
            if voix in COUPES else {}),
+        **({"jonctions": {f"{s}:{a}-{a + 1}": {"coupe": c, "raison": x} for (s, a), (c, x) in JONCTIONS[voix].items()}}
+           if voix in JONCTIONS else {}),
+        **({"ailleurs": {f"{s}:{a}": {"audio": u, "fenetre": list(c), "raison": x}
+                         for (s, a), (u, c, x) in AILLEURS[voix].items()}} if voix in AILLEURS else {}),
         "couverture": {"versets": 6236, "versets_avec_mots": 0},
     })
     print(f"{rec} : 114 sourates écrites", flush=True)
@@ -468,13 +550,19 @@ def fenetres_app(versets: list, ouverture, sauts=()) -> tuple[list[tuple[int, in
     fin_ouv = ouverture[1] if ouverture else 0
     debuts = []
     for i, v in enumerate(versets):
-        prec = fin_ouv if i == 0 else versets[i - 1][1]
-        debuts.append(v[0] - min(30, max(0, v[0] - prec)))
+        if v is None:  # verset absent de la table (lu ailleurs, `AILLEURS`) : -1, comme l'application
+            debuts.append(-1)
+            continue
+        prec = fin_ouv if i == 0 else (versets[i - 1][1] if versets[i - 1] else None)
+        debuts.append(v[0] - min(30, max(0, 30 if prec is None else v[0] - prec)))
     spans = []
     for i, v in enumerate(versets):
+        if v is None:
+            spans.append((-1, -1))
+            continue
         suiv = debuts[i + 1] if i + 1 < len(versets) and (i + 1) not in sauts else -1
         spans.append((debuts[i], max(v[1], suiv) if suiv >= 0 else v[1] + 150))
-    fins = [min(v[1] + 150, spans[i][1]) for i, v in enumerate(versets)]
+    fins = [-1 if v is None else min(v[1] + 150, spans[i][1]) for i, v in enumerate(versets)]
     return spans, fins
 
 
@@ -493,7 +581,8 @@ def controler(voix: str) -> None:
     """
     rec = f"reporte-{voix}"
     voisins = {f"{s}:{a}" for s, a in hors_reference(voix)}
-    ecarts, decales, trous, recouvre, n, nsauts = [], [], [], [], 0, 0
+    jonctions = JONCTIONS.get(voix, {})
+    ecarts, decales, trous, recouvre, n, nsauts, joints = [], [], [], [], 0, 0, []
     for s in range(1, 115):
         t = lire_json(DONNEES / rec / f"{s:03d}.json")
         r = lire_json(ICI / "brut" / voix / f"{s:03d}.json")
@@ -504,22 +593,34 @@ def controler(voix: str) -> None:
             if f"{s}:{v['a']}" in voisins:
                 continue
             c0, c1 = max(0, v["coupe"][0]), min(v["coupe"][1], r["duree"])
+            # une jonction posée (`JONCTIONS`) remplace la coupe de l'éditeur de ce côté-là
+            pose = [x for x in ((s, v["a"]), (s, v["a"] - 1)) if x in jonctions]
+            if (s, v["a"]) in jonctions:
+                c1 = jonctions[(s, v["a"])][0]
+            if (s, v["a"] - 1) in jonctions:
+                c0 = jonctions[(s, v["a"] - 1)][0]
+            if pose:
+                joints.append(f"{s}:{v['a']} ({(v['coupe'][1] - v['coupe'][0] - (c1 - c0)) / 1000:.2f} s de moins)")
             w = r["versets"][i + 1] if i + 1 < len(r["versets"]) else None
             # le verset s'arrête où commence la fenêtre du suivant (son amorce de 30 ms comprise)
-            if (w and not w.get("vide") and f"{s}:{w['a']}" not in voisins and w["coupe"][0] < c1 - 1
+            if (not pose and w and not w.get("vide") and f"{s}:{w['a']}" not in voisins and w["coupe"][0] < c1 - 1
                     and w["coupe"][0] - 30 <= fv <= c1 and c1 - fv <= 150 and abs(d - c0) <= 30):
                 recouvre.append(f"{s}:{v['a']} ({w['coupe'][0] - c1:+d} ms)")
                 continue
             if abs(d - c0) > 30 or abs(fv - c1) > 60:
                 decales.append(f"{s}:{v['a']} ({d - c0:+d}/{fv - c1:+d} ms)")
             joue = fv - d
-            if abs(joue - v["duree_ea"]) > 120 and not (i == len(spans) - 1 and c1 < v["coupe"][1]):
-                ecarts.append(f"{s}:{v['a']} ({v['duree_ea'] / 1000:.2f} → {joue / 1000:.2f} s)")
+            attendu = v["duree_ea"]
+            if pose:  # le fichier d'everyayah moins ce qui dépasse la jonction
+                attendu = c1 - c0
+            if abs(joue - attendu) > 120 and not (i == len(spans) - 1 and c1 < v["coupe"][1]):
+                ecarts.append(f"{s}:{v['a']} ({attendu / 1000:.2f} → {joue / 1000:.2f} s)")
             if i + 1 < len(spans) and (i + 1) not in t.get("sauts", []) and not 0 <= f - spans[i + 1][0] <= 150:
                 trous.append(f"{s}:{v['a']} ({spans[i + 1][0] - f:+d} ms)")
     print(f"{rec} : {n} versets contrôlés, dont {len(voisins)} bornés par leurs voisins ou à la main (hors comparaison) ; "
           f"{nsauts} saut(s) à la lecture d'un trait")
     for titre, l in (("fichiers d'everyayah qui se recouvrent (le verset s'arrête où commence le suivant)", recouvre),
+                     ("versets bornés d'un côté par une jonction posée au milieu du silence (`JONCTIONS`)", joints),
                      ("joué seul, décalé de la coupe de l'éditeur (début/fin)", decales),
                      ("joué seul, durée différente du fichier d'everyayah (> 120 ms)", ecarts),
                      ("d'un trait, fenêtres qui ne se suivent pas", trous)):

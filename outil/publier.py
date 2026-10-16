@@ -80,6 +80,7 @@ APPLICATION = {
     "reporte-neana": "Ahmed Neana",
     "reporte-suesy": "As-Suesy",
     "reporte-ajamy": "Al-Ajamy",
+    "reporte-ghamadi": "Saad Al-Ghamadi (1:1 hors table, lu dans 004.mp3)",
 }
 
 
