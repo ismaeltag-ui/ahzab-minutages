@@ -34,7 +34,9 @@ Chaque table dit d'où elle vient (`donnees/<récitation>/recitation.json`, cham
    seconde sont coupés au milieu du silence qui sépare leurs voix, chaque
    morceau lu aux phonèmes (`JONCTIONS`) ; un verset que l'éditeur a pris dans
    une autre sourate reste hors de la table, et l'application le lit là où on
-   l'a retrouvé (`AILLEURS` : la basmala d'Al-Ghamadi, tirée d'an-Nisâ').
+   l'a retrouvé (`AILLEURS` : la basmala d'Al-Ghamadi, tirée d'an-Nisâ'). Celle
+   d'Al-Qahtani n'est nulle part chez mp3quran : il lit sa basmala d'al-Anfâl,
+   un autre enregistrement, au choix de l'utilisateur.
 3. **aligné** — ce que personne ne publie, produit ici par alignement forcé :
    le modèle `obadx/muaalem-model-v3_2` reconnaît les phonèmes, et l'on cherche
    le chemin qui dit tout le texte, dans l'ordre. Aucune borne n'est tirée d'un

@@ -298,6 +298,140 @@ VOISINS: dict[str, dict[tuple[int, int], str]] = {
                   "redit plusieurs passages) : أَلَمْ تَرَ أَنَّ اللَّهَ يَسْجُدُ لَهُ … إِنَّ اللَّهَ يَفْعَلُ "
                   "مَا يَشَاءُ",
     },
+    "qahtani": {
+        (5, 1): "premier verset : la fin de 005001.mp3 est la même prise (0,81), le début est "
+                "retouché (0,10) ; du début du fichier à la coupe de 2, lu aux phonèmes : 0,99 du "
+                "texte, sans basmala",
+        (6, 1): "premier verset : la fin de 006001.mp3 est la même prise (0,79), le début est "
+                "retouché (0,06) ; du début du fichier à la coupe de 2, lu aux phonèmes : 1,00 du "
+                "texte, sans basmala",
+        (7, 1): "premier verset : la fin de 007001.mp3 est la même prise (0,97), le début est "
+                "retouché (0,21) ; du début du fichier à la coupe de 2, lu aux phonèmes : 1,00 du "
+                "texte, sans basmala",
+        (10, 1): "premier verset : la fin de 010001.mp3 est la même prise (0,95), le début est "
+                 "retouché (0,19) ; du début du fichier à la coupe de 2, lu aux phonèmes : 1,00 du "
+                 "texte, sans basmala",
+        (12, 1): "premier verset : la fin de 012001.mp3 est la même prise (0,86), le début est "
+                 "retouché (0,17) ; du début du fichier à la coupe de 2, lu aux phonèmes : 1,00 du "
+                 "texte, sans basmala",
+        (19, 26): "everyayah 019026.mp3 est une autre prise (moitiés à 0,08 et 0,09) ; entre les "
+                  "coupes de 25 et de 27, lu aux phonèmes : 0,87 du texte (l'imam redit « فَقُولِي "
+                  "إِنِّي نَذَرْتُ لِلرَّحْمَٰنِ صَوْمًا »)",
+        (24, 64): "dernier verset : le début de 024064.mp3 est la même prise (0,98), la fin est "
+                  "retouchée (0,08) ; de la coupe de 63 à la fin du fichier, lu aux phonèmes : 0,92 "
+                  "du texte (l'imam redit « وَيَوْمَ يُرْجَعُونَ إِلَيْهِ », comme chez everyayah)",
+        (31, 34): "dernier verset : le début de 031034.mp3 est la même prise (0,99), la fin est "
+                  "retouchée (0,09) ; de la coupe de 33 à la fin du fichier, lu aux phonèmes : 0,98 "
+                  "du texte",
+        (32, 30): "dernier verset : le début de 032030.mp3 est la même prise (0,98), la fin est "
+                  "retouchée (0,29) ; de la coupe de 29 à la fin du fichier, lu aux phonèmes : 0,97 "
+                  "du texte",
+        (34, 1): "premier verset : la fin de 034001.mp3 est la même prise (0,97), le début est "
+                 "retouché (0,14) ; du début du fichier à la coupe de 2, lu aux phonèmes : 0,98 du "
+                 "texte, sans basmala",
+        (39, 75): "dernier verset : le début de 039075.mp3 est la même prise (0,92), la fin est "
+                  "retouchée (0,13) ; de la coupe de 74 à la fin du fichier, lu aux phonèmes : 1,00 "
+                  "du texte",
+        (48, 29): "dernier verset : le début de 048029.mp3 est la même prise (0,96), la fin est "
+                  "retouchée (0,13) ; de la coupe de 28 à la fin du fichier, lu aux phonèmes : 0,94 "
+                  "du texte (l'imam redit « مُّحَمَّدٌ رَّسُولُ اللَّهِ » et « فَاسْتَغْلَظَ », comme"
+                  " chez everyayah)",
+        (51, 60): "dernier verset : le début de 051060.mp3 est la même prise (1,00), la fin est "
+                  "retouchée (0,21) ; de la coupe de 59 à la fin du fichier, lu aux phonèmes : 1,00 "
+                  "du texte",
+        (53, 62): "dernier verset : le début de 053062.mp3 est la même prise (0,93), la fin est "
+                  "retouchée (0,40) ; de la coupe de 61 à la fin du fichier, lu aux phonèmes : 0,98 "
+                  "du texte",
+        (54, 55): "dernier verset : le début de 054055.mp3 est la même prise (0,99), la fin est "
+                  "retouchée (0,23) ; de la coupe de 54 à la fin du fichier, lu aux phonèmes : 1,00 "
+                  "du texte",
+        (55, 78): "dernier verset : le début de 055078.mp3 est la même prise (0,96), la fin est "
+                  "retouchée (0,24) ; de la coupe de 77 à la fin du fichier, lu aux phonèmes : 0,97 "
+                  "du texte",
+        (58, 1): "premier verset : la fin de 058001.mp3 est la même prise (1,00), le début est "
+                 "retouché (0,12) ; du début du fichier à la coupe de 2, lu aux phonèmes : 1,00 du "
+                 "texte, sans basmala",
+        (58, 22): "dernier verset : le début de 058022.mp3 est la même prise (0,98), la fin est "
+                  "retouchée (0,25) ; de la coupe de 21 à la fin du fichier, lu aux phonèmes : 0,95 "
+                  "du texte (l'imam redit « أَوْ أَبْنَاءَهُمْ أَوْ إِخْوَانَهُمْ »)",
+        (59, 24): "dernier verset : le début de 059024.mp3 est la même prise (0,99), la fin est "
+                  "retouchée (0,15) ; de la coupe de 23 à la fin du fichier, lu aux phonèmes : 1,00 "
+                  "du texte",
+        (61, 14): "dernier verset : le début de 061014.mp3 est la même prise (0,99), la fin est "
+                  "retouchée (0,17) ; de la coupe de 13 à la fin du fichier, lu aux phonèmes : 0,94 "
+                  "du texte (l'imam redit « كَمَا قَالَ عِيسَى ابْنُ مَرْيَمَ », comme chez "
+                  "everyayah)",
+        (62, 11): "dernier verset : le début de 062011.mp3 est la même prise (0,97), la fin est "
+                  "retouchée (0,10) ; de la coupe de 10 à la fin du fichier, lu aux phonèmes : 0,98 "
+                  "du texte",
+        (65, 12): "dernier verset : le début de 065012.mp3 est la même prise (1,00), la fin est "
+                  "retouchée (0,15) ; de la coupe de 11 à la fin du fichier, lu aux phonèmes : 0,93 "
+                  "du texte (l'imam redit « يَتَنَزَّلُ الْأَمْرُ بَيْنَهُنَّ »)",
+        (67, 1): "premier verset : la fin de 067001.mp3 est la même prise (1,00), le début est "
+                 "retouché (0,12) ; du début du fichier à la coupe de 2, lu aux phonèmes : 0,99 du "
+                 "texte, sans basmala",
+        (67, 30): "dernier verset : le début de 067030.mp3 est la même prise (1,00), la fin est "
+                  "retouchée (0,34) ; de la coupe de 29 à la fin du fichier, lu aux phonèmes : 1,00 "
+                  "du texte",
+        (68, 52): "dernier verset : le début de 068052.mp3 est la même prise (0,93), la fin est "
+                  "retouchée (0,42) ; de la coupe de 51 à la fin du fichier, lu aux phonèmes : 0,97 "
+                  "du texte",
+        (69, 52): "dernier verset : le début de 069052.mp3 est la même prise (0,97), la fin est "
+                  "retouchée (0,30) ; de la coupe de 51 à la fin du fichier, lu aux phonèmes : 1,00 "
+                  "du texte",
+        (70, 44): "dernier verset : le début de 070044.mp3 est la même prise (1,00), la fin est "
+                  "retouchée (0,21) ; de la coupe de 43 à la fin du fichier, lu aux phonèmes : 0,92 "
+                  "du texte (le modèle entend mal « خَاشِعَةً »)",
+        (73, 20): "dernier verset : le début de 073020.mp3 est la même prise (0,99), la fin est "
+                  "retouchée (0,13) ; de la coupe de 19 à la fin du fichier, lu aux phonèmes : 0,97 "
+                  "du texte",
+        (75, 40): "dernier verset : le début de 075040.mp3 est la même prise (0,96), la fin est "
+                  "retouchée (0,17) ; de la coupe de 39 à la fin du fichier, lu aux phonèmes : 1,00 "
+                  "du texte",
+        (78, 40): "dernier verset : le début de 078040.mp3 est la même prise (0,95), la fin est "
+                  "retouchée (0,10) ; de la coupe de 39 à la fin du fichier, lu aux phonèmes : 0,99 "
+                  "du texte",
+        (84, 25): "dernier verset : le début de 084025.mp3 est la même prise (0,99), la fin est "
+                  "retouchée (0,24) ; de la coupe de 24 à la fin du fichier, lu aux phonèmes : 1,00 "
+                  "du texte",
+        (87, 19): "dernier verset : le début de 087019.mp3 est la même prise (0,99), la fin est "
+                  "retouchée (0,24) ; de la coupe de 18 à la fin du fichier, lu aux phonèmes : 1,00 "
+                  "du texte",
+        (88, 26): "dernier verset : le début de 088026.mp3 est la même prise (0,97), la fin est "
+                  "retouchée (0,19) ; de la coupe de 25 à la fin du fichier, lu aux phonèmes : 1,00 "
+                  "du texte",
+        (91, 15): "dernier verset : le début de 091015.mp3 est la même prise (0,99), la fin est "
+                  "retouchée (0,30) ; de la coupe de 14 à la fin du fichier, lu aux phonèmes : 1,00 "
+                  "du texte",
+        (92, 21): "dernier verset : le début de 092021.mp3 est la même prise (0,99), la fin est "
+                  "retouchée (0,43) ; de la coupe de 20 à la fin du fichier, lu aux phonèmes : 1,00 "
+                  "du texte",
+        (93, 11): "dernier verset : le début de 093011.mp3 est la même prise (0,99), la fin est "
+                  "retouchée (0,16) ; de la coupe de 10 à la fin du fichier, lu aux phonèmes : 1,00 "
+                  "du texte",
+        (99, 8): "dernier verset : le début de 099008.mp3 est la même prise (0,97), la fin est "
+                 "retouchée (0,27) ; de la coupe de 7 à la fin du fichier, lu aux phonèmes : 0,94 du "
+                 "texte (le modèle entend « n » pour « m » dans « مِثْقَالَ »)",
+        (100, 11): "dernier verset : le début de 100011.mp3 est la même prise (1,00), la fin est "
+                   "retouchée (0,26) ; de la coupe de 10 à la fin du fichier, lu aux phonèmes : 0,97 "
+                   "du texte",
+        (101, 11): "dernier verset : le début de 101011.mp3 est la même prise (1,00), la fin est "
+                   "retouchée (0,35) ; de la coupe de 10 à la fin du fichier, lu aux phonèmes : 1,00 "
+                   "du texte",
+        (102, 8): "dernier verset : le début de 102008.mp3 est la même prise (0,95), la fin est "
+                  "retouchée (0,25) ; de la coupe de 7 à la fin du fichier, lu aux phonèmes : 1,00 du"
+                  " texte",
+        (103, 3): "dernier verset : le début de 103003.mp3 est la même prise (0,96), la fin est "
+                  "retouchée (0,11) ; de la coupe de 2 à la fin du fichier, lu aux phonèmes : 1,00 du"
+                  " texte",
+        (107, 7): "dernier verset : le début de 107007.mp3 est la même prise (0,98), la fin est "
+                  "retouchée (0,69) ; de la coupe de 6 à la fin du fichier, lu aux phonèmes : 1,00 du"
+                  " texte",
+        (112, 4): "dernier verset : le début de 112004.mp3 est la même prise (0,96), la fin est "
+                  "retouchée (0,30) ; de la coupe de 3 à la fin du fichier, lu aux phonèmes : 1,00 du"
+                  " texte",
+        (5, 64): "everyayah 005064.mp3 dure 7 min 39 s (il commence dans le verset 49 et finit avec 64) ; entre les coupes de 63 et de 65, lu aux phonèmes : 0,98 du texte, de « قَالَتِ الْيَهُودُ » à « الْمُفْسِدِينَ »",
+    },
 }
 
 # Versets dont aucun fichier d'everyayah ne donne la coupe (un fichier qui dit deux
@@ -319,6 +453,12 @@ COUPES: dict[str, dict[tuple[int, int], tuple[tuple[int, int], str]]] = {
         (18, 63): ((1348754, 1372630), "everyayah 018062.mp3 dit le verset 63, et 018063.mp3 n'a "
                    "que 0,26 s de son : la coupe de 018062.mp3 : قَالَ أَرَأَيْتَ إِذْ أَوَيْنَا إِلَى "
                    "الصَّخْرَةِ … وَاتَّخَذَ سَبِيلَهُ فِي الْبَحْرِ عَجَبًا"),
+    },
+    "qahtani": {
+        (1, 2): ((0, 4933), "001.mp3 commence sur l'attaque de 001002.mp3 (le fichier en a perdu 30 ms, d'où 0,56) : du début du fichier à la fin de la coupe, la seconde moitié est la même prise (0,98) ; 1:1 est lu ailleurs (`AILLEURS`)"),
+        (5, 72): ((2270614, 2309720), "everyayah a interverti 005072.mp3 et 005073.mp3 : la coupe de 005073.mp3, qui suit 71 chez mp3quran, lue aux phonèmes : 1,00 du texte de 72 (0,43 de celui de 73)"),
+        (5, 73): ((2309720, 2336548), "la coupe de 005072.mp3, qui précède 74 : 0,98 du texte de 73"),
+        (83, 36): ((293326, 300774), "dernier verset, à sa place (début de 083036.mp3 à 1,00, fin retouchée) : sa coupe, jusqu'à la fin du fichier ; avant elle, l'imam redit 34 et 35, que everyayah avait retirés (`sauts`)"),
     },
 }
 
@@ -350,12 +490,15 @@ JONCTIONS: dict[str, dict[tuple[int, int], tuple[int, str]]] = {
 # enveloppe est tenu pour accolé au précédent (`examiner`) : 100 ms, plus là où
 # chaque jour jusqu'à 2 s a été lu aux phonèmes et ne contient rien
 # (`controles-m389/jonctions.py --phonemes`).
-JOUR_ACCOLE: dict[str, int] = {"ghamadi": 2000}  # 91 jours de 100 ms à 2 s, tous vides aux phonèmes
+JOUR_ACCOLE: dict[str, int] = {"ghamadi": 2000, "qahtani": 2000}  # 91 et 92 jours de 100 ms à 2 s,
+# tous vides aux phonèmes
 
 # Versets qu'everyayah a tirés d'un autre fichier de sourate que le leur : la
 # basmala d'al-Fâtiha (1:1), que le fichier d'al-Fâtiha de mp3quran ne contient
 # pas dans cette prise. Absents de la table ; l'application les lit dans ce fichier,
 # à ces bornes (`lib/recitationAudio.ts`). (sourate, verset) → (audio, fenêtre en ms, raison).
+# Al-Qahtani : sa basmala d'everyayah n'est nulle part chez mp3quran ; celle d'une
+# autre ouverture (autre enregistrement), choisie par l'utilisateur le 2026-10-16.
 AILLEURS: dict[str, dict[tuple[int, int], tuple[str, tuple[int, int], str]]] = {
     "ghamadi": {
         (1, 1): ("https://cdn.mp3quran.net/audio/saad-ghamdi/r1/004.mp3", (3937, 9000),
@@ -363,6 +506,13 @@ AILLEURS: dict[str, dict[tuple[int, int], tuple[str, tuple[int, int], str]]] = {
                  "est la basmala qui ouvre an-Nisâ', retrouvée dans 004.mp3 à 3 937 ms (0,96) : la voix "
                  "attaque à 3 940 ms et se tait vers 8 750, يَا أَيُّهَا النَّاسُ attaque à 9 200 ; la fenêtre "
                  "s'arrête au milieu de ce silence. Lu aux phonèmes : بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ"),
+    },
+    "qahtani": {
+        (1, 1): ("https://cdn.mp3quran.net/audio/khalid-qahtani/r1/008.mp3", (0, 5732),
+                 "001.mp3 commence à « الْحَمْدُ » et 001001.mp3 n'est dans aucun des 114 fichiers (au mieux "
+                 "0,11) : choix de l'utilisateur (2026-10-16), sa basmala d'al-Anfâl, même imam, autre "
+                 "enregistrement ; la voix attaque à 80 ms, la fenêtre s'arrête où commence 008001.mp3 "
+                 "(5 732 ms)"),
     },
 }
 

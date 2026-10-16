@@ -81,6 +81,7 @@ APPLICATION = {
     "reporte-suesy": "As-Suesy",
     "reporte-ajamy": "Al-Ajamy",
     "reporte-ghamadi": "Saad Al-Ghamadi (1:1 hors table, lu dans 004.mp3)",
+    "reporte-qahtani": "Khalid Al-Qahtani (1:1 hors table, basmala d'al-Anfal lue dans 008.mp3)",
 }
 
 
