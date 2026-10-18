@@ -38,6 +38,7 @@ APPLICATION = {
     # Hafs : voix nouvelles.
     "aligne-badr": "Badr at-Turki",
     "qua-mustafa_ismail_mp3quran": "Mustafa Ismail, murattal",
+    "aligne-kalbani": "Adel Al-Kalbani (mp3quran, que personne ne minute ; 2026-10-18)",
     # Warsh.
     "qua-mohammed_saayed_warsh_mp3quran": "Mohammad Saayed (remplace la table mp3quran 134, d'un autre enregistrement)",
     "qua-abdulbasit_abdulsamad_warsh_qdc": "AbdelBasset en Warsh, lecture continue",

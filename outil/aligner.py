@@ -198,14 +198,33 @@ def phonetiser(genre: str, verset: int, uthmani: str) -> Unite:
     return u
 
 
+def fondre(u: Unite) -> Unite:
+    """L'unité, ses jetons identiques consécutifs fondus en un seul.
+
+    Le texte écrit compte les voyelles longues une à une (madd à 4 temps) et
+    sépare deux jetons pareils par un blanc : il faut au moins 33 trames à la
+    basmala. Al-Kalbani la dit parfois en 1,2 s, soit 30 trames (2026-10-18) :
+    elle ne tenait pas, l'aligneur la versait dans le premier mot du verset 1,
+    et l'application, qui joue toujours la même basmala avant le verset 1,
+    l'aurait fait entendre deux fois. Fondus, ses jetons s'étirent à la demande
+    et tiennent aussi dans une basmala lente."""
+    v = Unite(u.genre, u.verset, u.mots, lies=u.lies)
+    for j, m in zip(u.jetons, u.mot_du_jeton):
+        if v.jetons and v.jetons[-1] == j:
+            continue
+        v.jetons.append(j)
+        v.mot_du_jeton.append(m)
+    return v
+
+
 def unites_sourate(s: int, versets: list[int], prefixe: tuple[str, ...]) -> list[Unite]:
     from quran_transcript import Aya
 
     res = []
     if "istiadha" in prefixe:
-        res.append(phonetiser("istiadha", 0, ISTIADHA))
+        res.append(fondre(phonetiser("istiadha", 0, ISTIADHA)))
     if "basmala" in prefixe:
-        res.append(phonetiser("basmala", 0, BASMALA))
+        res.append(fondre(phonetiser("basmala", 0, BASMALA)))
     for a in versets:
         res.append(phonetiser("verset", a, Aya(s, a).get().uthmani))
     return res
@@ -408,16 +427,31 @@ def aligner(lp: np.ndarray, unites: list[Unite], fenetre_s: float = 60.0, fin_ou
     return res
 
 
-def choisir_prefixe(lp: np.ndarray, s: int, premiers: list[int]) -> tuple[str, ...]:
+def choisir_prefixe(lp: np.ndarray, s: int, versets: list[int]) -> tuple[str, ...]:
     """Istiʿādha et basmala sont dites ou non selon l'enregistrement : on essaie
-    chaque ouverture sur la première minute et l'on garde la plus probable."""
+    chaque ouverture sur la première minute et l'on garde la plus probable.
+
+    **Avec assez de texte pour couvrir toute la minute.** Le chemin doit rendre
+    compte de chaque trame : quand le texte s'épuise avant l'audio (trois
+    versets d'un ou deux mots, « ar-raḥmān »…), la candidate la plus longue
+    gagne seulement parce que ses jetons de plus absorbent la suite de la
+    récitation. Chez Al-Kalbani (2026-10-18), dix sourates avaient ainsi reçu
+    une istiʿādha qu'il ne dit pas, et leur premier verset glissait sur le
+    deuxième. La fin reste libre : le texte en trop n'est pas consommé."""
+    from quran_transcript import Aya
+
     candidats = [(), ("istiadha",)] if s in (1, 9) else [(), ("basmala",), ("istiadha", "basmala")]
     if s == 9:
         candidats = [(), ("istiadha",)]
     fen = lp[: int(60 / TRAME)]
+    texte: list[Unite] = []
+    for a in versets:
+        texte.append(phonetiser("verset", a, Aya(s, a).get().uthmani))
+        if sum(len(u.jetons) for u in texte) >= len(fen):
+            break
     meilleur, score_m = candidats[0], NEG
     for c in candidats:
-        u = unites_sourate(s, premiers, c)
+        u = unites_sourate(s, [], c) + texte
         _, sc, _ = viterbi(fen, [j for x in u for j in x.jetons], True)
         if sc > score_m:
             meilleur, score_m = c, sc
@@ -513,7 +547,7 @@ def aligner_sourate(rec: str, source: str, s: int, audio_url: str | None = None,
     n = len(comptes("hafs")[s])
     a1, a2 = versets or (1, n)
     liste = list(range(a1, (n if jusqua else a2) + 1))  # extrait : le texte déborde l'audio
-    prefixe = choisir_prefixe(lp, s, liste[:3]) if a1 == 1 else ()
+    prefixe = choisir_prefixe(lp, s, liste) if a1 == 1 else ()
     unites = unites_sourate(s, liste, prefixe)
     occ = aligner(lp, unites, fin_ouverte=jusqua is not None)
     occ = [m for m in occ if unites[m.unite].genre != "verset" or unites[m.unite].verset <= a2]
