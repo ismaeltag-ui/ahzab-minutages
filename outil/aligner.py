@@ -18,6 +18,7 @@ passe comme une courte.
 
     py -m outil.aligner essai cache/audio/humaid/001.mp3 1
     py -m outil.aligner sourate <récitation> <fichier ou url> <sourate> [--jusqua 120] [--versets 1-10]
+        [--ouverture basmala|istiadha+basmala|aucune]   (impose l'ouverture au lieu de la choisir)
 """
 
 from __future__ import annotations
@@ -534,11 +535,66 @@ def affiner(mots: list[Mot], db: np.ndarray) -> list[tuple[int, int]]:
     return [tuple(b) for b in bornes]
 
 
+# --- Reprises de plusieurs versets -------------------------------------------
+
+def resoudre_chevauchements(table: dict) -> list[int]:
+    """Un passage repris en entier ne doit pas faire se chevaucher ses versets.
+
+    Le verset couvre tout ce qui a été dit de lui : juste quand l'imam reprend
+    quelques mots du même verset, faux quand il revient sur **plusieurs**
+    versets. Al-Kalbani dit 53:39-41, puis les redit (2026-10-18) : chaque verset
+    s'étendait de sa première occurrence à sa dernière, les fenêtres se
+    recouvraient, et l'application, qui n'enchaîne que des fenêtres contiguës,
+    aurait fait entendre le passage trois fois.
+
+    Dans un tel bloc, chaque verset est ramené à ses mots, c'est-à-dire à leur
+    dernière occurrence, celle qui mène à la suite. Si le premier verset du bloc
+    recule ainsi son début, ce qui précède (la première tentative) n'appartient
+    plus à aucun verset : le verset d'avant est inscrit dans `sauts`, comme pour
+    les tables reportées, et la lecture d'un trait le saute. Rend les versets
+    modifiés."""
+    versets, mots = table["versets"], table.get("mots") or []
+    n = len(versets)
+
+    def recouvre(a: int) -> bool:  # le verset a (rang 0) commence avant la fin du précédent
+        return a > 0 and versets[a] and versets[a - 1] and versets[a][0] < versets[a - 1][1]
+
+    modifies: list[int] = []
+    sauts = set(table.get("sauts") or [])
+    a = 1
+    while a < n:
+        if not recouvre(a):
+            a += 1
+            continue
+        i = a - 1
+        j = a
+        while j + 1 < n and recouvre(j + 1):
+            j += 1
+        for k in range(i, j + 1):
+            m = mots[k] if k < len(mots) else None
+            if not m:
+                continue
+            debuts = [m[x] for x in range(0, len(m), 2) if m[x] >= 0]
+            fins = [m[x] for x in range(1, len(m), 2) if m[x] >= 0]
+            if debuts and fins and [min(debuts), max(fins)] != versets[k]:
+                if k == i and min(debuts) > versets[k][0] and i > 0:
+                    sauts.add(i)  # numéro du verset d'avant le bloc (rang i - 1)
+                versets[k] = [min(debuts), max(fins)]
+                modifies.append(k + 1)
+        a = j + 1
+    if sauts:
+        table["sauts"] = sorted(sauts)
+    return modifies
+
+
 # --- Commandes ---------------------------------------------------------------
 
 def aligner_sourate(rec: str, source: str, s: int, audio_url: str | None = None,
                     jusqua: float | None = None, versets: tuple[int, int] | None = None,
-                    nom: str | None = None) -> dict:
+                    nom: str | None = None, ouverture_imposee: tuple[str, ...] | None = None) -> dict:
+    """`ouverture_imposee` remplace le choix de l'ouverture, quand on a entendu ce
+    que dit l'imam et que le choix se trompe : Al-Kalbani, sourate 68, dont la
+    basmala enchaîne sans pause sur « nūn » et s'y laissait verser (2026-10-18)."""
     t_debut = time.time()
     audio = charger_audio(source, 0, jusqua)
     cle = hashlib.sha1(f"{source}|{jusqua}".encode()).hexdigest()[:16]
@@ -547,7 +603,10 @@ def aligner_sourate(rec: str, source: str, s: int, audio_url: str | None = None,
     n = len(comptes("hafs")[s])
     a1, a2 = versets or (1, n)
     liste = list(range(a1, (n if jusqua else a2) + 1))  # extrait : le texte déborde l'audio
-    prefixe = choisir_prefixe(lp, s, liste) if a1 == 1 else ()
+    if ouverture_imposee is not None:
+        prefixe = ouverture_imposee
+    else:
+        prefixe = choisir_prefixe(lp, s, liste) if a1 == 1 else ()
     unites = unites_sourate(s, liste, prefixe)
     occ = aligner(lp, unites, fin_ouverte=jusqua is not None)
     occ = [m for m in occ if unites[m.unite].genre != "verset" or unites[m.unite].verset <= a2]
@@ -587,6 +646,7 @@ def aligner_sourate(rec: str, source: str, s: int, audio_url: str | None = None,
     table["lies"] = {str(u.verset): u.lies for u in unites if u.genre == "verset" and u.lies}
     table["confiance"] = {str(a): round(float(np.mean(v)), 3) for a, v in scores.items()}
     table["reprises"] = {str(a): r for a, r in reprises.items()}
+    resoudre_chevauchements(table)
     ecrire_sourate(rec, s, table)
     duree = len(audio) / SR
     fiche_f = DONNEES / rec / "recitation.json"
@@ -598,6 +658,8 @@ def aligner_sourate(rec: str, source: str, s: int, audio_url: str | None = None,
     fiche["passes"][f"{s:03d}"] = {"versets": [a1, a2], "audio_s": round(duree, 1),
                                    "calcul_s": round(time.time() - t_debut, 1), "emissions_s": round(t_em, 1),
                                    "ouverture": list(prefixe)}
+    if ouverture_imposee is not None:
+        fiche["passes"][f"{s:03d}"]["ouverture_imposee"] = True
     if t_em > 20:  # émissions calculées, pas relues du cache : une vraie mesure de vitesse
         fiche.setdefault("vitesse", {})[f"{s:03d}"] = {"audio_s": round(duree, 1), "calcul_s": round(time.time() - t_debut, 1)}
     ecrire_fiche(rec, fiche)
@@ -614,10 +676,22 @@ def main(args: list[str]) -> None:
         rec, source, s = args[1], args[2], int(args[3])
         opts = dict(zip(args[4::2], args[5::2]))
         v = opts.get("--versets")
+        o = opts.get("--ouverture")  # « basmala », « istiadha+basmala » ou « aucune »
         aligner_sourate(rec, source, s, audio_url=opts.get("--url"),
                         jusqua=float(opts["--jusqua"]) if "--jusqua" in opts else None,
                         versets=tuple(int(x) for x in v.split("-")) if v else None,
-                        nom=opts.get("--nom"))
+                        nom=opts.get("--nom"),
+                        ouverture_imposee=None if o is None else tuple(x for x in o.split("+") if x != "aucune"))
+    elif args[0] == "chevauchements":  # sur une récitation déjà alignée
+        rec = args[1]
+        for f in sorted((DONNEES / rec).glob("[0-9][0-9][0-9].json")):
+            t = lire_json(f)
+            avant = list(t.get("sauts") or [])
+            modifies = resoudre_chevauchements(t)
+            if modifies:
+                ecrire_sourate(rec, int(f.stem), t)
+                print(f"{rec} {f.stem} : versets ramenés à leurs mots {modifies}, "
+                      f"sauts {avant} → {t.get('sauts', [])}", flush=True)
 
 
 if __name__ == "__main__":
