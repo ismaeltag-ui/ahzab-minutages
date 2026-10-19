@@ -897,12 +897,10 @@
         30
       ],
       "audio_s": 316.8,
-      "calcul_s": 19.9,
-      "emissions_s": 17.5,
-      "ouverture": [
-        "istiadha",
-        "basmala"
-      ]
+      "calcul_s": 439.3,
+      "emissions_s": 436.3,
+      "ouverture": [],
+      "ouverture_imposee": true
     },
     "090": {
       "versets": [
@@ -1471,6 +1469,10 @@
     "083": {
       "audio_s": 407.2,
       "calcul_s": 25.6
+    },
+    "089": {
+      "audio_s": 316.8,
+      "calcul_s": 439.3
     }
   }
 }

@@ -1073,12 +1073,12 @@
         30
       ],
       "audio_s": 165.6,
-      "calcul_s": 10.8,
-      "emissions_s": 8.9,
+      "calcul_s": 203.1,
+      "emissions_s": 201.8,
       "ouverture": [
-        "istiadha",
         "basmala"
-      ]
+      ],
+      "ouverture_imposee": true
     },
     "090": {
       "versets": [
@@ -1218,12 +1218,12 @@
         11
       ],
       "audio_s": 46.6,
-      "calcul_s": 3.2,
-      "emissions_s": 2.5,
+      "calcul_s": 83.7,
+      "emissions_s": 83.1,
       "ouverture": [
-        "istiadha",
         "basmala"
-      ]
+      ],
+      "ouverture_imposee": true
     },
     "102": {
       "versets": [
@@ -1618,6 +1618,14 @@
     "060": {
       "audio_s": 444.5,
       "calcul_s": 29.2
+    },
+    "089": {
+      "audio_s": 165.6,
+      "calcul_s": 203.1
+    },
+    "101": {
+      "audio_s": 46.6,
+      "calcul_s": 83.7
     }
   }
 }
